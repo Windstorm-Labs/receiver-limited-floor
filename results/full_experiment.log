@@ -1,0 +1,2309 @@
+=============================================
+FULL-SCALE THROUGHPUT EXPERIMENT
+Started: Sun Mar 29 01:48:33 AM EDT 2026
+=============================================
+
+[01:48:33] === PHASE 1: Building model catalog ===
+Roster has 1826 models
+Already cataloged: 1725 models with vocab sizes
+Need to process: 101 models
+
+=== Phase 1: API lookup ===
+  API checked: 100/101, got vocab: 0, need tokenizer: 100
+
+API phase complete. Got vocab for 0 new models.
+Need tokenizer download for 101 models.
+  Saved 1725 entries to /home/hermes-oc1/throughput_experiment/results/full_catalog.csv
+
+=== Phase 2: Tokenizer fallback (101 models) ===
+  [1/101] unknown    tokenizer fallback failed for unknown: unknown is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [2/101] unknown    tokenizer fallback failed for unknown: unknown is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [3/101] HPLT/translate-fa-en-v2.0-hplt_opusWarning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+    tokenizer fallback failed for HPLT/translate-fa-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [4/101] HPLT/translate-az-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-az-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [5/101] HPLT/translate-en-nb-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-nb-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [6/101] HPLT/translate-tr-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-tr-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [7/101] HPLT/translate-kn-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-kn-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [8/101] Helsinki-NLP/opus-mt-mbart-large-50-many-to-many-mmt    tokenizer fallback failed for Helsinki-NLP/opus-mt-mbart-large-50-many-to-many-mmt: Helsinki-NLP/opus-mt-mbart-large-50-many-to-many-mmt is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [9/101] HPLT/translate-en-ml-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-ml-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [10/101] HPLT/translate-sl-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-sl-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [11/101] Helsinki-NLP/opus-mt-madlad400-3b-mt    tokenizer fallback failed for Helsinki-NLP/opus-mt-madlad400-3b-mt: Helsinki-NLP/opus-mt-madlad400-3b-mt is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [12/101] HPLT/translate-ko-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-ko-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [13/101] HPLT/translate-en-uz-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-uz-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [14/101] HPLT/translate-mk-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-mk-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [15/101] HPLT/translate-en-ne-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-ne-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [16/101] HPLT/translate-ta-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-ta-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [17/101] HPLT/translate-cy-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-cy-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [18/101] WindyProLabs/windy-pair-en-ru    tokenizer fallback failed for WindyProLabs/windy-pair-en-ru: WindyProLabs/windy-pair-en-ru is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [19/101] unknown    tokenizer fallback failed for unknown: unknown is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [20/101] HPLT/translate-uz-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-uz-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [21/101] HPLT/translate-en-lv-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-lv-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [22/101] unknown    tokenizer fallback failed for unknown: unknown is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [23/101] HPLT/translate-ne-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-ne-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [24/101] unknown    tokenizer fallback failed for unknown: unknown is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [25/101] HPLT/translate-en-ms-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-ms-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [26/101] HPLT/translate-mr-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-mr-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [27/101] HPLT/translate-en-tr-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-tr-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [28/101] HPLT/translate-en-he-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-he-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [29/101] Helsinki-NLP/opus-mt-Tower-Plus-2B    tokenizer fallback failed for Helsinki-NLP/opus-mt-Tower-Plus-2B: Helsinki-NLP/opus-mt-Tower-Plus-2B is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [30/101] Helsinki-NLP/opus-mt-he-fr    tokenizer fallback failed for Helsinki-NLP/opus-mt-he-fr: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [31/101] HPLT/translate-en-mr-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-mr-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [32/101] HPLT/translate-eo-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-eo-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [33/101] unknown    tokenizer fallback failed for unknown: unknown is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [34/101] Helsinki-NLP/opus-mt-ALMA-7B-R    tokenizer fallback failed for Helsinki-NLP/opus-mt-ALMA-7B-R: Helsinki-NLP/opus-mt-ALMA-7B-R is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [35/101] HPLT/translate-vi-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-vi-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [36/101] WindyProLabs/windy-pair-en-hi    tokenizer fallback failed for WindyProLabs/windy-pair-en-hi: WindyProLabs/windy-pair-en-hi is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [37/101] HPLT/translate-en-ur-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-ur-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [38/101] HPLT/translate-si-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-si-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [39/101] HPLT/translate-en-bn-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-bn-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [40/101] HPLT/translate-en-mk-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-mk-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [41/101] WindyProLabs/windy-pair-en-pt    tokenizer fallback failed for WindyProLabs/windy-pair-en-pt: WindyProLabs/windy-pair-en-pt is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [42/101] HPLT/translate-lv-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-lv-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [43/101] HPLT/translate-en-sk-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-sk-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [44/101] HPLT/translate-en-vi-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-vi-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [45/101] HPLT/translate-en-gu-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-gu-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [46/101] HPLT/translate-en-te-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-te-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [47/101] HPLT/translate-af-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-af-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [48/101] HPLT/translate-en-si-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-si-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [49/101] HPLT/translate-en-eo-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-eo-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [50/101] HPLT/translate-kk-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-kk-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  Saved 1775 entries to /home/hermes-oc1/throughput_experiment/results/full_catalog.csv
+  [51/101] HPLT/translate-en-af-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-af-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [52/101] HPLT/translate-be-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-be-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [53/101] HPLT/translate-th-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-th-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [54/101] Helsinki-NLP/opus-mt-mbart-large-50-one-to-many-mmt    tokenizer fallback failed for Helsinki-NLP/opus-mt-mbart-large-50-one-to-many-mmt: Helsinki-NLP/opus-mt-mbart-large-50-one-to-many-mmt is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [55/101] WindyProLabs/windy-pair-zh-en    tokenizer fallback failed for WindyProLabs/windy-pair-zh-en: WindyProLabs/windy-pair-zh-en is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [56/101] HPLT/translate-en-fa-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-fa-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [57/101] Helsinki-NLP/opus-mt-ALMA-13B-R    tokenizer fallback failed for Helsinki-NLP/opus-mt-ALMA-13B-R: Helsinki-NLP/opus-mt-ALMA-13B-R is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [58/101] Helsinki-NLP/opus-mt-Tower-Plus-9B    tokenizer fallback failed for Helsinki-NLP/opus-mt-Tower-Plus-9B: Helsinki-NLP/opus-mt-Tower-Plus-9B is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [59/101] HPLT/translate-bn-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-bn-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [60/101] HPLT/translate-en-xh-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-xh-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [61/101] unknown    tokenizer fallback failed for unknown: unknown is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [62/101] HPLT/translate-en-be-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-be-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [63/101] WindyProLabs/windy-pair-en-fr    tokenizer fallback failed for WindyProLabs/windy-pair-en-fr: WindyProLabs/windy-pair-en-fr is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [64/101] HPLT/translate-en-uk-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-uk-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [65/101] WindyProLabs/windy-pair-en-zh    tokenizer fallback failed for WindyProLabs/windy-pair-en-zh: WindyProLabs/windy-pair-en-zh is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [66/101] HPLT/translate-en-bg-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-bg-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [67/101] unknown    tokenizer fallback failed for unknown: unknown is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [68/101] HPLT/translate-en-sr-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-sr-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [69/101] HPLT/translate-uk-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-uk-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [70/101] Helsinki-NLP/opus-mt-m2m100_1.2B    tokenizer fallback failed for Helsinki-NLP/opus-mt-m2m100_1.2B: Helsinki-NLP/opus-mt-m2m100_1.2B is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [71/101] HPLT/translate-he-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-he-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [72/101] HPLT/translate-en-th-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-th-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [73/101] WindyProLabs/windy-pair-es-en    tokenizer fallback failed for WindyProLabs/windy-pair-es-en: WindyProLabs/windy-pair-es-en is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [74/101] WindyProLabs/windy-pair-hi-en    tokenizer fallback failed for WindyProLabs/windy-pair-hi-en: WindyProLabs/windy-pair-hi-en is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [75/101] HPLT/translate-en-kn-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-kn-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [76/101] HPLT/translate-xh-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-xh-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [77/101] HPLT/translate-sk-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-sk-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [78/101] WindyProLabs/windy-pair-ru-en    tokenizer fallback failed for WindyProLabs/windy-pair-ru-en: WindyProLabs/windy-pair-ru-en is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [79/101] HPLT/translate-en-az-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-az-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [80/101] HPLT/translate-sr-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-sr-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [81/101] HPLT/translate-ml-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-ml-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [82/101] HPLT/translate-ja-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-ja-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [83/101] HPLT/translate-te-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-te-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [84/101] HPLT/translate-en-ta-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-ta-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [85/101] HPLT/translate-lt-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-lt-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [86/101] HPLT/translate-bg-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-bg-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [87/101] HPLT/translate-ur-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-ur-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [88/101] HPLT/translate-gu-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-gu-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [89/101] HPLT/translate-en-kk-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-kk-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [90/101] Helsinki-NLP/opus-mt-m2m100_418M    tokenizer fallback failed for Helsinki-NLP/opus-mt-m2m100_418M: Helsinki-NLP/opus-mt-m2m100_418M is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [91/101] HPLT/translate-en-lt-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-lt-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [92/101] HPLT/translate-nb-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-nb-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [93/101] HPLT/translate-en-ko-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-ko-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [94/101] WindyProLabs/windy-pair-en-de    tokenizer fallback failed for WindyProLabs/windy-pair-en-de: WindyProLabs/windy-pair-en-de is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [95/101] unknown    tokenizer fallback failed for unknown: unknown is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [96/101] HPLT/translate-ms-en-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-ms-en-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [97/101] HPLT/translate-en-ja-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-ja-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [98/101] WindyProLabs/windy-pair-en-ar    tokenizer fallback failed for WindyProLabs/windy-pair-en-ar: WindyProLabs/windy-pair-en-ar is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  [99/101] HPLT/translate-en-cy-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-cy-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  [100/101] WindyProLabs/windy-pair-en-es    tokenizer fallback failed for WindyProLabs/windy-pair-en-es: WindyProLabs/windy-pair-en-es is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+ → vocab=None
+  Saved 1825 entries to /home/hermes-oc1/throughput_experiment/results/full_catalog.csv
+  [101/101] HPLT/translate-en-sl-v2.0-hplt_opus    tokenizer fallback failed for HPLT/translate-en-sl-v2.0-hplt_opus: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece or tiktoken installed to convert a slow tokenizer to a fast one.
+ → vocab=None
+  Saved 1826 entries to /home/hermes-oc1/throughput_experiment/results/full_catalog.csv
+
+=== CATALOG COMPLETE ===
+Total: 1826
+With vocab size: 1725
+Failed: 101
+[01:50:54] Catalog: 1725 models with valid vocab sizes
+[01:50:54] Already evaluated: 530 models
+[01:50:54] Need to evaluate: 1195 models
+[01:50:54] 
+=== PHASE 2: Evaluating 1195 models ===
+[01:50:54] Free disk: 144.0 GB
+[01:50:54] [1/1195] Helsinki-NLP/opus-mt-mg-es (V=56469) — ETA: calculating...
+[01:51:16]   ✓ BPB=5.2546, time=21.5s
+[01:51:17] [2/1195] Helsinki-NLP/opus-mt-sv-id (V=56497) — ETA: 7:29:27
+[01:51:41]   ✓ BPB=4.6217, time=23.9s
+[01:51:42] [3/1195] Helsinki-NLP/opus-mt-id-sv (V=56497) — ETA: 7:52:53
+[01:52:04]   ✓ BPB=4.8784, time=22.7s
+[01:52:05] [4/1195] Helsinki-NLP/opus-mt-en-ty (V=56506) — ETA: 7:52:16
+[01:52:25]   ✓ BPB=3.8521, time=19.9s
+[01:52:26] [5/1195] Helsinki-NLP/opus-mt-tc-big-et-en (V=56510) — ETA: 7:37:41
+[01:52:55]   ✓ BPB=4.9915, time=28.6s
+[01:52:56] [6/1195] Helsinki-NLP/opus-mt-tc-big-et-en (V=56510) — ETA: 8:03:21
+[01:53:23]   ✓ BPB=4.9915, time=26.6s
+[01:53:24] [7/1195] Helsinki-NLP/opus-mt-lun-en (V=56530) — ETA: 8:13:45
+[01:53:52]   ✓ BPB=6.4204, time=28.8s
+[01:53:53] [8/1195] Helsinki-NLP/opus-mt-en-lun (V=56530) — ETA: 8:27:10
+[01:54:12]   ✓ BPB=4.2498, time=19.1s
+[01:54:14] [9/1195] Helsinki-NLP/opus-mt-tc-bible-big-cel-deu_eng_fra_por_spa (V=56599) — ETA: 8:13:08
+[01:54:45]   ✓ BPB=3.4991, time=31.2s
+[01:54:46] [10/1195] Helsinki-NLP/opus-mt-tc-bible-big-cel-deu_eng_fra_por_spa (V=56599) — ETA: 8:28:45
+[01:55:16]   ✓ BPB=3.4991, time=29.9s
+[01:55:17] [11/1195] Helsinki-NLP/opus-mt-en-gem (V=56629) — ETA: 8:38:41
+[01:55:36]   ✓ BPB=5.0455, time=19.5s
+[01:55:37] [12/1195] Helsinki-NLP/opus-mt-fr-ro (V=56634) — ETA: 8:27:57
+[01:56:01]   ✓ BPB=5.2585, time=23.3s
+[01:56:02] [13/1195] Helsinki-NLP/opus-mt-ro-fr (V=56634) — ETA: 8:25:15
+[01:56:23]   ✓ BPB=5.0980, time=21.8s
+[01:56:24] [14/1195] Helsinki-NLP/opus-mt-gem-en (V=56647) — ETA: 8:20:37
+[01:56:48]   ✓ BPB=5.7579, time=23.6s
+[01:56:49] [15/1195] Helsinki-NLP/opus-mt-en-roa (V=56671) — ETA: 8:19:07
+[01:57:09]   ✓ BPB=3.7159, time=20.1s
+[01:57:10] [16/1195] Helsinki-NLP/opus-mt-en-ga (V=56683) — ETA: 8:13:10
+[01:57:31]   ✓ BPB=3.8048, time=20.5s
+[01:57:32] [17/1195] Helsinki-NLP/opus-mt-ga-en (V=56683) — ETA: 8:08:24
+[01:57:53]   ✓ BPB=5.8062, time=21.0s
+[01:57:54] [18/1195] Helsinki-NLP/opus-mt-tc-big-de-gmq (V=56728) — ETA: 8:04:43
+[01:58:22]   ✓ BPB=5.0521, time=28.6s
+[01:58:23] [19/1195] Helsinki-NLP/opus-mt-tc-big-de-gmq (V=56728) — ETA: 8:09:43
+[01:58:52]   ✓ BPB=5.0521, time=28.1s
+[01:58:53] [20/1195] Helsinki-NLP/opus-mt-de-pon (V=56761) — ETA: 8:13:34
+[01:59:17]   ✓ BPB=5.3012, time=24.1s
+[01:59:18] [21/1195] Helsinki-NLP/opus-mt-nl-sv (V=56781) — ETA: 8:13:07
+[01:59:39]   ✓ BPB=5.6966, time=21.2s
+[01:59:40] [22/1195] Helsinki-NLP/opus-mt-sv-nl (V=56781) — ETA: 8:09:55
+[02:00:02]   ✓ BPB=6.2599, time=22.3s
+[02:00:03] [23/1195] Helsinki-NLP/opus-mt-es-pon (V=56793) — ETA: 8:07:58
+[02:00:30]   ✓ BPB=5.3918, time=26.3s
+[02:00:31] [24/1195] Helsinki-NLP/opus-mt-pon-es (V=56793) — ETA: 8:09:37
+[02:00:54]   ✓ BPB=5.4188, time=23.8s
+[02:00:55] [25/1195] Helsinki-NLP/opus-mt-tc-bible-big-gem-fra_ita_por_spa (V=56813) — ETA: 8:09:00
+[02:01:23]   ✓ BPB=3.5163, time=27.7s
+[02:01:24] [26/1195] Helsinki-NLP/opus-mt-tc-bible-big-gem-fra_ita_por_spa (V=56813) — ETA: 8:11:30
+[02:01:49]   ✓ BPB=3.5163, time=25.1s
+[02:01:50] [27/1195] Helsinki-NLP/opus-mt-en-ceb (V=56824) — ETA: 8:11:47
+[02:02:10]   ✓ BPB=3.7510, time=20.0s
+[02:02:11] [28/1195] Helsinki-NLP/opus-mt-yo-en (V=56836) — ETA: 8:08:19
+[02:02:37]   ✓ BPB=8.4658, time=25.1s
+[02:02:38] [29/1195] Helsinki-NLP/opus-mt-fr-id (V=56844) — ETA: 8:08:39
+[02:02:59]   ✓ BPB=4.4683, time=21.0s
+[02:03:00] [30/1195] Helsinki-NLP/opus-mt-id-fr (V=56844) — ETA: 8:06:08
+[02:03:21]   ✓ BPB=4.3211, time=21.1s
+[02:03:22] [31/1195] Helsinki-NLP/opus-mt-tc-big-de-es (V=56847) — ETA: 8:03:53
+[02:03:52]   ✓ BPB=5.1681, time=30.4s
+[02:03:53] [32/1195] Helsinki-NLP/opus-mt-tc-big-de-es (V=56847) — ETA: 8:07:33
+[02:04:20]   ✓ BPB=5.1681, time=27.1s
+[02:04:21] [33/1195] Helsinki-NLP/opus-mt-tc-big-itc-eu (V=56899) — ETA: 8:08:55
+[02:04:49]   ✓ BPB=4.5091, time=28.0s
+[02:04:50] [34/1195] Helsinki-NLP/opus-mt-tc-big-itc-eu (V=56899) — ETA: 8:10:44
+[02:05:18]   ✓ BPB=4.5091, time=27.4s
+[02:05:19] [35/1195] Helsinki-NLP/opus-mt-fi-ve (V=56909) — ETA: 8:12:04
+[02:05:44]   ✓ BPB=5.9513, time=25.5s
+[02:05:45] [36/1195] Helsinki-NLP/opus-mt-tc-big-hu-en (V=56973) — ETA: 8:12:16
+[02:06:16]   ✓ BPB=5.0487, time=30.9s
+[02:06:17] [37/1195] Helsinki-NLP/opus-mt-tc-big-en-hu (V=56973) — ETA: 8:15:19
+[02:06:43]   ✓ BPB=3.2715, time=25.9s
+[02:06:44] [38/1195] Helsinki-NLP/opus-mt-tc-big-hu-en (V=56973) — ETA: 8:15:34
+[02:07:13]   ✓ BPB=5.0487, time=29.1s
+[02:07:14] [39/1195] Helsinki-NLP/opus-mt-tc-big-en-hu (V=56973) — ETA: 8:17:26
+[02:07:39]   ✓ BPB=3.2715, time=24.7s
+[02:07:40] [40/1195] Helsinki-NLP/opus-mt-tc-big-eu-itc (V=56987) — ETA: 8:16:59
+[02:08:11]   ✓ BPB=4.7637, time=30.8s
+[02:08:12] [41/1195] Helsinki-NLP/opus-mt-tc-big-eu-itc (V=56987) — ETA: 8:19:29
+[02:08:40]   ✓ BPB=4.7637, time=28.2s
+[02:08:41] [42/1195] Helsinki-NLP/opus-mt-en-tw (V=57000) — ETA: 8:20:36
+[02:09:03]   ✓ BPB=3.5722, time=21.3s
+[02:09:04] [43/1195] Helsinki-NLP/opus-mt-da-de (V=57027) — ETA: 8:18:28
+[02:09:28]   ✓ BPB=6.1751, time=24.3s
+[02:09:29] [44/1195] Helsinki-NLP/opus-mt-de-da (V=57027) — ETA: 8:17:46
+[02:09:51]   ✓ BPB=6.3032, time=22.4s
+[02:09:52] [45/1195] Helsinki-NLP/opus-mt-itc-en (V=57043) — ETA: 8:16:16
+[02:10:16]   ✓ BPB=6.0147, time=23.2s
+[02:10:17] [46/1195] Helsinki-NLP/opus-mt-tc-big-tr-en (V=57060) — ETA: 8:15:07
+[02:10:43]   ✓ BPB=4.7517, time=26.5s
+[02:10:44] [47/1195] Helsinki-NLP/opus-mt-tc-big-en-tr (V=57060) — ETA: 8:15:25
+[02:11:11]   ✓ BPB=3.0870, time=26.6s
+[02:11:12] [48/1195] Helsinki-NLP/opus-mt-tc-big-en-tr (V=57060) — ETA: 8:15:42
+[02:11:37]   ✓ BPB=3.0870, time=25.2s
+[02:11:38] [49/1195] Helsinki-NLP/opus-mt-tc-big-tr-en (V=57060) — ETA: 8:15:24
+[02:12:05]   ✓ BPB=4.7517, time=26.8s
+[02:12:06] [50/1195] Helsinki-NLP/opus-mt-en-gmq (V=57068) — ETA: 8:15:44
+[02:12:24]   ✓ BPB=6.1219, time=18.4s
+[02:12:25] [51/1195] Helsinki-NLP/opus-mt-es-mt (V=57085) — ETA: 8:12:48
+[02:12:48]   ✓ BPB=14.6169, time=23.1s
+[02:12:49] [52/1195] Helsinki-NLP/opus-mt-mt-es (V=57085) — ETA: 8:11:44
+[02:13:12]   ✓ BPB=6.5787, time=22.1s
+[02:13:13] [53/1195] Helsinki-NLP/opus-mt-fr-mt (V=57092) — ETA: 8:10:21
+[02:13:35]   ✓ BPB=9.0436, time=22.0s
+[02:13:36] [54/1195] Helsinki-NLP/opus-mt-srn-en (V=57092) — ETA: 8:08:58
+[02:13:57]   ✓ BPB=6.6778, time=21.7s
+[02:13:58] [55/1195] Helsinki-NLP/opus-mt-mt-fr (V=57092) — ETA: 8:07:31
+[02:14:21]   ✓ BPB=6.7573, time=22.7s
+[02:14:22] [56/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mkh (V=57129) — ETA: 8:06:25
+[02:14:53]   ✓ BPB=3.1092, time=30.7s
+[02:14:54] [57/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-mkh (V=57129) — ETA: 8:08:05
+[02:15:18]   ✓ BPB=3.1092, time=24.5s
+[02:15:20] [58/1195] Helsinki-NLP/opus-mt-sv-ro (V=57133) — ETA: 8:07:37
+[02:15:44]   ✓ BPB=5.4953, time=24.4s
+[02:15:45] [59/1195] Helsinki-NLP/opus-mt-ro-sv (V=57133) — ETA: 8:07:06
+[02:16:09]   ✓ BPB=5.6606, time=24.2s
+[02:16:10] [60/1195] Helsinki-NLP/opus-mt-da-fr (V=57138) — ETA: 8:06:31
+[02:16:35]   ✓ BPB=5.7599, time=24.5s
+[02:16:36] [61/1195] Helsinki-NLP/opus-mt-en-itc (V=57148) — ETA: 8:06:05
+[02:16:54]   ✓ BPB=3.7307, time=18.3s
+[02:16:55] [62/1195] Helsinki-NLP/opus-mt-tc-big-gmq-tr (V=57177) — ETA: 8:03:41
+[02:17:26]   ✓ BPB=4.7365, time=30.5s
+[02:17:27] [63/1195] Helsinki-NLP/opus-mt-tc-big-gmq-tr (V=57177) — ETA: 8:05:03
+[02:17:56]   ✓ BPB=4.7365, time=29.2s
+[02:17:57] [64/1195] Helsinki-NLP/opus-mt-en-gaa (V=57186) — ETA: 8:05:59
+[02:18:19]   ✓ BPB=3.7525, time=22.1s
+[02:18:20] [65/1195] Helsinki-NLP/opus-mt-gaa-en (V=57186) — ETA: 8:04:46
+[02:18:42]   ✓ BPB=5.5983, time=22.1s
+[02:18:43] [66/1195] Helsinki-NLP/opus-mt-tl-en (V=57198) — ETA: 8:03:35
+[02:19:08]   ✓ BPB=6.2638, time=24.6s
+[02:19:09] [67/1195] Helsinki-NLP/opus-mt-fi-ha (V=57208) — ETA: 8:03:10
+[02:19:33]   ✓ BPB=5.6200, time=24.6s
+[02:19:34] [68/1195] Helsinki-NLP/opus-mt-ha-fi (V=57208) — ETA: 8:02:44
+[02:19:59]   ✓ BPB=5.8996, time=24.8s
+[02:20:00] [69/1195] Helsinki-NLP/opus-mt-ceb-en (V=57239) — ETA: 8:02:21
+[02:20:26]   ✓ BPB=6.1936, time=25.3s
+[02:20:27] [70/1195] Helsinki-NLP/opus-mt-ru-bg (V=57274) — ETA: 8:02:05
+[02:20:54]   ✓ BPB=6.3861, time=27.6s
+[02:20:55] [71/1195] Helsinki-NLP/opus-mt-sv-mt (V=57279) — ETA: 8:02:28
+[02:21:17]   ✓ BPB=12.3518, time=21.8s
+[02:21:18] [72/1195] Helsinki-NLP/opus-mt-mt-sv (V=57279) — ETA: 8:01:16
+[02:21:43]   ✓ BPB=16.0133, time=24.4s
+[02:21:44] [73/1195] Helsinki-NLP/opus-mt-en-pap (V=57294) — ETA: 8:00:47
+[02:22:03]   ✓ BPB=3.6243, time=19.8s
+[02:22:05] [74/1195] Helsinki-NLP/opus-mt-pap-en (V=57294) — ETA: 7:59:08
+[02:22:27]   ✓ BPB=5.1776, time=22.7s
+[02:22:28] [75/1195] Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa (V=57305) — ETA: 7:58:14
+[02:23:31]   ✓ BPB=3.6390, time=63.0s
+[02:23:32] [76/1195] Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_fra_por_spa (V=57305) — ETA: 8:07:22
+[02:24:01]   ✓ BPB=3.6390, time=28.4s
+[02:24:02] [77/1195] Helsinki-NLP/opus-mt-tn-en (V=57306) — ETA: 8:07:46
+[02:24:26]   ✓ BPB=7.8594, time=24.0s
+[02:24:27] [78/1195] Helsinki-NLP/opus-mt-en-tn (V=57306) — ETA: 8:07:03
+[02:24:48]   ✓ BPB=3.4977, time=20.8s
+[02:24:49] [79/1195] Helsinki-NLP/opus-mt-bg-ru (V=57310) — ETA: 8:05:35
+[02:25:14]   ✓ BPB=5.6314, time=25.4s
+[02:25:15] [80/1195] Helsinki-NLP/opus-mt-tc-big-en-et (V=57319) — ETA: 8:05:15
+[02:25:41]   ✓ BPB=3.2043, time=25.7s
+[02:25:42] [81/1195] Helsinki-NLP/opus-mt-tc-big-en-et (V=57319) — ETA: 8:04:58
+[02:26:05]   ✓ BPB=3.2043, time=22.8s
+[02:26:06] [82/1195] Helsinki-NLP/opus-mt-en-st (V=57355) — ETA: 8:04:01
+[02:26:25]   ✓ BPB=3.7323, time=19.1s
+[02:26:26] [83/1195] Helsinki-NLP/opus-mt-st-en (V=57355) — ETA: 8:02:15
+[02:26:49]   ✓ BPB=6.2226, time=23.0s
+[02:26:50] [84/1195] Helsinki-NLP/opus-mt-en-tl (V=57373) — ETA: 8:01:22
+[02:27:09]   ✓ BPB=3.4505, time=19.6s
+[02:27:11] [85/1195] Helsinki-NLP/opus-mt-gmq-en (V=57388) — ETA: 7:59:45
+[02:27:33]   ✓ BPB=5.6437, time=23.0s
+[02:27:35] [86/1195] Helsinki-NLP/opus-mt-ms-fr (V=57401) — ETA: 7:58:54
+[02:27:55]   ✓ BPB=4.7076, time=20.9s
+[02:27:56] [87/1195] Helsinki-NLP/opus-mt-fr-ms (V=57403) — ETA: 7:57:37
+[02:28:20]   ✓ BPB=4.5894, time=23.7s
+[02:28:21] [88/1195] Helsinki-NLP/opus-mt-id-es (V=57414) — ETA: 7:56:57
+[02:28:42]   ✓ BPB=4.6800, time=20.4s
+[02:28:43] [89/1195] Helsinki-NLP/opus-mt-es-id (V=57414) — ETA: 7:55:36
+[02:29:04]   ✓ BPB=6.1329, time=21.7s
+[02:29:05] [90/1195] Helsinki-NLP/opus-mt-sv-sm (V=57440) — ETA: 7:54:33
+[02:29:28]   ✓ BPB=5.1197, time=22.5s
+[02:29:29] [91/1195] Helsinki-NLP/opus-mt-af-en (V=57445) — ETA: 7:53:40
+[02:29:50]   ✓ BPB=5.2015, time=21.0s
+[02:29:51] [92/1195] Helsinki-NLP/opus-mt-en-af (V=57445) — ETA: 7:52:30
+[02:30:11]   ✓ BPB=3.6103, time=20.2s
+[02:30:12] [93/1195] Helsinki-NLP/opus-mt-en-to (V=57446) — ETA: 7:51:11
+[02:30:33]   ✓ BPB=4.0492, time=20.3s
+[02:30:34] [94/1195] Helsinki-NLP/opus-mt-to-en (V=57446) — ETA: 7:49:55
+[02:30:59]   ✓ BPB=7.1751, time=25.0s
+[02:31:00] [95/1195] Helsinki-NLP/opus-mt-ts-en (V=57469) — ETA: 7:49:34
+[02:31:24]   ✓ BPB=5.1830, time=24.3s
+[02:31:25] [96/1195] Helsinki-NLP/opus-mt-en-ts (V=57469) — ETA: 7:49:06
+[02:31:46]   ✓ BPB=3.5838, time=20.7s
+[02:31:47] [97/1195] Helsinki-NLP/opus-mt-cs-sv (V=57482) — ETA: 7:47:56
+[02:32:10]   ✓ BPB=6.2207, time=23.3s
+[02:32:11] [98/1195] Helsinki-NLP/opus-mt-sv-cs (V=57482) — ETA: 7:47:16
+[02:32:32]   ✓ BPB=5.8719, time=21.2s
+[02:32:33] [99/1195] Helsinki-NLP/opus-mt-en-pag (V=57487) — ETA: 7:46:14
+[02:32:54]   ✓ BPB=3.8788, time=21.1s
+[02:32:55] [100/1195] Helsinki-NLP/opus-mt-pag-en (V=57487) — ETA: 7:45:11
+[02:33:18]   ✓ BPB=5.4430, time=22.6s
+[02:33:19] [101/1195] Helsinki-NLP/opus-mt-fr-bi (V=57508) — ETA: 7:44:26
+[02:33:41]   ✓ BPB=5.3569, time=22.5s
+[02:33:42] [102/1195] Helsinki-NLP/opus-mt-bi-fr (V=57508) — ETA: 7:43:39
+[02:34:07]   ✓ BPB=5.0330, time=24.5s
+[02:34:08] [103/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-aav (V=57539) — ETA: 7:43:15
+[02:34:37]   ✓ BPB=3.0834, time=29.0s
+[02:34:38] [104/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-aav (V=57539) — ETA: 7:43:38
+[02:35:07]   ✓ BPB=3.0834, time=29.1s
+[02:35:08] [105/1195] Helsinki-NLP/opus-mt-en-nso (V=57542) — ETA: 7:44:02
+[02:35:28]   ✓ BPB=3.6829, time=19.5s
+[02:35:29] [106/1195] Helsinki-NLP/opus-mt-nso-en (V=57542) — ETA: 7:42:44
+[02:35:52]   ✓ BPB=6.1263, time=23.7s
+[02:35:53] [107/1195] Helsinki-NLP/opus-mt-de-nl (V=57567) — ETA: 7:42:11
+[02:36:19]   ✓ BPB=5.9408, time=25.6s
+[02:36:20] [108/1195] Helsinki-NLP/opus-mt-tc-bible-big-phi-en (V=57576) — ETA: 7:41:58
+[02:36:51]   ✓ BPB=4.0269, time=31.3s
+[02:36:52] [109/1195] Helsinki-NLP/opus-mt-tc-bible-big-phi-en (V=57576) — ETA: 7:42:42
+[02:37:21]   ✓ BPB=4.0269, time=29.0s
+[02:37:23] [110/1195] Helsinki-NLP/opus-mt-ee-en (V=57579) — ETA: 7:43:01
+[02:37:44]   ✓ BPB=5.3128, time=21.9s
+[02:37:45] [111/1195] Helsinki-NLP/opus-mt-en-ee (V=57579) — ETA: 7:42:09
+[02:38:06]   ✓ BPB=3.6032, time=20.5s
+[02:38:07] [112/1195] Helsinki-NLP/opus-mt-da-es (V=57584) — ETA: 7:41:05
+[02:38:29]   ✓ BPB=6.0246, time=22.4s
+[02:38:30] [113/1195] Helsinki-NLP/opus-mt-es-da (V=57584) — ETA: 7:40:19
+[02:38:52]   ✓ BPB=6.1390, time=21.6s
+[02:38:53] [114/1195] Helsinki-NLP/opus-mt-nl-fr (V=57642) — ETA: 7:39:26
+[02:39:16]   ✓ BPB=5.7389, time=22.8s
+[02:39:17] [115/1195] Helsinki-NLP/opus-mt-sl-sv (V=57661) — ETA: 7:38:46
+[02:39:41]   ✓ BPB=6.0335, time=24.5s
+[02:39:42] [116/1195] Helsinki-NLP/opus-mt-sv-sl (V=57661) — ETA: 7:38:21
+[02:40:04]   ✓ BPB=5.7352, time=21.8s
+[02:40:05] [117/1195] Helsinki-NLP/opus-mt-zls-en (V=57673) — ETA: 7:37:31
+[02:40:28]   ✓ BPB=8.6379, time=22.5s
+[02:40:29] [118/1195] Helsinki-NLP/opus-mt-cpf-en (V=57679) — ETA: 7:36:48
+[02:40:42]   ✗ exit=1: , time=13.6s
+[02:40:43] [119/1195] Helsinki-NLP/opus-mt-en-zls (V=57680) — ETA: 7:34:43
+[02:41:07]   ✓ BPB=12.2182, time=24.1s
+[02:41:09] [120/1195] Helsinki-NLP/opus-mt-en-cpf (V=57681) — ETA: 7:34:16
+[02:41:29]   ✓ BPB=3.3389, time=20.5s
+[02:41:30] [121/1195] Helsinki-NLP/opus-mt-tc-big-en-ces_slk (V=57703) — ETA: 7:33:17
+[02:41:55]   ✓ BPB=3.1958, time=24.6s
+[02:41:56] [122/1195] Helsinki-NLP/opus-mt-tc-big-en-ces_slk (V=57703) — ETA: 7:32:55
+[02:42:18]   ✓ BPB=3.1958, time=22.6s
+[02:42:19] [123/1195] Helsinki-NLP/opus-mt-tc-big-zls-zle (V=57711) — ETA: 7:32:15
+[02:42:48]   ✓ BPB=5.4351, time=28.4s
+[02:42:49] [124/1195] Helsinki-NLP/opus-mt-tc-big-zls-zle (V=57711) — ETA: 7:32:26
+[02:43:17]   ✓ BPB=5.4351, time=27.8s
+[02:43:18] [125/1195] Helsinki-NLP/opus-mt-tc-big-ces_slk-en (V=57714) — ETA: 7:32:31
+[02:43:49]   ✓ BPB=5.5691, time=31.1s
+[02:43:50] [126/1195] Helsinki-NLP/opus-mt-tc-big-ces_slk-en (V=57714) — ETA: 7:33:05
+[02:44:18]   ✓ BPB=5.5691, time=28.1s
+[02:44:19] [127/1195] Helsinki-NLP/opus-mt-ms-de (V=57715) — ETA: 7:33:11
+[02:44:42]   ✓ BPB=4.6317, time=23.3s
+[02:44:43] [128/1195] Helsinki-NLP/opus-mt-de-ms (V=57716) — ETA: 7:32:37
+[02:45:10]   ✓ BPB=4.9390, time=26.3s
+[02:45:11] [129/1195] Helsinki-NLP/opus-mt-tc-big-lv-en (V=57723) — ETA: 7:32:27
+[02:45:42]   ✓ BPB=4.9382, time=31.6s
+[02:45:43] [130/1195] Helsinki-NLP/opus-mt-tc-big-lv-en (V=57723) — ETA: 7:33:02
+[02:46:14]   ✓ BPB=4.9382, time=30.3s
+[02:46:15] [131/1195] Helsinki-NLP/opus-mt-fi-pon (V=57737) — ETA: 7:33:24
+[02:46:41]   ✓ BPB=5.5796, time=25.7s
+[02:46:42] [132/1195] Helsinki-NLP/opus-mt-pon-fi (V=57737) — ETA: 7:33:09
+[02:47:06]   ✓ BPB=5.8987, time=24.3s
+[02:47:07] [133/1195] Helsinki-NLP/opus-mt-ty-fr (V=57756) — ETA: 7:32:41
+[02:47:31]   ✓ BPB=13.6944, time=23.8s
+[02:47:32] [134/1195] Helsinki-NLP/opus-mt-fr-ty (V=57756) — ETA: 7:32:10
+[02:47:55]   ✓ BPB=5.3628, time=23.0s
+[02:47:56] [135/1195] Helsinki-NLP/opus-mt-en-cpp (V=57766) — ETA: 7:31:32
+[02:48:17]   ✓ BPB=3.2325, time=20.9s
+[02:48:18] [136/1195] Helsinki-NLP/opus-mt-ru-uk (V=57777) — ETA: 7:30:39
+[02:48:45]   ✓ BPB=5.9926, time=27.6s
+[02:48:46] [137/1195] Helsinki-NLP/opus-mt-en-ilo (V=57777) — ETA: 7:30:38
+[02:49:05]   ✓ BPB=3.6463, time=18.4s
+[02:49:06] [138/1195] Helsinki-NLP/opus-mt-uk-ru (V=57777) — ETA: 7:29:26
+[02:49:32]   ✓ BPB=6.7164, time=25.5s
+[02:49:33] [139/1195] Helsinki-NLP/opus-mt-cpp-en (V=57790) — ETA: 7:29:09
+[02:49:54]   ✓ BPB=4.5500, time=21.8s
+[02:49:55] [140/1195] Helsinki-NLP/opus-mt-et-sv (V=57792) — ETA: 7:28:23
+[02:50:18]   ✓ BPB=6.0629, time=22.4s
+[02:50:19] [141/1195] Helsinki-NLP/opus-mt-sv-et (V=57792) — ETA: 7:27:42
+[02:50:41]   ✓ BPB=5.7585, time=21.7s
+[02:50:42] [142/1195] Helsinki-NLP/opus-mt-tc-big-fi-en (V=57830) — ETA: 7:26:57
+[02:51:10]   ✓ BPB=5.5844, time=28.8s
+[02:51:11] [143/1195] Helsinki-NLP/opus-mt-tc-big-fi-en (V=57830) — ETA: 7:27:04
+[02:51:38]   ✓ BPB=5.5844, time=27.0s
+[02:51:40] [144/1195] Helsinki-NLP/opus-mt-tc-big-zle-zls (V=57830) — ETA: 7:26:57
+[02:52:13]   ✓ BPB=6.1952, time=33.2s
+[02:52:14] [145/1195] Helsinki-NLP/opus-mt-tc-big-zle-zls (V=57830) — ETA: 7:27:36
+[02:52:43]   ✓ BPB=6.1952, time=29.4s
+[02:52:44] [146/1195] Helsinki-NLP/opus-mt-tc-big-en-fi (V=57849) — ETA: 7:27:46
+[02:53:11]   ✓ BPB=3.3551, time=26.8s
+[02:53:12] [147/1195] Helsinki-NLP/opus-mt-tc-big-en-fi (V=57849) — ETA: 7:27:36
+[02:53:36]   ✓ BPB=3.3551, time=23.6s
+[02:53:37] [148/1195] Helsinki-NLP/opus-mt-ms-it (V=57896) — ETA: 7:27:04
+[02:54:00]   ✓ BPB=4.4664, time=23.3s
+[02:54:01] [149/1195] Helsinki-NLP/opus-mt-cel-en (V=57907) — ETA: 7:26:29
+[02:54:26]   ✓ BPB=5.3499, time=25.0s
+[02:54:27] [150/1195] Helsinki-NLP/opus-mt-it-ms (V=57912) — ETA: 7:26:07
+[02:54:48]   ✓ BPB=4.6197, time=21.4s
+[02:54:50] [151/1195] Helsinki-NLP/opus-mt-en-cel (V=57912) — ETA: 7:25:20
+[02:55:09]   ✓ BPB=4.1800, time=19.2s
+[02:55:10] [152/1195] Helsinki-NLP/opus-mt-fr-vi (V=57937) — ETA: 7:24:18
+[02:55:34]   ✓ BPB=4.7679, time=23.8s
+[02:55:35] [153/1195] Helsinki-NLP/opus-mt-vi-fr (V=57937) — ETA: 7:23:47
+[02:55:55]   ✓ BPB=4.4627, time=20.5s
+[02:55:56] [154/1195] Helsinki-NLP/opus-mt-lv-en (V=57941) — ETA: 7:22:55
+[02:56:19]   ✓ BPB=6.3645, time=22.6s
+[02:56:20] [155/1195] Helsinki-NLP/opus-mt-de-mt (V=57955) — ETA: 7:22:16
+[02:56:42]   ✓ BPB=16.6040, time=22.3s
+[02:56:43] [156/1195] Helsinki-NLP/opus-mt-sl-es (V=57959) — ETA: 7:21:36
+[02:57:07]   ✓ BPB=5.8531, time=23.9s
+[02:57:08] [157/1195] Helsinki-NLP/opus-mt-es-sl (V=57959) — ETA: 7:21:07
+[02:57:31]   ✓ BPB=5.9866, time=23.0s
+[02:57:32] [158/1195] Helsinki-NLP/opus-mt-sv-sk (V=57968) — ETA: 7:20:33
+[02:57:54]   ✓ BPB=5.9754, time=22.0s
+[02:57:55] [159/1195] Helsinki-NLP/opus-mt-sk-sv (V=57968) — ETA: 7:19:51
+[02:58:17]   ✓ BPB=6.4365, time=21.8s
+[02:58:18] [160/1195] Helsinki-NLP/opus-mt-tc-big-gmq-itc (V=57969) — ETA: 7:19:08
+[02:58:45]   ✓ BPB=4.4966, time=27.0s
+[02:58:46] [161/1195] Helsinki-NLP/opus-mt-tc-big-gmq-itc (V=57969) — ETA: 7:18:59
+[02:59:12]   ✓ BPB=4.4966, time=26.5s
+[02:59:13] [162/1195] Helsinki-NLP/opus-mt-loz-en (V=57974) — ETA: 7:18:47
+[02:59:36]   ✓ BPB=5.6601, time=23.0s
+[02:59:38] [163/1195] Helsinki-NLP/opus-mt-en-loz (V=57974) — ETA: 7:18:13
+[02:59:58]   ✓ BPB=3.8905, time=20.6s
+[02:59:59] [164/1195] Helsinki-NLP/opus-mt-it-sv (V=57979) — ETA: 7:17:23
+[03:00:21]   ✓ BPB=6.0941, time=21.6s
+[03:00:22] [165/1195] Helsinki-NLP/opus-mt-fr-sv (V=57981) — ETA: 7:16:41
+[03:00:43]   ✓ BPB=5.9273, time=21.6s
+[03:00:45] [166/1195] Helsinki-NLP/opus-mt-sv-fr (V=57981) — ETA: 7:15:58
+[03:01:06]   ✓ BPB=5.7487, time=21.8s
+[03:01:07] [167/1195] Helsinki-NLP/opus-mt-NORTH_EU-NORTH_EU (V=58012) — ETA: 7:15:17
+[03:01:31]   ✓ BPB=5.3333, time=23.3s
+[03:01:32] [168/1195] Helsinki-NLP/opus-mt-zlw-en (V=58034) — ETA: 7:14:45
+[03:01:55]   ✓ BPB=10.5326, time=23.7s
+[03:01:57] [169/1195] Helsinki-NLP/opus-mt-de-et (V=58042) — ETA: 7:14:16
+[03:02:18]   ✓ BPB=5.8898, time=21.9s
+[03:02:19] [170/1195] Helsinki-NLP/opus-mt-et-de (V=58042) — ETA: 7:13:36
+[03:02:43]   ✓ BPB=5.9625, time=23.9s
+[03:02:44] [171/1195] Helsinki-NLP/opus-mt-en-zlw (V=58052) — ETA: 7:13:08
+[03:03:02]   ✓ BPB=5.2803, time=17.9s
+[03:03:03] [172/1195] Helsinki-NLP/opus-mt-sv-es (V=58053) — ETA: 7:12:04
+[03:03:28]   ✓ BPB=6.0039, time=24.3s
+[03:03:29] [173/1195] Helsinki-NLP/opus-mt-fi-et (V=58055) — ETA: 7:11:38
+[03:03:53]   ✓ BPB=6.1197, time=24.9s
+[03:03:55] [174/1195] Helsinki-NLP/opus-mt-et-fi (V=58055) — ETA: 7:11:17
+[03:04:17]   ✓ BPB=6.0381, time=22.1s
+[03:04:18] [175/1195] Helsinki-NLP/opus-mt-eu-es (V=58060) — ETA: 7:10:39
+[03:04:39]   ✓ BPB=5.5021, time=21.7s
+[03:04:40] [176/1195] Helsinki-NLP/opus-mt-es-eu (V=58060) — ETA: 7:09:59
+[03:05:05]   ✓ BPB=5.1227, time=24.8s
+[03:05:06] [177/1195] Helsinki-NLP/opus-mt-et-fr (V=58065) — ETA: 7:09:37
+[03:05:29]   ✓ BPB=6.1528, time=22.9s
+[03:05:30] [178/1195] Helsinki-NLP/opus-mt-es-NORWAY (V=58071) — ETA: 7:09:04
+[03:05:56]   ✓ BPB=5.5670, time=25.7s
+[03:05:57] [179/1195] Helsinki-NLP/opus-mt-en-ha (V=58089) — ETA: 7:08:47
+[03:06:17]   ✓ BPB=3.5587, time=19.7s
+[03:06:18] [180/1195] Helsinki-NLP/opus-mt-ha-en (V=58089) — ETA: 7:07:56
+[03:06:42]   ✓ BPB=5.1955, time=24.6s
+[03:06:43] [181/1195] Helsinki-NLP/opus-mt-en-de (V=58101) — ETA: 7:07:32
+[03:07:01]   ✓ BPB=3.5913, time=17.9s
+[03:07:02] [182/1195] Helsinki-NLP/opus-mt-de-en (V=58101) — ETA: 7:06:32
+[03:07:23]   ✓ BPB=5.0564, time=21.1s
+[03:07:24] [183/1195] Helsinki-NLP/opus-mt-tc-big-zlw-en (V=58102) — ETA: 7:05:49
+[03:07:55]   ✓ BPB=6.0937, time=30.1s
+[03:07:56] [184/1195] Helsinki-NLP/opus-mt-tc-big-zlw-en (V=58102) — ETA: 7:05:57
+[03:08:22]   ✓ BPB=6.0937, time=26.8s
+[03:08:23] [185/1195] Helsinki-NLP/opus-mt-kwy-en (V=58115) — ETA: 7:05:46
+[03:08:50]   ✓ BPB=6.1323, time=26.6s
+[03:08:51] [186/1195] Helsinki-NLP/opus-mt-en-kwy (V=58115) — ETA: 7:05:33
+[03:09:11]   ✓ BPB=3.8366, time=19.5s
+[03:09:12] [187/1195] Helsinki-NLP/opus-mt-fr-sm (V=58116) — ETA: 7:04:42
+[03:09:36]   ✓ BPB=5.4183, time=24.7s
+[03:09:37] [188/1195] Helsinki-NLP/opus-mt-sm-fr (V=58116) — ETA: 7:04:20
+[03:10:01]   ✓ BPB=5.3179, time=23.2s
+[03:10:02] [189/1195] Helsinki-NLP/opus-mt-et-es (V=58124) — ETA: 7:03:49
+[03:10:25]   ✓ BPB=6.2003, time=23.1s
+[03:10:26] [190/1195] Helsinki-NLP/opus-mt-es-et (V=58124) — ETA: 7:03:18
+[03:10:57]   ✓ BPB=5.7235, time=31.4s
+[03:10:58] [191/1195] Helsinki-NLP/opus-mt-lv-sv (V=58192) — ETA: 7:03:31
+[03:11:30]   ✓ BPB=8.9733, time=31.3s
+[03:11:31] [192/1195] Helsinki-NLP/opus-mt-sv-lv (V=58192) — ETA: 7:03:43
+[03:11:59]   ✓ BPB=13.1301, time=27.9s
+[03:12:00] [193/1195] Helsinki-NLP/opus-mt-hr-sv (V=58208) — ETA: 7:03:37
+[03:12:23]   ✓ BPB=5.4990, time=23.0s
+[03:12:24] [194/1195] Helsinki-NLP/opus-mt-sv-hr (V=58208) — ETA: 7:03:04
+[03:12:56]   ✓ BPB=5.0596, time=32.3s
+[03:12:57] [195/1195] Helsinki-NLP/opus-mt-de-vi (V=58225) — ETA: 7:03:20
+[03:13:23]   ✓ BPB=4.7886, time=26.2s
+[03:13:24] [196/1195] Helsinki-NLP/opus-mt-vi-de (V=58225) — ETA: 7:03:04
+[03:13:47]   ✓ BPB=4.5581, time=23.1s
+[03:13:48] [197/1195] Helsinki-NLP/opus-mt-lv-es (V=58226) — ETA: 7:02:32
+[03:14:16]   ✓ BPB=8.6919, time=27.7s
+[03:14:17] [198/1195] Helsinki-NLP/opus-mt-cs-de (V=58234) — ETA: 7:02:24
+[03:14:44]   ✓ BPB=6.3070, time=26.5s
+[03:14:45] [199/1195] Helsinki-NLP/opus-mt-de-cs (V=58234) — ETA: 7:02:10
+[03:15:15]   ✓ BPB=5.9242, time=30.5s
+[03:15:16] [200/1195] Helsinki-NLP/opus-mt-fr-sl (V=58240) — ETA: 7:02:15
+[03:15:37]   ✓ BPB=5.2469, time=21.3s
+[03:15:38] [201/1195] Helsinki-NLP/opus-mt-sl-fr (V=58240) — ETA: 7:01:34
+[03:16:05]   ✓ BPB=5.6766, time=27.0s
+[03:16:07] [202/1195] Helsinki-NLP/opus-mt-tc-bible-big-mkh-fra_ita_por_spa (V=58241) — ETA: 7:01:22
+[03:16:44]   ✓ BPB=4.0020, time=37.3s
+[03:16:45] [203/1195] Helsinki-NLP/opus-mt-tc-bible-big-mkh-fra_ita_por_spa (V=58241) — ETA: 7:02:00
+[03:17:16]   ✓ BPB=4.0020, time=31.0s
+[03:17:17] [204/1195] Helsinki-NLP/opus-mt-es-nl (V=58264) — ETA: 7:02:06
+[03:17:54]   ✓ BPB=5.8427, time=37.2s
+[03:17:55] [205/1195] Helsinki-NLP/opus-mt-nl-es (V=58264) — ETA: 7:02:42
+[03:18:18]   ✓ BPB=5.4619, time=22.5s
+[03:18:19] [206/1195] Helsinki-NLP/opus-mt-es-sm (V=58284) — ETA: 7:02:07
+[03:18:44]   ✓ BPB=5.2141, time=25.5s
+[03:18:45] [207/1195] Helsinki-NLP/opus-mt-sm-es (V=58284) — ETA: 7:01:46
+[03:19:12]   ✓ BPB=5.2932, time=26.9s
+[03:19:13] [208/1195] Helsinki-NLP/opus-mt-en-eu (V=58286) — ETA: 7:01:31
+[03:19:46]   ✓ BPB=3.5107, time=32.8s
+[03:19:47] [209/1195] Helsinki-NLP/opus-mt-tc-big-en-lv (V=58298) — ETA: 7:01:45
+[03:20:13]   ✓ BPB=3.5138, time=26.2s
+[03:20:14] [210/1195] Helsinki-NLP/opus-mt-tc-big-en-lv (V=58298) — ETA: 7:01:27
+[03:20:38]   ✓ BPB=3.5138, time=23.7s
+[03:20:39] [211/1195] Helsinki-NLP/opus-mt-tc-bible-big-pqw-en (V=58311) — ETA: 7:00:57
+[03:21:18]   ✓ BPB=4.5148, time=39.2s
+[03:21:19] [212/1195] Helsinki-NLP/opus-mt-tc-bible-big-pqw-en (V=58311) — ETA: 7:01:39
+[03:21:49]   ✓ BPB=4.5148, time=29.9s
+[03:21:50] [213/1195] Helsinki-NLP/opus-mt-en-ln (V=58314) — ETA: 7:01:38
+[03:22:11]   ✓ BPB=3.7979, time=20.5s
+[03:22:12] [214/1195] Helsinki-NLP/opus-mt-ln-en (V=58314) — ETA: 7:00:53
+[03:22:37]   ✓ BPB=5.5019, time=25.5s
+[03:22:38] [215/1195] Helsinki-NLP/opus-mt-cs-fr (V=58338) — ETA: 7:00:31
+[03:23:06]   ✓ BPB=6.0536, time=27.4s
+[03:23:07] [216/1195] Helsinki-NLP/opus-mt-eo-es (V=58379) — ETA: 7:00:18
+[03:23:32]   ✓ BPB=5.6294, time=25.5s
+[03:23:33] [217/1195] Helsinki-NLP/opus-mt-es-eo (V=58379) — ETA: 6:59:56
+[03:23:56]   ✓ BPB=5.7779, time=23.1s
+[03:23:57] [218/1195] Helsinki-NLP/opus-mt-eu-en (V=58429) — ETA: 6:59:23
+[03:24:20]   ✓ BPB=5.3931, time=22.6s
+[03:24:21] [219/1195] Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld (V=58434) — ETA: 6:58:48
+[03:24:56]   ✓ BPB=3.5955, time=34.7s
+[03:24:57] [220/1195] Helsinki-NLP/opus-mt-tc-bible-big-mul-deu_eng_nld (V=58434) — ETA: 6:59:08
+[03:25:24]   ✓ BPB=3.5955, time=27.3s
+[03:25:25] [221/1195] Helsinki-NLP/opus-mt-sk-es (V=58437) — ETA: 6:58:53
+[03:25:49]   ✓ BPB=6.3268, time=24.1s
+[03:25:50] [222/1195] Helsinki-NLP/opus-mt-to-sv (V=58440) — ETA: 6:58:25
+[03:26:14]   ✓ BPB=7.7548, time=23.5s
+[03:26:15] [223/1195] Helsinki-NLP/opus-mt-sv-to (V=58440) — ETA: 6:57:54
+[03:26:40]   ✓ BPB=5.2943, time=25.3s
+[03:26:41] [224/1195] Helsinki-NLP/opus-mt-sv-ty (V=58443) — ETA: 6:57:30
+[03:27:06]   ✓ BPB=5.5338, time=24.2s
+[03:27:07] [225/1195] Helsinki-NLP/opus-mt-ty-sv (V=58443) — ETA: 6:57:02
+[03:27:33]   ✓ BPB=5.7208, time=26.2s
+[03:27:34] [226/1195] Helsinki-NLP/opus-mt-en-bcl (V=58455) — ETA: 6:56:43
+[03:27:55]   ✓ BPB=3.6432, time=21.4s
+[03:27:56] [227/1195] Helsinki-NLP/opus-mt-bcl-en (V=58455) — ETA: 6:56:02
+[03:28:20]   ✓ BPB=5.6115, time=23.7s
+[03:28:21] [228/1195] Helsinki-NLP/opus-mt-af-sv (V=58463) — ETA: 6:55:32
+[03:28:47]   ✓ BPB=5.7476, time=25.6s
+[03:28:48] [229/1195] Helsinki-NLP/opus-mt-sv-af (V=58463) — ETA: 6:55:10
+[03:29:12]   ✓ BPB=5.7494, time=24.3s
+[03:29:13] [230/1195] Helsinki-NLP/opus-mt-lv-fr (V=58464) — ETA: 6:54:43
+[03:29:47]   ✓ BPB=6.5093, time=34.2s
+[03:29:48] [231/1195] Helsinki-NLP/opus-mt-tc-bible-big-aav-fra_ita_por_spa (V=58474) — ETA: 6:54:57
+[03:30:22]   ✓ BPB=3.8792, time=34.3s
+[03:30:23] [232/1195] Helsinki-NLP/opus-mt-tc-bible-big-aav-fra_ita_por_spa (V=58474) — ETA: 6:55:11
+[03:30:51]   ✓ BPB=3.8792, time=27.6s
+[03:30:52] [233/1195] Helsinki-NLP/opus-mt-hu-sv (V=58486) — ETA: 6:54:57
+[03:31:21]   ✓ BPB=6.4779, time=29.0s
+[03:31:22] [234/1195] Helsinki-NLP/opus-mt-sv-hu (V=58486) — ETA: 6:54:48
+[03:31:49]   ✓ BPB=5.6301, time=26.8s
+[03:31:50] [235/1195] Helsinki-NLP/opus-mt-es-vi (V=58488) — ETA: 6:54:30
+[03:32:15]   ✓ BPB=4.7622, time=25.0s
+[03:32:16] [236/1195] Helsinki-NLP/opus-mt-vi-es (V=58488) — ETA: 6:54:05
+[03:32:41]   ✓ BPB=4.6822, time=24.9s
+[03:32:42] [237/1195] Helsinki-NLP/opus-mt-vi-it (V=58489) — ETA: 6:53:40
+[03:33:07]   ✓ BPB=4.4060, time=25.1s
+[03:33:08] [238/1195] Helsinki-NLP/opus-mt-it-vi (V=58489) — ETA: 6:53:15
+[03:33:32]   ✓ BPB=4.8367, time=23.8s
+[03:33:33] [239/1195] Helsinki-NLP/opus-mt-lt-sv (V=58506) — ETA: 6:52:45
+[03:34:00]   ✓ BPB=6.4394, time=26.7s
+[03:34:01] [240/1195] Helsinki-NLP/opus-mt-tc-big-gmq-zlw (V=58521) — ETA: 6:52:26
+[03:34:30]   ✓ BPB=4.7118, time=29.2s
+[03:34:31] [241/1195] Helsinki-NLP/opus-mt-tc-big-gmq-zlw (V=58521) — ETA: 6:52:18
+[03:34:57]   ✓ BPB=4.7118, time=26.3s
+[03:34:58] [242/1195] Helsinki-NLP/opus-mt-tc-big-itc-tr (V=58545) — ETA: 6:51:57
+[03:35:28]   ✓ BPB=4.5028, time=29.3s
+[03:35:29] [243/1195] Helsinki-NLP/opus-mt-tc-big-itc-tr (V=58545) — ETA: 6:51:49
+[03:35:55]   ✓ BPB=4.5028, time=26.8s
+[03:35:57] [244/1195] Helsinki-NLP/opus-mt-sk-fr (V=58559) — ETA: 6:51:30
+[03:36:24]   ✓ BPB=6.1708, time=27.0s
+[03:36:25] [245/1195] Helsinki-NLP/opus-mt-fr-sk (V=58559) — ETA: 6:51:13
+[03:36:53]   ✓ BPB=5.6611, time=28.1s
+[03:36:54] [246/1195] Helsinki-NLP/opus-mt-fr-hu (V=58564) — ETA: 6:50:59
+[03:37:17]   ✓ BPB=5.2449, time=22.9s
+[03:37:18] [247/1195] Helsinki-NLP/opus-mt-hu-fr (V=58564) — ETA: 6:50:26
+[03:37:49]   ✓ BPB=5.9910, time=31.1s
+[03:37:50] [248/1195] Helsinki-NLP/opus-mt-tc-big-lt-en (V=58577) — ETA: 6:50:23
+[03:38:20]   ✓ BPB=4.9802, time=29.9s
+[03:38:21] [249/1195] Helsinki-NLP/opus-mt-tc-big-en-lt (V=58577) — ETA: 6:50:16
+[03:38:46]   ✓ BPB=3.2149, time=25.6s
+[03:38:47] [250/1195] Helsinki-NLP/opus-mt-tc-big-en-lt (V=58577) — ETA: 6:49:53
+[03:39:10]   ✓ BPB=3.2149, time=22.5s
+[03:39:11] [251/1195] Helsinki-NLP/opus-mt-tc-big-lt-en (V=58577) — ETA: 6:49:18
+[03:39:42]   ✓ BPB=4.9802, time=31.0s
+[03:39:43] [252/1195] Helsinki-NLP/opus-mt-tc-bible-big-zhx-en (V=58592) — ETA: 6:49:14
+[03:40:14]   ✓ BPB=4.3532, time=31.0s
+[03:40:15] [253/1195] Helsinki-NLP/opus-mt-tc-bible-big-zhx-en (V=58592) — ETA: 6:49:11
+[03:40:44]   ✓ BPB=4.3532, time=29.3s
+[03:40:45] [254/1195] Helsinki-NLP/opus-mt-es-cs (V=58623) — ETA: 6:49:01
+[03:41:07]   ✓ BPB=5.6609, time=21.6s
+[03:41:08] [255/1195] Helsinki-NLP/opus-mt-tc-base-en-sh (V=58639) — ETA: 6:48:22
+[03:41:27]   ✓ BPB=3.5841, time=18.6s
+[03:41:28] [256/1195] Helsinki-NLP/opus-mt-en-is (V=58647) — ETA: 6:47:33
+[03:41:47]   ✓ BPB=3.3851, time=19.1s
+[03:41:48] [257/1195] Helsinki-NLP/opus-mt-is-en (V=58647) — ETA: 6:46:45
+[03:42:10]   ✓ BPB=5.3141, time=22.1s
+[03:42:11] [258/1195] Helsinki-NLP/opus-mt-es-hr (V=58648) — ETA: 6:46:09
+[03:42:34]   ✓ BPB=4.9026, time=22.9s
+[03:42:35] [259/1195] Helsinki-NLP/opus-mt-hr-es (V=58648) — ETA: 6:45:35
+[03:43:00]   ✓ BPB=5.3237, time=25.5s
+[03:43:01] [260/1195] Helsinki-NLP/opus-mt-hr-fr (V=58663) — ETA: 6:45:11
+[03:43:28]   ✓ BPB=5.1418, time=27.1s
+[03:43:30] [261/1195] Helsinki-NLP/opus-mt-fr-hr (V=58663) — ETA: 6:44:53
+[03:43:51]   ✓ BPB=4.8415, time=21.0s
+[03:43:52] [262/1195] Helsinki-NLP/opus-mt-de-hu (V=58671) — ETA: 6:44:13
+[03:44:14]   ✓ BPB=5.7364, time=22.4s
+[03:44:15] [263/1195] Helsinki-NLP/opus-mt-hu-de (V=58671) — ETA: 6:43:38
+[03:44:37]   ✓ BPB=6.3013, time=21.9s
+[03:44:38] [264/1195] Helsinki-NLP/opus-mt-umb-en (V=58673) — ETA: 6:43:01
+[03:45:03]   ✓ BPB=5.5724, time=24.8s
+[03:45:04] [265/1195] Helsinki-NLP/opus-mt-en-umb (V=58673) — ETA: 6:42:35
+[03:45:27]   ✓ BPB=3.9277, time=23.3s
+[03:45:28] [266/1195] Helsinki-NLP/opus-mt-de-hr (V=58701) — ETA: 6:42:03
+[03:45:52]   ✓ BPB=5.2709, time=23.5s
+[03:45:53] [267/1195] Helsinki-NLP/opus-mt-tc-bible-big-bat-en (V=58702) — ETA: 6:41:32
+[03:46:25]   ✓ BPB=5.3730, time=32.4s
+[03:46:26] [268/1195] Helsinki-NLP/opus-mt-tc-bible-big-bat-en (V=58702) — ETA: 6:41:33
+[03:46:58]   ✓ BPB=5.3730, time=32.0s
+[03:46:59] [269/1195] Helsinki-NLP/opus-mt-pl-sv (V=58718) — ETA: 6:41:31
+[03:47:24]   ✓ BPB=6.6193, time=24.5s
+[03:47:25] [270/1195] Helsinki-NLP/opus-mt-tc-bible-big-fiu-en (V=58747) — ETA: 6:41:04
+[03:48:02]   ✓ BPB=5.2435, time=37.2s
+[03:48:03] [271/1195] Helsinki-NLP/opus-mt-tc-bible-big-fiu-en (V=58747) — ETA: 6:41:20
+[03:48:36]   ✓ BPB=5.2435, time=33.2s
+[03:48:37] [272/1195] Helsinki-NLP/opus-mt-tc-big-fa-gmq (V=58754) — ETA: 6:41:22
+[03:49:06]   ✓ BPB=4.6778, time=29.1s
+[03:49:07] [273/1195] Helsinki-NLP/opus-mt-tc-big-fa-gmq (V=58754) — ETA: 6:41:09
+[03:49:34]   ✓ BPB=4.6778, time=26.9s
+[03:49:35] [274/1195] Helsinki-NLP/opus-mt-af-de (V=58757) — ETA: 6:40:50
+[03:50:01]   ✓ BPB=5.4402, time=25.5s
+[03:50:02] [275/1195] Helsinki-NLP/opus-mt-tr-sv (V=58767) — ETA: 6:40:25
+[03:50:24]   ✓ BPB=5.1343, time=21.9s
+[03:50:25] [276/1195] Helsinki-NLP/opus-mt-ln-fr (V=58810) — ETA: 6:39:48
+[03:50:59]   ✓ BPB=4.9136, time=33.9s
+[03:51:00] [277/1195] Helsinki-NLP/opus-mt-fr-ln (V=58810) — ETA: 6:39:52
+[03:51:24]   ✓ BPB=4.9667, time=24.8s
+[03:51:25] [278/1195] Helsinki-NLP/opus-mt-sv-srn (V=58814) — ETA: 6:39:25
+[03:51:48]   ✓ BPB=4.8473, time=23.0s
+[03:51:49] [279/1195] Helsinki-NLP/opus-mt-srn-sv (V=58814) — ETA: 6:38:52
+[03:52:22]   ✓ BPB=5.7562, time=32.5s
+[03:52:23] [280/1195] Helsinki-NLP/opus-mt-sla-en (V=58816) — ETA: 6:38:50
+[03:52:43]   ✓ BPB=5.8683, time=20.4s
+[03:52:44] [281/1195] Helsinki-NLP/opus-mt-de-bzs (V=58819) — ETA: 6:38:09
+[03:53:10]   ✓ BPB=6.1438, time=25.5s
+[03:53:11] [282/1195] Helsinki-NLP/opus-mt-tc-big-en-el (V=58829) — ETA: 6:37:44
+[03:53:39]   ✓ BPB=3.1974, time=28.0s
+[03:53:40] [283/1195] Helsinki-NLP/opus-mt-tc-big-el-en (V=58829) — ETA: 6:37:28
+[03:54:10]   ✓ BPB=5.9479, time=30.2s
+[03:54:11] [284/1195] Helsinki-NLP/opus-mt-tc-big-el-en (V=58829) — ETA: 6:37:18
+[03:54:43]   ✓ BPB=5.9479, time=31.9s
+[03:54:44] [285/1195] Helsinki-NLP/opus-mt-tc-big-en-el (V=58829) — ETA: 6:37:14
+[03:55:08]   ✓ BPB=3.1974, time=23.8s
+[03:55:09] [286/1195] Helsinki-NLP/opus-mt-tc-bible-big-tai-deu_eng_fra_por_spa (V=58838) — ETA: 6:36:44
+[03:55:48]   ✓ BPB=4.5255, time=38.6s
+[03:55:49] [287/1195] Helsinki-NLP/opus-mt-tc-bible-big-tai-deu_eng_fra_por_spa (V=58838) — ETA: 6:37:00
+[03:56:22]   ✓ BPB=4.5255, time=33.1s
+[03:56:23] [288/1195] Helsinki-NLP/opus-mt-en-pqw (V=58849) — ETA: 6:36:59
+[03:57:09]   ✓ BPB=3.3307, time=46.0s
+[03:57:10] [289/1195] Helsinki-NLP/opus-mt-sv-fj (V=58854) — ETA: 6:37:39
+[03:57:53]   ✓ BPB=4.9816, time=42.9s
+[03:57:54] [290/1195] Helsinki-NLP/opus-mt-ha-sv (V=58857) — ETA: 6:38:08
+[03:58:20]   ✓ BPB=5.1632, time=25.5s
+[03:58:21] [291/1195] Helsinki-NLP/opus-mt-sv-ha (V=58857) — ETA: 6:37:42
+[03:58:47]   ✓ BPB=5.0600, time=26.3s
+[03:58:48] [292/1195] Helsinki-NLP/opus-mt-de-lt (V=58862) — ETA: 6:37:18
+[03:59:09]   ✓ BPB=6.2416, time=21.5s
+[03:59:10] [293/1195] Helsinki-NLP/opus-mt-lt-de (V=58862) — ETA: 6:36:40
+[03:59:34]   ✓ BPB=6.4073, time=23.4s
+[03:59:35] [294/1195] Helsinki-NLP/opus-mt-et-en (V=58866) — ETA: 6:36:08
+[04:00:04]   ✓ BPB=6.3276, time=28.9s
+[04:00:05] [295/1195] Helsinki-NLP/opus-mt-en-et (V=58866) — ETA: 6:35:53
+[04:00:25]   ✓ BPB=3.9174, time=20.1s
+[04:00:26] [296/1195] Helsinki-NLP/opus-mt-es-ty (V=58873) — ETA: 6:35:10
+[04:01:00]   ✓ BPB=5.5104, time=34.0s
+[04:01:01] [297/1195] Helsinki-NLP/opus-mt-ty-es (V=58873) — ETA: 6:35:10
+[04:01:23]   ✓ BPB=6.1455, time=21.8s
+[04:01:24] [298/1195] Helsinki-NLP/opus-mt-en-sla (V=58879) — ETA: 6:34:33
+[04:01:43]   ✓ BPB=3.4543, time=18.9s
+[04:01:44] [299/1195] Helsinki-NLP/opus-mt-fr-to (V=58889) — ETA: 6:33:48
+[04:02:07]   ✓ BPB=5.2542, time=22.9s
+[04:02:08] [300/1195] Helsinki-NLP/opus-mt-to-fr (V=58889) — ETA: 6:33:14
+[04:02:31]   ✓ BPB=6.5265, time=23.1s
+[04:02:32] [301/1195] Helsinki-NLP/opus-mt-lt-fr (V=58898) — ETA: 6:32:41
+[04:03:08]   ✓ BPB=6.3152, time=36.5s
+[04:03:09] [302/1195] Helsinki-NLP/opus-mt-sv-chk (V=58904) — ETA: 6:32:48
+[04:03:49]   ✓ BPB=5.4379, time=40.0s
+[04:03:50] [303/1195] Helsinki-NLP/opus-mt-chk-sv (V=58904) — ETA: 6:33:05
+[04:04:21]   ✓ BPB=5.4106, time=30.4s
+[04:04:22] [304/1195] Helsinki-NLP/opus-mt-swc-en (V=58905) — ETA: 6:32:54
+[04:04:45]   ✓ BPB=5.5669, time=23.3s
+[04:04:46] [305/1195] Helsinki-NLP/opus-mt-en-swc (V=58905) — ETA: 6:32:21
+[04:05:08]   ✓ BPB=3.9227, time=21.5s
+[04:05:09] [306/1195] Helsinki-NLP/opus-mt-sv-is (V=58915) — ETA: 6:31:43
+[04:05:32]   ✓ BPB=4.8752, time=22.9s
+[04:05:33] [307/1195] Helsinki-NLP/opus-mt-is-sv (V=58915) — ETA: 6:31:10
+[04:05:59]   ✓ BPB=5.5226, time=26.2s
+[04:06:00] [308/1195] Helsinki-NLP/opus-mt-en-urj (V=58920) — ETA: 6:30:46
+[04:06:24]   ✓ BPB=10.9247, time=24.2s
+[04:06:25] [309/1195] Helsinki-NLP/opus-mt-fiu-en (V=58923) — ETA: 6:30:16
+[04:06:49]   ✓ BPB=15.6095, time=23.8s
+[04:06:50] [310/1195] Helsinki-NLP/opus-mt-tc-big-sh-en (V=58923) — ETA: 6:29:45
+[04:07:22]   ✓ BPB=5.5654, time=31.8s
+[04:07:23] [311/1195] Helsinki-NLP/opus-mt-tc-big-sh-en (V=58923) — ETA: 6:29:37
+[04:07:51]   ✓ BPB=5.5654, time=28.3s
+[04:07:52] [312/1195] Helsinki-NLP/opus-mt-da-en (V=58930) — ETA: 6:29:19
+[04:08:13]   ✓ BPB=5.7966, time=20.5s
+[04:08:14] [313/1195] Helsinki-NLP/opus-mt-en-da (V=58930) — ETA: 6:28:39
+[04:08:35]   ✓ BPB=3.8544, time=20.7s
+[04:08:36] [314/1195] Helsinki-NLP/opus-mt-en-fiu (V=58938) — ETA: 6:27:59
+[04:08:56]   ✓ BPB=8.7806, time=20.7s
+[04:08:57] [315/1195] Helsinki-NLP/opus-mt-urj-en (V=58944) — ETA: 6:27:20
+[04:09:20]   ✓ BPB=15.7596, time=22.9s
+[04:09:21] [316/1195] Helsinki-NLP/opus-mt-en-sw (V=58950) — ETA: 6:26:47
+[04:09:41]   ✓ BPB=3.5508, time=20.1s
+[04:09:42] [317/1195] Helsinki-NLP/opus-mt-es-to (V=58959) — ETA: 6:26:06
+[04:10:23]   ✓ BPB=5.1125, time=40.9s
+[04:10:24] [318/1195] Helsinki-NLP/opus-mt-to-es (V=58959) — ETA: 6:26:23
+[04:11:14]   ✓ BPB=12.4425, time=49.8s
+[04:11:15] [319/1195] Helsinki-NLP/opus-mt-is-fr (V=58996) — ETA: 6:27:04
+[04:12:03]   ✓ BPB=5.5916, time=47.6s
+[04:12:04] [320/1195] Helsinki-NLP/opus-mt-cs-fi (V=59012) — ETA: 6:27:38
+[04:12:39]   ✓ BPB=5.5602, time=34.8s
+[04:12:40] [321/1195] Helsinki-NLP/opus-mt-fi-cs (V=59012) — ETA: 6:27:37
+[04:13:04]   ✓ BPB=5.9947, time=24.6s
+[04:13:05] [322/1195] Helsinki-NLP/opus-mt-es-it (V=59031) — ETA: 6:27:08
+[04:13:27]   ✓ BPB=5.4094, time=21.9s
+[04:13:28] [323/1195] Helsinki-NLP/opus-mt-it-es (V=59031) — ETA: 6:26:31
+[04:13:50]   ✓ BPB=5.6639, time=21.5s
+[04:13:51] [324/1195] Helsinki-NLP/opus-mt-fi-mt (V=59039) — ETA: 6:25:54
+[04:14:14]   ✓ BPB=7.2662, time=22.9s
+[04:14:15] [325/1195] Helsinki-NLP/opus-mt-mt-fi (V=59039) — ETA: 6:25:21
+[04:15:02]   ✓ BPB=12.1266, time=47.3s
+[04:15:03] [326/1195] Helsinki-NLP/opus-mt-bat-en (V=59056) — ETA: 6:25:52
+[04:15:26]   ✓ BPB=19.4722, time=22.5s
+[04:15:27] [327/1195] Helsinki-NLP/opus-mt-en-bat (V=59061) — ETA: 6:25:17
+[04:16:12]   ✓ BPB=8.1705, time=45.0s
+[04:16:13] [328/1195] Helsinki-NLP/opus-mt-efi-sv (V=59076) — ETA: 6:25:42
+[04:16:37]   ✓ BPB=5.1645, time=24.3s
+[04:16:38] [329/1195] Helsinki-NLP/opus-mt-sv-efi (V=59076) — ETA: 6:25:12
+[04:17:02]   ✓ BPB=5.2954, time=24.4s
+[04:17:03] [330/1195] Helsinki-NLP/opus-mt-tc-bible-big-bat-deu_eng_nld (V=59091) — ETA: 6:24:42
+[04:17:36]   ✓ BPB=5.1084, time=32.8s
+[04:17:37] [331/1195] Helsinki-NLP/opus-mt-tc-bible-big-bat-deu_eng_nld (V=59091) — ETA: 6:24:35
+[04:18:07]   ✓ BPB=5.1084, time=29.3s
+[04:18:08] [332/1195] Helsinki-NLP/opus-mt-sv-yo (V=59097) — ETA: 6:24:18
+[04:18:32]   ✓ BPB=5.7454, time=24.7s
+[04:18:33] [333/1195] Helsinki-NLP/opus-mt-yo-sv (V=59097) — ETA: 6:23:48
+[04:18:55]   ✓ BPB=7.8809, time=22.0s
+[04:18:56] [334/1195] Helsinki-NLP/opus-mt-sv-pap (V=59099) — ETA: 6:23:12
+[04:19:19]   ✓ BPB=5.2705, time=22.8s
+[04:19:20] [335/1195] Helsinki-NLP/opus-mt-art-en (V=59131) — ETA: 6:22:38
+[04:19:44]   ✓ BPB=5.3752, time=24.1s
+[04:19:46] [336/1195] Helsinki-NLP/opus-mt-sv-hil (V=59139) — ETA: 6:22:08
+[04:20:10]   ✓ BPB=5.4366, time=24.0s
+[04:20:11] [337/1195] Helsinki-NLP/opus-mt-ro-fi (V=59142) — ETA: 6:21:37
+[04:20:35]   ✓ BPB=5.2037, time=24.3s
+[04:20:36] [338/1195] Helsinki-NLP/opus-mt-fi-ro (V=59142) — ETA: 6:21:07
+[04:20:58]   ✓ BPB=5.8281, time=22.4s
+[04:20:59] [339/1195] Helsinki-NLP/opus-mt-sq-en (V=59158) — ETA: 6:20:32
+[04:21:22]   ✓ BPB=5.1192, time=22.3s
+[04:21:23] [340/1195] Helsinki-NLP/opus-mt-en-sq (V=59158) — ETA: 6:19:57
+[04:21:44]   ✓ BPB=3.4213, time=21.3s
+[04:21:45] [341/1195] Helsinki-NLP/opus-mt-tc-bible-big-zhx-deu_eng_fra_por_spa (V=59178) — ETA: 6:19:20
+[04:22:18]   ✓ BPB=4.2805, time=32.8s
+[04:22:19] [342/1195] Helsinki-NLP/opus-mt-tc-bible-big-zhx-deu_eng_fra_por_spa (V=59178) — ETA: 6:19:11
+[04:22:49]   ✓ BPB=4.2805, time=29.8s
+[04:22:50] [343/1195] Helsinki-NLP/opus-mt-ceb-sv (V=59183) — ETA: 6:18:55
+[04:23:12]   ✓ BPB=4.8983, time=22.1s
+[04:23:13] [344/1195] Helsinki-NLP/opus-mt-sv-ceb (V=59183) — ETA: 6:18:20
+[04:23:36]   ✓ BPB=5.6327, time=23.2s
+[04:23:37] [345/1195] Helsinki-NLP/opus-mt-tc-bible-big-urj-deu_eng_nld (V=59183) — ETA: 6:17:47
+[04:24:07]   ✓ BPB=5.2656, time=30.1s
+[04:24:08] [346/1195] Helsinki-NLP/opus-mt-tc-bible-big-urj-deu_eng_nld (V=59183) — ETA: 6:17:32
+[04:24:42]   ✓ BPB=5.2656, time=33.4s
+[04:24:43] [347/1195] Helsinki-NLP/opus-mt-eo-en (V=59197) — ETA: 6:17:25
+[04:25:06]   ✓ BPB=5.1022, time=23.3s
+[04:25:07] [348/1195] Helsinki-NLP/opus-mt-en-eo (V=59197) — ETA: 6:16:52
+[04:25:28]   ✓ BPB=3.6281, time=20.7s
+[04:25:29] [349/1195] Helsinki-NLP/opus-mt-sk-fi (V=59223) — ETA: 6:16:14
+[04:25:53]   ✓ BPB=6.4027, time=23.7s
+[04:25:54] [350/1195] Helsinki-NLP/opus-mt-fi-sk (V=59223) — ETA: 6:15:42
+[04:26:19]   ✓ BPB=6.4141, time=25.5s
+[04:26:20] [351/1195] Helsinki-NLP/opus-mt-tc-bible-big-pqw-deu_eng_fra_por_spa (V=59229) — ETA: 6:15:15
+[04:26:52]   ✓ BPB=4.8305, time=31.6s
+[04:26:53] [352/1195] Helsinki-NLP/opus-mt-tc-bible-big-pqw-deu_eng_fra_por_spa (V=59229) — ETA: 6:15:03
+[04:27:24]   ✓ BPB=4.8305, time=30.9s
+[04:27:25] [353/1195] Helsinki-NLP/opus-mt-es-hil (V=59256) — ETA: 6:14:49
+[04:27:49]   ✓ BPB=5.2278, time=23.7s
+[04:27:50] [354/1195] Helsinki-NLP/opus-mt-id-fi (V=59299) — ETA: 6:14:18
+[04:28:12]   ✓ BPB=5.0354, time=22.7s
+[04:28:13] [355/1195] Helsinki-NLP/opus-mt-de-af (V=59299) — ETA: 6:13:44
+[04:28:38]   ✓ BPB=5.3997, time=24.3s
+[04:28:39] [356/1195] Helsinki-NLP/opus-mt-fi-id (V=59299) — ETA: 6:13:15
+[04:29:04]   ✓ BPB=5.5213, time=25.1s
+[04:29:05] [357/1195] Helsinki-NLP/opus-mt-ig-sv (V=59311) — ETA: 6:12:47
+[04:29:30]   ✓ BPB=5.7574, time=25.4s
+[04:29:31] [358/1195] Helsinki-NLP/opus-mt-sv-ig (V=59311) — ETA: 6:12:20
+[04:29:54]   ✓ BPB=5.2445, time=22.9s
+[04:29:55] [359/1195] Helsinki-NLP/opus-mt-sl-fi (V=59315) — ETA: 6:11:47
+[04:30:18]   ✓ BPB=5.9042, time=22.9s
+[04:30:19] [360/1195] Helsinki-NLP/opus-mt-fi-sl (V=59315) — ETA: 6:11:14
+[04:30:43]   ✓ BPB=6.2488, time=23.5s
+[04:30:44] [361/1195] Helsinki-NLP/opus-mt-is-de (V=59315) — ETA: 6:10:42
+[04:31:08]   ✓ BPB=4.9224, time=24.1s
+[04:31:09] [362/1195] Helsinki-NLP/opus-mt-de-is (V=59315) — ETA: 6:10:12
+[04:31:32]   ✓ BPB=4.8012, time=22.9s
+[04:31:33] [363/1195] Helsinki-NLP/opus-mt-ceb-es (V=59324) — ETA: 6:09:39
+[04:31:55]   ✓ BPB=4.8928, time=22.4s
+[04:31:56] [364/1195] Helsinki-NLP/opus-mt-es-ceb (V=59324) — ETA: 6:09:05
+[04:32:21]   ✓ BPB=5.4227, time=24.9s
+[04:32:22] [365/1195] Helsinki-NLP/opus-mt-sv-bg (V=59345) — ETA: 6:08:37
+[04:32:44]   ✓ BPB=5.5849, time=21.7s
+[04:32:45] [366/1195] Helsinki-NLP/opus-mt-fi-NORWAY (V=59345) — ETA: 6:08:02
+[04:33:09]   ✓ BPB=5.6510, time=24.0s
+[04:33:10] [367/1195] Helsinki-NLP/opus-mt-pl-lt (V=59345) — ETA: 6:07:31
+[04:33:35]   ✓ BPB=14.9828, time=24.9s
+[04:33:36] [368/1195] Helsinki-NLP/opus-mt-bg-sv (V=59345) — ETA: 6:07:03
+[04:33:58]   ✓ BPB=6.2183, time=22.3s
+[04:33:59] [369/1195] Helsinki-NLP/opus-mt-lt-pl (V=59345) — ETA: 6:06:29
+[04:34:22]   ✓ BPB=17.1910, time=22.5s
+[04:34:23] [370/1195] Helsinki-NLP/opus-mt-it-fr (V=59351) — ETA: 6:05:56
+[04:34:44]   ✓ BPB=5.5258, time=21.6s
+[04:34:45] [371/1195] Helsinki-NLP/opus-mt-tc-bible-big-urj-deu_eng_fra_por_spa (V=59366) — ETA: 6:05:21
+[04:35:14]   ✓ BPB=5.3627, time=28.6s
+[04:35:15] [372/1195] Helsinki-NLP/opus-mt-tc-bible-big-urj-deu_eng_fra_por_spa (V=59366) — ETA: 6:05:01
+[04:35:47]   ✓ BPB=5.3627, time=31.9s
+[04:35:48] [373/1195] Helsinki-NLP/opus-mt-tc-bible-big-fiu-deu_eng_fra_por_spa (V=59382) — ETA: 6:04:49
+[04:36:20]   ✓ BPB=5.3676, time=31.5s
+[04:36:21] [374/1195] Helsinki-NLP/opus-mt-tc-bible-big-fiu-deu_eng_fra_por_spa (V=59382) — ETA: 6:04:35
+[04:36:52]   ✓ BPB=5.3676, time=31.2s
+[04:36:53] [375/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-urj (V=59384) — ETA: 6:04:21
+[04:37:20]   ✓ BPB=3.2103, time=27.5s
+[04:37:22] [376/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-urj (V=59384) — ETA: 6:03:59
+[04:37:46]   ✓ BPB=3.2103, time=24.9s
+[04:37:48] [377/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-fiu (V=59392) — ETA: 6:03:31
+[04:38:15]   ✓ BPB=2.9056, time=27.0s
+[04:38:16] [378/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-fiu (V=59392) — ETA: 6:03:07
+[04:38:43]   ✓ BPB=2.9056, time=27.7s
+[04:38:44] [379/1195] Helsinki-NLP/opus-mt-fi-hr (V=59394) — ETA: 6:02:45
+[04:39:08]   ✓ BPB=5.1263, time=23.1s
+[04:39:09] [380/1195] Helsinki-NLP/opus-mt-hr-fi (V=59394) — ETA: 6:02:13
+[04:39:31]   ✓ BPB=5.0927, time=22.8s
+[04:39:33] [381/1195] Helsinki-NLP/opus-mt-fr-fj (V=59408) — ETA: 6:01:41
+[04:39:57]   ✓ BPB=5.2403, time=24.2s
+[04:39:58] [382/1195] Helsinki-NLP/opus-mt-fj-fr (V=59408) — ETA: 6:01:11
+[04:40:22]   ✓ BPB=5.2057, time=24.0s
+[04:40:23] [383/1195] Helsinki-NLP/opus-mt-tc-big-zls-itc (V=59413) — ETA: 6:00:41
+[04:40:54]   ✓ BPB=5.0008, time=31.7s
+[04:40:55] [384/1195] Helsinki-NLP/opus-mt-tc-big-zls-itc (V=59413) — ETA: 6:00:27
+[04:41:26]   ✓ BPB=5.0008, time=30.3s
+[04:41:27] [385/1195] Helsinki-NLP/opus-mt-en-sit (V=59414) — ETA: 6:00:11
+[04:41:45]   ✓ BPB=3.5973, time=18.1s
+[04:41:46] [386/1195] Helsinki-NLP/opus-mt-fr-ha (V=59416) — ETA: 5:59:28
+[04:42:09]   ✓ BPB=5.1095, time=22.6s
+[04:42:10] [387/1195] Helsinki-NLP/opus-mt-ha-fr (V=59416) — ETA: 5:58:56
+[04:42:32]   ✓ BPB=5.2356, time=22.1s
+[04:42:33] [388/1195] Helsinki-NLP/opus-mt-fr-af (V=59422) — ETA: 5:58:22
+[04:42:57]   ✓ BPB=5.3205, time=24.0s
+[04:42:58] [389/1195] Helsinki-NLP/opus-mt-af-fr (V=59422) — ETA: 5:57:52
+[04:43:19]   ✓ BPB=4.9890, time=21.1s
+[04:43:20] [390/1195] Helsinki-NLP/opus-mt-fi-bzs (V=59433) — ETA: 5:57:16
+[04:43:49]   ✓ BPB=7.2244, time=28.9s
+[04:43:50] [391/1195] Helsinki-NLP/opus-mt-bzs-fi (V=59433) — ETA: 5:56:56
+[04:44:13]   ✓ BPB=6.6806, time=23.0s
+[04:44:14] [392/1195] Helsinki-NLP/opus-mt-sv-war (V=59435) — ETA: 5:56:25
+[04:44:41]   ✓ BPB=5.0006, time=26.7s
+[04:44:42] [393/1195] Helsinki-NLP/opus-mt-war-sv (V=59435) — ETA: 5:56:00
+[04:45:04]   ✓ BPB=5.0959, time=21.9s
+[04:45:05] [394/1195] Helsinki-NLP/opus-mt-en-lua (V=59447) — ETA: 5:55:26
+[04:45:24]   ✓ BPB=3.6750, time=19.1s
+[04:45:25] [395/1195] Helsinki-NLP/opus-mt-lua-en (V=59447) — ETA: 5:54:47
+[04:45:49]   ✓ BPB=5.4458, time=23.6s
+[04:45:50] [396/1195] Helsinki-NLP/opus-mt-ilo-es (V=59457) — ETA: 5:54:16
+[04:46:14]   ✓ BPB=5.0555, time=24.2s
+[04:46:15] [397/1195] Helsinki-NLP/opus-mt-es-ilo (V=59457) — ETA: 5:53:47
+[04:46:39]   ✓ BPB=5.5165, time=24.1s
+[04:46:40] [398/1195] Helsinki-NLP/opus-mt-lv-fi (V=59460) — ETA: 5:53:18
+[04:47:02]   ✓ BPB=12.9072, time=21.7s
+[04:47:03] [399/1195] Helsinki-NLP/opus-mt-fi-lv (V=59460) — ETA: 5:52:43
+[04:47:27]   ✓ BPB=16.0905, time=24.2s
+[04:47:28] [400/1195] Helsinki-NLP/opus-mt-tc-bible-big-bat-deu_eng_fra_por_spa (V=59467) — ETA: 5:52:14
+[04:48:01]   ✓ BPB=5.4503, time=33.3s
+[04:48:02] [401/1195] Helsinki-NLP/opus-mt-tc-bible-big-bat-deu_eng_fra_por_spa (V=59467) — ETA: 5:52:03
+[04:48:34]   ✓ BPB=5.4503, time=31.7s
+[04:48:35] [402/1195] Helsinki-NLP/opus-mt-fi-de (V=59471) — ETA: 5:51:49
+[04:48:58]   ✓ BPB=6.0299, time=23.2s
+[04:48:59] [403/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-bat (V=59473) — ETA: 5:51:18
+[04:49:27]   ✓ BPB=3.5222, time=28.1s
+[04:49:29] [404/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-bat (V=59473) — ETA: 5:50:56
+[04:49:54]   ✓ BPB=3.5222, time=25.8s
+[04:49:55] [405/1195] Helsinki-NLP/opus-mt-fr-efi (V=59481) — ETA: 5:50:30
+[04:50:18]   ✓ BPB=5.0051, time=22.7s
+[04:50:19] [406/1195] Helsinki-NLP/opus-mt-efi-fr (V=59481) — ETA: 5:49:58
+[04:50:44]   ✓ BPB=4.9312, time=24.9s
+[04:50:45] [407/1195] Helsinki-NLP/opus-mt-ha-es (V=59503) — ETA: 5:49:30
+[04:51:08]   ✓ BPB=5.3377, time=23.1s
+[04:51:09] [408/1195] Helsinki-NLP/opus-mt-es-ha (V=59503) — ETA: 5:48:59
+[04:51:32]   ✓ BPB=5.0501, time=22.4s
+[04:51:33] [409/1195] Helsinki-NLP/opus-mt-es-lt (V=59511) — ETA: 5:48:26
+[04:51:58]   ✓ BPB=7.0621, time=25.3s
+[04:51:59] [410/1195] Helsinki-NLP/opus-mt-lt-es (V=59511) — ETA: 5:47:59
+[04:52:22]   ✓ BPB=8.2836, time=23.0s
+[04:52:23] [411/1195] Helsinki-NLP/opus-mt-fr-en (V=59514) — ETA: 5:47:28
+[04:52:43]   ✓ BPB=4.8271, time=20.4s
+[04:52:44] [412/1195] Helsinki-NLP/opus-mt-wa-en (V=59514) — ETA: 5:46:51
+[04:53:05]   ✓ BPB=4.6880, time=20.6s
+[04:53:06] [413/1195] Helsinki-NLP/opus-mt-en-fr (V=59514) — ETA: 5:46:16
+[04:53:24]   ✓ BPB=3.3603, time=18.1s
+[04:53:25] [414/1195] Helsinki-NLP/opus-mt-tc-big-zls-de (V=59519) — ETA: 5:45:35
+[04:53:54]   ✓ BPB=6.0167, time=29.1s
+[04:53:55] [415/1195] Helsinki-NLP/opus-mt-tc-big-zls-de (V=59519) — ETA: 5:45:15
+[04:54:28]   ✓ BPB=6.0167, time=32.6s
+[04:54:29] [416/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-pqw (V=59520) — ETA: 5:45:02
+[04:54:59]   ✓ BPB=3.2039, time=29.9s
+[04:55:00] [417/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-pqw (V=59520) — ETA: 5:44:44
+[04:55:26]   ✓ BPB=3.2039, time=25.8s
+[04:55:27] [418/1195] Helsinki-NLP/opus-mt-hu-fi (V=59526) — ETA: 5:44:18
+[04:55:49]   ✓ BPB=6.0706, time=22.0s
+[04:55:50] [419/1195] Helsinki-NLP/opus-mt-fi-hu (V=59526) — ETA: 5:43:45
+[04:56:13]   ✓ BPB=5.8107, time=22.9s
+[04:56:14] [420/1195] Helsinki-NLP/opus-mt-tw-sv (V=59541) — ETA: 5:43:13
+[04:56:39]   ✓ BPB=5.6477, time=24.9s
+[04:56:40] [421/1195] Helsinki-NLP/opus-mt-sv-tw (V=59541) — ETA: 5:42:46
+[04:57:04]   ✓ BPB=4.7567, time=24.3s
+[04:57:05] [422/1195] Helsinki-NLP/opus-mt-en-ro (V=59543) — ETA: 5:42:17
+[04:57:25]   ✓ BPB=3.5989, time=19.9s
+[04:57:26] [423/1195] Helsinki-NLP/opus-mt-lt-it (V=59549) — ETA: 5:41:40
+[04:57:51]   ✓ BPB=6.1102, time=25.3s
+[04:57:52] [424/1195] Helsinki-NLP/opus-mt-it-lt (V=59549) — ETA: 5:41:14
+[04:58:14]   ✓ BPB=6.1337, time=21.9s
+[04:58:15] [425/1195] Helsinki-NLP/opus-mt-tr-es (V=59565) — ETA: 5:40:41
+[04:58:40]   ✓ BPB=4.8923, time=25.0s
+[04:58:41] [426/1195] Helsinki-NLP/opus-mt-ilo-sv (V=59581) — ETA: 5:40:13
+[04:59:06]   ✓ BPB=5.3063, time=24.4s
+[04:59:07] [427/1195] Helsinki-NLP/opus-mt-sv-ilo (V=59581) — ETA: 5:39:45
+[04:59:31]   ✓ BPB=5.5861, time=23.9s
+[04:59:32] [428/1195] Helsinki-NLP/opus-mt-fi-sm (V=59586) — ETA: 5:39:16
+[04:59:59]   ✓ BPB=5.9139, time=26.8s
+[05:00:00] [429/1195] Helsinki-NLP/opus-mt-sv-st (V=59596) — ETA: 5:38:51
+[05:00:22]   ✓ BPB=5.2322, time=22.6s
+[05:00:23] [430/1195] Helsinki-NLP/opus-mt-st-sv (V=59596) — ETA: 5:38:20
+[05:00:48]   ✓ BPB=5.1708, time=24.8s
+[05:00:49] [431/1195] Helsinki-NLP/opus-mt-da-fi (V=59606) — ETA: 5:37:52
+[05:01:15]   ✓ BPB=6.0234, time=25.7s
+[05:01:16] [432/1195] Helsinki-NLP/opus-mt-chk-fr (V=59610) — ETA: 5:37:26
+[05:01:40]   ✓ BPB=5.7218, time=24.0s
+[05:01:41] [433/1195] Helsinki-NLP/opus-mt-fr-yo (V=59615) — ETA: 5:36:57
+[05:02:03]   ✓ BPB=5.7310, time=22.6s
+[05:02:05] [434/1195] Helsinki-NLP/opus-mt-yo-fr (V=59615) — ETA: 5:36:25
+[05:02:27]   ✓ BPB=5.4848, time=22.6s
+[05:02:28] [435/1195] Helsinki-NLP/opus-mt-sv-gaa (V=59654) — ETA: 5:35:54
+[05:02:50]   ✓ BPB=4.9225, time=22.3s
+[05:02:51] [436/1195] Helsinki-NLP/opus-mt-gaa-sv (V=59654) — ETA: 5:35:22
+[05:03:19]   ✓ BPB=5.1065, time=27.7s
+[05:03:20] [437/1195] Helsinki-NLP/opus-mt-es-tl (V=59655) — ETA: 5:34:59
+[05:03:44]   ✓ BPB=5.4954, time=24.1s
+[05:03:45] [438/1195] Helsinki-NLP/opus-mt-tl-es (V=59655) — ETA: 5:34:30
+[05:04:09]   ✓ BPB=4.8376, time=23.7s
+[05:04:10] [439/1195] Helsinki-NLP/opus-mt-fi-en (V=59659) — ETA: 5:34:01
+[05:04:31]   ✓ BPB=6.1775, time=21.1s
+[05:04:32] [440/1195] Helsinki-NLP/opus-mt-sv-tn (V=59661) — ETA: 5:33:27
+[05:04:57]   ✓ BPB=5.4546, time=24.5s
+[05:04:58] [441/1195] Helsinki-NLP/opus-mt-tn-sv (V=59661) — ETA: 5:32:59
+[05:05:21]   ✓ BPB=8.1335, time=23.4s
+[05:05:22] [442/1195] Helsinki-NLP/opus-mt-de-ha (V=59664) — ETA: 5:32:29
+[05:05:46]   ✓ BPB=5.0645, time=23.9s
+[05:05:47] [443/1195] Helsinki-NLP/opus-mt-es-fj (V=59664) — ETA: 5:32:00
+[05:06:11]   ✓ BPB=5.1921, time=23.5s
+[05:06:12] [444/1195] Helsinki-NLP/opus-mt-pl-es (V=59678) — ETA: 5:31:30
+[05:06:34]   ✓ BPB=5.8925, time=22.1s
+[05:06:35] [445/1195] Helsinki-NLP/opus-mt-ee-sv (V=59678) — ETA: 5:30:58
+[05:06:56]   ✓ BPB=5.3498, time=21.7s
+[05:06:58] [446/1195] Helsinki-NLP/opus-mt-sv-ee (V=59678) — ETA: 5:30:25
+[05:07:22]   ✓ BPB=5.0949, time=24.7s
+[05:07:23] [447/1195] Helsinki-NLP/opus-mt-es-pl (V=59678) — ETA: 5:29:58
+[05:07:47]   ✓ BPB=5.9822, time=23.6s
+[05:07:48] [448/1195] Helsinki-NLP/opus-mt-pap-fr (V=59706) — ETA: 5:29:28
+[05:08:12]   ✓ BPB=5.3398, time=23.7s
+[05:08:13] [449/1195] Helsinki-NLP/opus-mt-fr-pap (V=59706) — ETA: 5:28:59
+[05:08:36]   ✓ BPB=4.8390, time=23.2s
+[05:08:37] [450/1195] Helsinki-NLP/opus-mt-yo-es (V=59716) — ETA: 5:28:29
+[05:09:01]   ✓ BPB=5.4774, time=24.1s
+[05:09:02] [451/1195] Helsinki-NLP/opus-mt-es-yo (V=59716) — ETA: 5:28:01
+[05:09:27]   ✓ BPB=5.2100, time=24.9s
+[05:09:28] [452/1195] Helsinki-NLP/opus-mt-sq-sv (V=59725) — ETA: 5:27:33
+[05:09:51]   ✓ BPB=4.9798, time=23.3s
+[05:09:52] [453/1195] Helsinki-NLP/opus-mt-sv-sq (V=59725) — ETA: 5:27:03
+[05:10:14]   ✓ BPB=4.9188, time=21.7s
+[05:10:15] [454/1195] Helsinki-NLP/opus-mt-el-fi (V=59727) — ETA: 5:26:31
+[05:10:41]   ✓ BPB=6.0561, time=25.6s
+[05:10:42] [455/1195] Helsinki-NLP/opus-mt-fi-el (V=59727) — ETA: 5:26:05
+[05:11:05]   ✓ BPB=6.2038, time=23.1s
+[05:11:06] [456/1195] Helsinki-NLP/opus-mt-fr-eo (V=59728) — ETA: 5:25:35
+[05:11:28]   ✓ BPB=5.4281, time=21.8s
+[05:11:29] [457/1195] Helsinki-NLP/opus-mt-eo-fr (V=59728) — ETA: 5:25:03
+[05:11:51]   ✓ BPB=5.5526, time=22.2s
+[05:11:52] [458/1195] Helsinki-NLP/opus-mt-efi-de (V=59733) — ETA: 5:24:31
+[05:12:16]   ✓ BPB=5.2676, time=24.3s
+[05:12:17] [459/1195] Helsinki-NLP/opus-mt-de-efi (V=59733) — ETA: 5:24:03
+[05:12:43]   ✓ BPB=5.2394, time=26.1s
+[05:12:44] [460/1195] Helsinki-NLP/opus-mt-es-bcl (V=59736) — ETA: 5:23:38
+[05:13:09]   ✓ BPB=5.2299, time=25.1s
+[05:13:10] [461/1195] Helsinki-NLP/opus-mt-bcl-es (V=59736) — ETA: 5:23:11
+[05:13:36]   ✓ BPB=5.1686, time=25.4s
+[05:13:37] [462/1195] Helsinki-NLP/opus-mt-tc-bible-big-map-en (V=59740) — ETA: 5:22:45
+[05:14:06]   ✓ BPB=4.3692, time=28.9s
+[05:14:07] [463/1195] Helsinki-NLP/opus-mt-tc-bible-big-map-en (V=59740) — ETA: 5:22:24
+[05:14:35]   ✓ BPB=4.3692, time=28.5s
+[05:14:36] [464/1195] Helsinki-NLP/opus-mt-zlw-fiu (V=59747) — ETA: 5:22:03
+[05:15:00]   ✓ BPB=5.0845, time=23.5s
+[05:15:01] [465/1195] Helsinki-NLP/opus-mt-tc-bible-big-poz-en (V=59757) — ETA: 5:21:34
+[05:15:35]   ✓ BPB=4.9200, time=34.4s
+[05:15:36] [466/1195] Helsinki-NLP/opus-mt-tc-bible-big-poz-en (V=59757) — ETA: 5:21:21
+[05:16:10]   ✓ BPB=4.9200, time=33.8s
+[05:16:11] [467/1195] Helsinki-NLP/opus-mt-tc-bible-big-urj-fra_ita_por_spa (V=59759) — ETA: 5:21:08
+[05:16:44]   ✓ BPB=5.1344, time=32.7s
+[05:16:45] [468/1195] Helsinki-NLP/opus-mt-tc-bible-big-urj-fra_ita_por_spa (V=59759) — ETA: 5:20:53
+[05:17:20]   ✓ BPB=5.1344, time=35.2s
+[05:17:21] [469/1195] Helsinki-NLP/opus-mt-tc-bible-big-phi-deu_eng_fra_por_spa (V=59760) — ETA: 5:20:42
+[05:17:53]   ✓ BPB=4.4610, time=31.6s
+[05:17:54] [470/1195] Helsinki-NLP/opus-mt-tc-bible-big-phi-deu_eng_fra_por_spa (V=59760) — ETA: 5:20:25
+[05:18:23]   ✓ BPB=4.4610, time=28.8s
+[05:18:24] [471/1195] Helsinki-NLP/opus-mt-fr-hil (V=59764) — ETA: 5:20:04
+[05:18:47]   ✓ BPB=5.5469, time=23.6s
+[05:18:48] [472/1195] Helsinki-NLP/opus-mt-ts-sv (V=59767) — ETA: 5:19:34
+[05:19:11]   ✓ BPB=7.6588, time=22.7s
+[05:19:12] [473/1195] Helsinki-NLP/opus-mt-sv-ts (V=59767) — ETA: 5:19:04
+[05:19:37]   ✓ BPB=5.1817, time=24.7s
+[05:19:38] [474/1195] Helsinki-NLP/opus-mt-ceb-fr (V=59770) — ETA: 5:18:36
+[05:20:00]   ✓ BPB=5.0632, time=22.4s
+[05:20:01] [475/1195] Helsinki-NLP/opus-mt-fr-ceb (V=59770) — ETA: 5:18:05
+[05:20:26]   ✓ BPB=5.0672, time=24.6s
+[05:20:27] [476/1195] Helsinki-NLP/opus-mt-rnd-fr (V=59771) — ETA: 5:17:38
+[05:20:51]   ✓ BPB=6.2249, time=23.7s
+[05:20:52] [477/1195] Helsinki-NLP/opus-mt-fr-rnd (V=59771) — ETA: 5:17:09
+[05:21:15]   ✓ BPB=5.7724, time=23.1s
+[05:21:16] [478/1195] Helsinki-NLP/opus-mt-nso-sv (V=59774) — ETA: 5:16:39
+[05:21:39]   ✓ BPB=5.9966, time=22.7s
+[05:21:40] [479/1195] Helsinki-NLP/opus-mt-sv-nso (V=59774) — ETA: 5:16:08
+[05:22:03]   ✓ BPB=5.2813, time=22.9s
+[05:22:04] [480/1195] Helsinki-NLP/opus-mt-pt-tl (V=59778) — ETA: 5:15:38
+[05:22:29]   ✓ BPB=5.6465, time=24.9s
+[05:22:30] [481/1195] Helsinki-NLP/opus-mt-tl-pt (V=59778) — ETA: 5:15:11
+[05:22:52]   ✓ BPB=5.0667, time=22.4s
+[05:22:53] [482/1195] Helsinki-NLP/opus-mt-tc-bible-big-fiu-fra_ita_por_spa (V=59780) — ETA: 5:14:40
+[05:23:23]   ✓ BPB=4.5003, time=29.9s
+[05:23:24] [483/1195] Helsinki-NLP/opus-mt-tc-bible-big-fiu-fra_ita_por_spa (V=59780) — ETA: 5:14:20
+[05:23:55]   ✓ BPB=4.5003, time=30.3s
+[05:23:56] [484/1195] Helsinki-NLP/opus-mt-srn-fr (V=59781) — ETA: 5:14:01
+[05:24:18]   ✓ BPB=5.0534, time=22.1s
+[05:24:19] [485/1195] Helsinki-NLP/opus-mt-pa-en (V=59781) — ETA: 5:13:30
+[05:24:42]   ✓ BPB=4.6394, time=23.3s
+[05:24:43] [486/1195] Helsinki-NLP/opus-mt-fr-srn (V=59781) — ETA: 5:13:00
+[05:25:08]   ✓ BPB=5.7871, time=25.1s
+[05:25:09] [487/1195] Helsinki-NLP/opus-mt-sv-ln (V=59791) — ETA: 5:12:33
+[05:25:33]   ✓ BPB=5.1728, time=24.0s
+[05:25:34] [488/1195] Helsinki-NLP/opus-mt-sv-pag (V=59796) — ETA: 5:12:05
+[05:25:57]   ✓ BPB=4.9977, time=22.5s
+[05:25:58] [489/1195] Helsinki-NLP/opus-mt-pag-sv (V=59796) — ETA: 5:11:34
+[05:26:22]   ✓ BPB=5.1821, time=24.4s
+[05:26:23] [490/1195] Helsinki-NLP/opus-mt-de-fj (V=59804) — ETA: 5:11:06
+[05:26:49]   ✓ BPB=5.3993, time=25.5s
+[05:26:50] [491/1195] Helsinki-NLP/opus-mt-en-ny (V=59811) — ETA: 5:10:40
+[05:27:08]   ✓ BPB=4.0730, time=18.4s
+[05:27:09] [492/1195] Helsinki-NLP/opus-mt-ny-en (V=59811) — ETA: 5:10:04
+[05:27:34]   ✓ BPB=6.6002, time=24.4s
+[05:27:35] [493/1195] Helsinki-NLP/opus-mt-es-efi (V=59814) — ETA: 5:09:36
+[05:27:59]   ✓ BPB=5.3678, time=24.2s
+[05:28:00] [494/1195] Helsinki-NLP/opus-mt-bem-en (V=59828) — ETA: 5:09:08
+[05:28:23]   ✓ BPB=5.8460, time=23.3s
+[05:28:24] [495/1195] Helsinki-NLP/opus-mt-en-bem (V=59828) — ETA: 5:08:38
+[05:28:45]   ✓ BPB=3.8338, time=20.6s
+[05:28:46] [496/1195] Helsinki-NLP/opus-mt-tr-fr (V=59829) — ETA: 5:08:05
+[05:29:13]   ✓ BPB=4.8685, time=26.5s
+[05:29:14] [497/1195] Helsinki-NLP/opus-mt-sv-swc (V=59834) — ETA: 5:07:40
+[05:29:36]   ✓ BPB=5.0217, time=22.0s
+[05:29:37] [498/1195] Helsinki-NLP/opus-mt-swc-sv (V=59834) — ETA: 5:07:09
+[05:30:00]   ✓ BPB=5.4813, time=23.1s
+[05:30:01] [499/1195] Helsinki-NLP/opus-mt-fr-ig (V=59835) — ETA: 5:06:40
+[05:30:24]   ✓ BPB=5.9519, time=23.2s
+[05:30:25] [500/1195] Helsinki-NLP/opus-mt-ig-fr (V=59835) — ETA: 5:06:10
+[05:30:48]   ✓ BPB=5.1844, time=22.7s
+[05:30:49] [501/1195] Helsinki-NLP/opus-mt-eo-de (V=59836) — ETA: 5:05:40
+[05:31:12]   ✓ BPB=5.6669, time=23.2s
+[05:31:13] [502/1195] Helsinki-NLP/opus-mt-de-eo (V=59836) — ETA: 5:05:11
+[05:31:35]   ✓ BPB=5.9375, time=21.7s
+[05:31:36] [503/1195] Helsinki-NLP/opus-mt-fi-nl (V=59836) — ETA: 5:04:40
+[05:31:58]   ✓ BPB=6.2971, time=22.4s
+[05:31:59] [504/1195] Helsinki-NLP/opus-mt-sv-el (V=59836) — ETA: 5:04:09
+[05:32:23]   ✓ BPB=5.6889, time=23.4s
+[05:32:24] [505/1195] Helsinki-NLP/opus-mt-el-sv (V=59836) — ETA: 5:03:40
+[05:32:47]   ✓ BPB=6.4829, time=23.3s
+[05:32:48] [506/1195] Helsinki-NLP/opus-mt-nl-fi (V=59836) — ETA: 5:03:11
+[05:33:10]   ✓ BPB=5.3892, time=21.6s
+[05:33:11] [507/1195] Helsinki-NLP/opus-mt-en-phi (V=59866) — ETA: 5:02:40
+[05:33:32]   ✓ BPB=3.5431, time=20.8s
+[05:33:33] [508/1195] Helsinki-NLP/opus-mt-de-it (V=59867) — ETA: 5:02:07
+[05:33:55]   ✓ BPB=6.0217, time=22.5s
+[05:33:56] [509/1195] Helsinki-NLP/opus-mt-it-de (V=59867) — ETA: 5:01:37
+[05:34:17]   ✓ BPB=6.1076, time=20.9s
+[05:34:18] [510/1195] Helsinki-NLP/opus-mt-tc-bible-big-sla-deu_eng_nld (V=59873) — ETA: 5:01:05
+[05:34:54]   ✓ BPB=5.0890, time=36.1s
+[05:34:55] [511/1195] Helsinki-NLP/opus-mt-tc-bible-big-sla-deu_eng_nld (V=59873) — ETA: 5:00:53
+[05:35:28]   ✓ BPB=5.0890, time=32.3s
+[05:35:29] [512/1195] Helsinki-NLP/opus-mt-uk-bg (V=59878) — ETA: 5:00:36
+[05:35:55]   ✓ BPB=6.2312, time=25.9s
+[05:35:56] [513/1195] Helsinki-NLP/opus-mt-bg-uk (V=59878) — ETA: 5:00:10
+[05:36:21]   ✓ BPB=6.2190, time=25.5s
+[05:36:22] [514/1195] Helsinki-NLP/opus-mt-tc-big-zls-en (V=59883) — ETA: 4:59:44
+[05:36:54]   ✓ BPB=5.6518, time=31.4s
+[05:36:55] [515/1195] Helsinki-NLP/opus-mt-tc-big-zls-en (V=59883) — ETA: 4:59:26
+[05:37:21]   ✓ BPB=5.6518, time=26.5s
+[05:37:22] [516/1195] Helsinki-NLP/opus-mt-tc-bible-big-sla-en (V=59891) — ETA: 4:59:01
+[05:37:54]   ✓ BPB=4.9997, time=32.2s
+[05:37:55] [517/1195] Helsinki-NLP/opus-mt-tc-bible-big-sla-en (V=59891) — ETA: 4:58:44
+[05:38:26]   ✓ BPB=4.9997, time=30.8s
+[05:38:27] [518/1195] Helsinki-NLP/opus-mt-om-en (V=59898) — ETA: 4:58:24
+[05:38:53]   ✓ BPB=6.6634, time=25.9s
+[05:38:54] [519/1195] Helsinki-NLP/opus-mt-en-om (V=59898) — ETA: 4:57:59
+[05:39:15]   ✓ BPB=3.8475, time=20.4s
+[05:39:16] [520/1195] Helsinki-NLP/opus-mt-fi-tr (V=59902) — ETA: 4:57:26
+[05:39:39]   ✓ BPB=5.2230, time=22.8s
+[05:39:40] [521/1195] Helsinki-NLP/opus-mt-fi-it (V=59909) — ETA: 4:56:56
+[05:40:02]   ✓ BPB=6.4830, time=22.8s
+[05:40:03] [522/1195] Helsinki-NLP/opus-mt-sv-bcl (V=59911) — ETA: 4:56:26
+[05:40:27]   ✓ BPB=4.8469, time=23.5s
+[05:40:28] [523/1195] Helsinki-NLP/opus-mt-bcl-sv (V=59911) — ETA: 4:55:58
+[05:40:51]   ✓ BPB=5.1683, time=22.7s
+[05:40:52] [524/1195] Helsinki-NLP/opus-mt-tc-big-fi-zls (V=59931) — ETA: 4:55:28
+[05:41:22]   ✓ BPB=5.0080, time=30.2s
+[05:41:23] [525/1195] Helsinki-NLP/opus-mt-tc-big-fi-zls (V=59931) — ETA: 4:55:08
+[05:41:51]   ✓ BPB=5.0080, time=27.9s
+[05:41:52] [526/1195] Helsinki-NLP/opus-mt-de-el (V=59951) — ETA: 4:54:45
+[05:42:14]   ✓ BPB=5.8194, time=21.8s
+[05:42:15] [527/1195] Helsinki-NLP/opus-mt-es-war (V=59954) — ETA: 4:54:14
+[05:42:39]   ✓ BPB=4.9584, time=23.9s
+[05:42:40] [528/1195] Helsinki-NLP/opus-mt-war-es (V=59954) — ETA: 4:53:45
+[05:43:02]   ✓ BPB=5.0838, time=22.0s
+[05:43:03] [529/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-sla (V=59956) — ETA: 4:53:15
+[05:43:29]   ✓ BPB=3.5429, time=25.8s
+[05:43:30] [530/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-sla (V=59956) — ETA: 4:52:49
+[05:43:56]   ✓ BPB=3.5429, time=26.2s
+[05:43:57] [531/1195] Helsinki-NLP/opus-mt-de-fi (V=59971) — ETA: 4:52:24
+[05:44:18]   ✓ BPB=5.9304, time=21.4s
+[05:44:19] [532/1195] Helsinki-NLP/opus-mt-fr-lua (V=59980) — ETA: 4:51:53
+[05:44:43]   ✓ BPB=5.2701, time=23.2s
+[05:44:44] [533/1195] Helsinki-NLP/opus-mt-lua-fr (V=59980) — ETA: 4:51:24
+[05:45:07]   ✓ BPB=5.4954, time=23.3s
+[05:45:08] [534/1195] Helsinki-NLP/opus-mt-ig-es (V=60006) — ETA: 4:50:55
+[05:45:30]   ✓ BPB=5.7308, time=22.2s
+[05:45:31] [535/1195] Helsinki-NLP/opus-mt-es-ig (V=60006) — ETA: 4:50:24
+[05:45:54]   ✓ BPB=5.0693, time=22.8s
+[05:45:55] [536/1195] Helsinki-NLP/opus-mt-chk-es (V=60011) — ETA: 4:49:55
+[05:46:17]   ✓ BPB=5.5065, time=22.2s
+[05:46:18] [537/1195] Helsinki-NLP/opus-mt-tc-big-gmq-he (V=60013) — ETA: 4:49:25
+[05:46:47]   ✓ BPB=4.9118, time=29.2s
+[05:46:48] [538/1195] Helsinki-NLP/opus-mt-tc-big-gmq-he (V=60013) — ETA: 4:49:03
+[05:47:15]   ✓ BPB=4.9118, time=26.5s
+[05:47:16] [539/1195] Helsinki-NLP/opus-mt-de-ig (V=60025) — ETA: 4:48:38
+[05:47:40]   ✓ BPB=5.2365, time=24.4s
+[05:47:41] [540/1195] Helsinki-NLP/opus-mt-sk-en (V=60025) — ETA: 4:48:11
+[05:48:04]   ✓ BPB=6.4212, time=22.3s
+[05:48:05] [541/1195] Helsinki-NLP/opus-mt-ig-de (V=60025) — ETA: 4:47:41
+[05:48:30]   ✓ BPB=5.6352, time=25.7s
+[05:48:32] [542/1195] Helsinki-NLP/opus-mt-en-sk (V=60025) — ETA: 4:47:15
+[05:48:50]   ✓ BPB=3.8411, time=18.3s
+[05:48:51] [543/1195] Helsinki-NLP/opus-mt-tw-es (V=60033) — ETA: 4:46:40
+[05:49:17]   ✓ BPB=5.3167, time=25.9s
+[05:49:18] [544/1195] Helsinki-NLP/opus-mt-es-tw (V=60033) — ETA: 4:46:14
+[05:49:42]   ✓ BPB=4.9420, time=24.4s
+[05:49:43] [545/1195] Helsinki-NLP/opus-mt-hil-de (V=60041) — ETA: 4:45:47
+[05:50:07]   ✓ BPB=4.7171, time=23.6s
+[05:50:08] [546/1195] Helsinki-NLP/opus-mt-de-hil (V=60041) — ETA: 4:45:19
+[05:50:31]   ✓ BPB=5.2326, time=23.3s
+[05:50:32] [547/1195] Helsinki-NLP/opus-mt-fr-pl (V=60050) — ETA: 4:44:50
+[05:50:57]   ✓ BPB=5.5818, time=25.0s
+[05:50:58] [548/1195] Helsinki-NLP/opus-mt-pl-fr (V=60050) — ETA: 4:44:23
+[05:51:21]   ✓ BPB=6.1670, time=22.7s
+[05:51:22] [549/1195] Helsinki-NLP/opus-mt-srn-es (V=60052) — ETA: 4:43:54
+[05:51:47]   ✓ BPB=4.9042, time=24.8s
+[05:51:48] [550/1195] Helsinki-NLP/opus-mt-es-srn (V=60052) — ETA: 4:43:27
+[05:52:12]   ✓ BPB=5.5156, time=24.0s
+[05:52:13] [551/1195] Helsinki-NLP/opus-mt-fr-ilo (V=60057) — ETA: 4:42:59
+[05:52:36]   ✓ BPB=5.8649, time=22.8s
+[05:52:37] [552/1195] Helsinki-NLP/opus-mt-fr-war (V=60058) — ETA: 4:42:30
+[05:52:59]   ✓ BPB=4.9163, time=22.5s
+[05:53:00] [553/1195] Helsinki-NLP/opus-mt-war-fr (V=60058) — ETA: 4:42:01
+[05:53:22]   ✓ BPB=5.1369, time=22.0s
+[05:53:23] [554/1195] Helsinki-NLP/opus-mt-fi-fr (V=60065) — ETA: 4:41:30
+[05:53:46]   ✓ BPB=6.1160, time=22.4s
+[05:53:47] [555/1195] Helsinki-NLP/opus-mt-bg-fi (V=60069) — ETA: 4:41:01
+[05:54:09]   ✓ BPB=6.0162, time=22.4s
+[05:54:10] [556/1195] Helsinki-NLP/opus-mt-fi-bg (V=60069) — ETA: 4:40:31
+[05:54:33]   ✓ BPB=5.5295, time=22.3s
+[05:54:34] [557/1195] Helsinki-NLP/opus-mt-pag-es (V=60074) — ETA: 4:40:01
+[05:54:56]   ✓ BPB=4.7685, time=22.0s
+[05:54:57] [558/1195] Helsinki-NLP/opus-mt-es-pag (V=60074) — ETA: 4:39:31
+[05:55:21]   ✓ BPB=5.1754, time=24.6s
+[05:55:22] [559/1195] Helsinki-NLP/opus-mt-loz-sv (V=60081) — ETA: 4:39:04
+[05:55:45]   ✓ BPB=5.7955, time=22.5s
+[05:55:46] [560/1195] Helsinki-NLP/opus-mt-en-map (V=60088) — ETA: 4:38:35
+[05:56:04]   ✓ BPB=3.4291, time=18.0s
+[05:56:05] [561/1195] Helsinki-NLP/opus-mt-en-pqe (V=60089) — ETA: 4:38:00
+[05:56:26]   ✓ BPB=3.9097, time=21.4s
+[05:56:27] [562/1195] Helsinki-NLP/opus-mt-pqe-en (V=60111) — ETA: 4:37:30
+[05:56:52]   ✓ BPB=12.9064, time=24.4s
+[05:56:53] [563/1195] Helsinki-NLP/opus-mt-sq-es (V=60116) — ETA: 4:37:03
+[05:57:18]   ✓ BPB=5.0649, time=25.2s
+[05:57:19] [564/1195] Helsinki-NLP/opus-mt-sv-umb (V=60123) — ETA: 4:36:36
+[05:57:43]   ✓ BPB=5.4103, time=23.9s
+[05:57:44] [565/1195] Helsinki-NLP/opus-mt-fr-tl (V=60124) — ETA: 4:36:09
+[05:58:07]   ✓ BPB=5.0012, time=22.8s
+[05:58:08] [566/1195] Helsinki-NLP/opus-mt-kqn-en (V=60142) — ETA: 4:35:40
+[05:58:34]   ✓ BPB=5.4649, time=26.3s
+[05:58:35] [567/1195] Helsinki-NLP/opus-mt-en-kqn (V=60142) — ETA: 4:35:15
+[05:58:56]   ✓ BPB=4.2818, time=20.8s
+[05:58:57] [568/1195] Helsinki-NLP/opus-mt-tc-big-itc-bat (V=60149) — ETA: 4:34:43
+[05:59:27]   ✓ BPB=5.7193, time=29.7s
+[05:59:28] [569/1195] Helsinki-NLP/opus-mt-tc-big-itc-bat (V=60149) — ETA: 4:34:22
+[05:59:55]   ✓ BPB=5.7193, time=27.6s
+[05:59:56] [570/1195] Helsinki-NLP/opus-mt-fr-st (V=60161) — ETA: 4:33:59
+[06:00:20]   ✓ BPB=5.1567, time=23.6s
+[06:00:21] [571/1195] Helsinki-NLP/opus-mt-st-fr (V=60161) — ETA: 4:33:31
+[06:00:44]   ✓ BPB=5.4700, time=22.5s
+[06:00:45] [572/1195] Helsinki-NLP/opus-mt-ee-es (V=60163) — ETA: 4:33:02
+[06:01:07]   ✓ BPB=5.3979, time=22.7s
+[06:01:08] [573/1195] Helsinki-NLP/opus-mt-es-ee (V=60163) — ETA: 4:32:33
+[06:01:34]   ✓ BPB=5.3159, time=25.2s
+[06:01:35] [574/1195] Helsinki-NLP/opus-mt-swc-fr (V=60172) — ETA: 4:32:06
+[06:01:59]   ✓ BPB=5.5356, time=24.1s
+[06:02:00] [575/1195] Helsinki-NLP/opus-mt-fr-swc (V=60172) — ETA: 4:31:39
+[06:02:22]   ✓ BPB=5.3422, time=22.1s
+[06:02:23] [576/1195] Helsinki-NLP/opus-mt-gaa-es (V=60173) — ETA: 4:31:09
+[06:02:48]   ✓ BPB=5.5545, time=24.6s
+[06:02:49] [577/1195] Helsinki-NLP/opus-mt-es-gaa (V=60173) — ETA: 4:30:42
+[06:03:12]   ✓ BPB=5.7276, time=23.1s
+[06:03:13] [578/1195] Helsinki-NLP/opus-mt-en-poz (V=60175) — ETA: 4:30:14
+[06:03:32]   ✓ BPB=3.0471, time=19.1s
+[06:03:33] [579/1195] Helsinki-NLP/opus-mt-pap-de (V=60181) — ETA: 4:29:41
+[06:03:55]   ✓ BPB=4.9754, time=22.5s
+[06:03:56] [580/1195] Helsinki-NLP/opus-mt-de-pap (V=60181) — ETA: 4:29:12
+[06:04:21]   ✓ BPB=5.1987, time=24.6s
+[06:04:22] [581/1195] Helsinki-NLP/opus-mt-tw-fr (V=60184) — ETA: 4:28:45
+[06:04:44]   ✓ BPB=6.0603, time=22.4s
+[06:04:46] [582/1195] Helsinki-NLP/opus-mt-fr-tw (V=60184) — ETA: 4:28:16
+[06:05:08]   ✓ BPB=6.8109, time=22.8s
+[06:05:09] [583/1195] Helsinki-NLP/opus-mt-sv-lua (V=60188) — ETA: 4:27:47
+[06:05:35]   ✓ BPB=4.9571, time=25.6s
+[06:05:36] [584/1195] Helsinki-NLP/opus-mt-lua-sv (V=60188) — ETA: 4:27:22
+[06:06:03]   ✓ BPB=5.6728, time=26.9s
+[06:06:04] [585/1195] Helsinki-NLP/opus-mt-de-ilo (V=60194) — ETA: 4:26:57
+[06:06:29]   ✓ BPB=5.7442, time=25.4s
+[06:06:30] [586/1195] Helsinki-NLP/opus-mt-ilo-de (V=60194) — ETA: 4:26:31
+[06:06:53]   ✓ BPB=5.0159, time=22.8s
+[06:06:54] [587/1195] Helsinki-NLP/opus-mt-es-st (V=60207) — ETA: 4:26:02
+[06:07:18]   ✓ BPB=4.9987, time=23.7s
+[06:07:19] [588/1195] Helsinki-NLP/opus-mt-st-es (V=60207) — ETA: 4:25:35
+[06:07:43]   ✓ BPB=6.4965, time=24.3s
+[06:07:44] [589/1195] Helsinki-NLP/opus-mt-fi-ty (V=60215) — ETA: 4:25:08
+[06:08:12]   ✓ BPB=6.1827, time=27.4s
+[06:08:13] [590/1195] Helsinki-NLP/opus-mt-ty-fi (V=60215) — ETA: 4:24:44
+[06:08:37]   ✓ BPB=5.4078, time=24.6s
+[06:08:38] [591/1195] Helsinki-NLP/opus-mt-af-es (V=60216) — ETA: 4:24:17
+[06:09:00]   ✓ BPB=5.2035, time=21.7s
+[06:09:01] [592/1195] Helsinki-NLP/opus-mt-es-af (V=60216) — ETA: 4:23:47
+[06:09:26]   ✓ BPB=5.4354, time=25.3s
+[06:09:27] [593/1195] Helsinki-NLP/opus-mt-ee-fr (V=60218) — ETA: 4:23:21
+[06:09:52]   ✓ BPB=5.6490, time=24.1s
+[06:09:53] [594/1195] Helsinki-NLP/opus-mt-fr-ee (V=60218) — ETA: 4:22:54
+[06:10:15]   ✓ BPB=5.6478, time=22.5s
+[06:10:16] [595/1195] Helsinki-NLP/opus-mt-fr-gaa (V=60229) — ETA: 4:22:25
+[06:10:48]   ✓ BPB=5.3917, time=31.9s
+[06:10:49] [596/1195] Helsinki-NLP/opus-mt-gaa-fr (V=60229) — ETA: 4:22:06
+[06:11:14]   ✓ BPB=5.5277, time=24.4s
+[06:11:15] [597/1195] Helsinki-NLP/opus-mt-tc-big-he-gmq (V=60233) — ETA: 4:21:39
+[06:11:44]   ✓ BPB=5.8704, time=29.6s
+[06:11:45] [598/1195] Helsinki-NLP/opus-mt-tc-big-he-gmq (V=60233) — ETA: 4:21:17
+[06:12:21]   ✓ BPB=5.8704, time=36.0s
+[06:12:22] [599/1195] Helsinki-NLP/opus-mt-fr-tn (V=60234) — ETA: 4:21:01
+[06:12:44]   ✓ BPB=5.2490, time=22.0s
+[06:12:45] [600/1195] Helsinki-NLP/opus-mt-tn-fr (V=60234) — ETA: 4:20:32
+[06:13:08]   ✓ BPB=5.2753, time=22.3s
+[06:13:09] [601/1195] Helsinki-NLP/opus-mt-ts-fr (V=60236) — ETA: 4:20:03
+[06:13:33]   ✓ BPB=6.4930, time=24.6s
+[06:13:34] [602/1195] Helsinki-NLP/opus-mt-fr-ts (V=60236) — ETA: 4:19:36
+[06:13:58]   ✓ BPB=5.3450, time=23.2s
+[06:13:59] [603/1195] Helsinki-NLP/opus-mt-en-lu (V=60241) — ETA: 4:19:08
+[06:14:20]   ✓ BPB=4.0712, time=20.9s
+[06:14:21] [604/1195] Helsinki-NLP/opus-mt-lu-en (V=60241) — ETA: 4:18:38
+[06:14:47]   ✓ BPB=5.8878, time=26.3s
+[06:14:48] [605/1195] Helsinki-NLP/opus-mt-fr-nso (V=60246) — ETA: 4:18:13
+[06:15:10]   ✓ BPB=5.4472, time=22.2s
+[06:15:11] [606/1195] Helsinki-NLP/opus-mt-nso-fr (V=60246) — ETA: 4:17:44
+[06:15:38]   ✓ BPB=5.3375, time=26.3s
+[06:15:39] [607/1195] Helsinki-NLP/opus-mt-is-fi (V=60259) — ETA: 4:17:18
+[06:16:02]   ✓ BPB=5.4834, time=23.4s
+[06:16:03] [608/1195] Helsinki-NLP/opus-mt-fi-is (V=60259) — ETA: 4:16:50
+[06:16:29]   ✓ BPB=5.2171, time=26.4s
+[06:16:30] [609/1195] Helsinki-NLP/opus-mt-fr-pag (V=60260) — ETA: 4:16:25
+[06:16:53]   ✓ BPB=4.9190, time=22.8s
+[06:16:54] [610/1195] Helsinki-NLP/opus-mt-tn-es (V=60267) — ETA: 4:15:57
+[06:17:17]   ✓ BPB=5.0761, time=22.9s
+[06:17:18] [611/1195] Helsinki-NLP/opus-mt-es-tn (V=60267) — ETA: 4:15:29
+[06:17:41]   ✓ BPB=5.0204, time=23.0s
+[06:17:42] [612/1195] Helsinki-NLP/opus-mt-tc-big-he-en (V=60269) — ETA: 4:15:00
+[06:18:11]   ✓ BPB=4.9302, time=28.3s
+[06:18:12] [613/1195] Helsinki-NLP/opus-mt-tc-big-he-en (V=60269) — ETA: 4:14:37
+[06:18:40]   ✓ BPB=4.9302, time=28.0s
+[06:18:41] [614/1195] Helsinki-NLP/opus-mt-sv-kwy (V=60295) — ETA: 4:14:14
+[06:19:05]   ✓ BPB=5.4254, time=24.0s
+[06:19:06] [615/1195] Helsinki-NLP/opus-mt-kwy-sv (V=60295) — ETA: 4:13:46
+[06:19:30]   ✓ BPB=6.5288, time=24.3s
+[06:19:31] [616/1195] Helsinki-NLP/opus-mt-fi-to (V=60324) — ETA: 4:13:19
+[06:19:55]   ✓ BPB=5.7698, time=24.4s
+[06:19:56] [617/1195] Helsinki-NLP/opus-mt-tc-base-ro-uk (V=60327) — ETA: 4:12:52
+[06:20:17]   ✓ BPB=4.8695, time=20.4s
+[06:20:18] [618/1195] Helsinki-NLP/opus-mt-fi-mg (V=60329) — ETA: 4:12:22
+[06:20:42]   ✓ BPB=5.5968, time=23.7s
+[06:20:43] [619/1195] Helsinki-NLP/opus-mt-es-swc (V=60332) — ETA: 4:11:54
+[06:21:05]   ✓ BPB=5.1062, time=22.2s
+[06:21:06] [620/1195] Helsinki-NLP/opus-mt-swc-es (V=60332) — ETA: 4:11:25
+[06:21:32]   ✓ BPB=5.2028, time=25.8s
+[06:21:33] [621/1195] Helsinki-NLP/opus-mt-is-es (V=60335) — ETA: 4:10:59
+[06:21:55]   ✓ BPB=4.9621, time=22.7s
+[06:21:56] [622/1195] Helsinki-NLP/opus-mt-es-is (V=60335) — ETA: 4:10:31
+[06:22:53]   ✓ BPB=4.8670, time=56.6s
+[06:22:54] [623/1195] Helsinki-NLP/opus-mt-nso-es (V=60344) — ETA: 4:10:34
+[06:23:16]   ✓ BPB=5.3514, time=22.4s
+[06:23:18] [624/1195] Helsinki-NLP/opus-mt-es-nso (V=60344) — ETA: 4:10:05
+[06:23:40]   ✓ BPB=5.1672, time=22.3s
+[06:23:41] [625/1195] Helsinki-NLP/opus-mt-ee-de (V=60346) — ETA: 4:09:36
+[06:24:04]   ✓ BPB=5.4037, time=23.1s
+[06:24:05] [626/1195] Helsinki-NLP/opus-mt-tl-de (V=60346) — ETA: 4:09:08
+[06:24:30]   ✓ BPB=4.8437, time=25.2s
+[06:24:31] [627/1195] Helsinki-NLP/opus-mt-de-ee (V=60346) — ETA: 4:08:42
+[06:24:54]   ✓ BPB=5.4640, time=22.8s
+[06:24:55] [628/1195] Helsinki-NLP/opus-mt-de-tl (V=60346) — ETA: 4:08:14
+[06:25:20]   ✓ BPB=5.3913, time=24.9s
+[06:25:21] [629/1195] Helsinki-NLP/opus-mt-ln-es (V=60350) — ETA: 4:07:47
+[06:25:46]   ✓ BPB=5.6145, time=25.0s
+[06:25:47] [630/1195] Helsinki-NLP/opus-mt-es-ln (V=60350) — ETA: 4:07:21
+[06:26:11]   ✓ BPB=5.0508, time=23.5s
+[06:26:12] [631/1195] Helsinki-NLP/opus-mt-ts-es (V=60354) — ETA: 4:06:53
+[06:26:35]   ✓ BPB=5.1658, time=23.5s
+[06:26:36] [632/1195] Helsinki-NLP/opus-mt-tc-base-uk-ro (V=60357) — ETA: 4:06:25
+[06:27:00]   ✓ BPB=5.3798, time=23.7s
+[06:27:01] [633/1195] Helsinki-NLP/opus-mt-en-rw (V=60384) — ETA: 4:05:58
+[06:27:21]   ✓ BPB=3.7280, time=20.0s
+[06:27:22] [634/1195] Helsinki-NLP/opus-mt-rw-en (V=60384) — ETA: 4:05:27
+[06:27:46]   ✓ BPB=5.7213, time=24.4s
+[06:27:47] [635/1195] Helsinki-NLP/opus-mt-tc-bible-big-poz-deu_eng_fra_por_spa (V=60414) — ETA: 4:05:00
+[06:28:19]   ✓ BPB=5.6967, time=31.5s
+[06:28:20] [636/1195] Helsinki-NLP/opus-mt-tc-bible-big-poz-deu_eng_fra_por_spa (V=60414) — ETA: 4:04:39
+[06:28:51]   ✓ BPB=5.6967, time=31.0s
+[06:28:52] [637/1195] Helsinki-NLP/opus-mt-gaa-de (V=60424) — ETA: 4:04:18
+[06:29:14]   ✓ BPB=5.3487, time=22.1s
+[06:29:15] [638/1195] Helsinki-NLP/opus-mt-de-gaa (V=60424) — ETA: 4:03:49
+[06:29:40]   ✓ BPB=5.4738, time=24.7s
+[06:29:41] [639/1195] Helsinki-NLP/opus-mt-tc-big-bg-en (V=60427) — ETA: 4:03:23
+[06:30:14]   ✓ BPB=6.3504, time=33.0s
+[06:30:15] [640/1195] Helsinki-NLP/opus-mt-tc-big-en-bg (V=60427) — ETA: 4:03:03
+[06:30:37]   ✓ BPB=3.2752, time=22.4s
+[06:30:38] [641/1195] Helsinki-NLP/opus-mt-tc-big-bg-en (V=60427) — ETA: 4:02:35
+[06:31:07]   ✓ BPB=6.3504, time=28.8s
+[06:31:08] [642/1195] Helsinki-NLP/opus-mt-tc-big-en-bg (V=60427) — ETA: 4:02:11
+[06:31:31]   ✓ BPB=3.2752, time=23.1s
+[06:31:32] [643/1195] Helsinki-NLP/opus-mt-pl-de (V=60431) — ETA: 4:01:43
+[06:31:57]   ✓ BPB=6.2085, time=25.1s
+[06:31:58] [644/1195] Helsinki-NLP/opus-mt-de-pl (V=60431) — ETA: 4:01:17
+[06:32:20]   ✓ BPB=6.1371, time=21.7s
+[06:32:21] [645/1195] Helsinki-NLP/opus-mt-de-nso (V=60441) — ETA: 4:00:48
+[06:32:46]   ✓ BPB=5.4270, time=24.5s
+[06:32:47] [646/1195] Helsinki-NLP/opus-mt-nso-de (V=60441) — ETA: 4:00:21
+[06:33:12]   ✓ BPB=5.2189, time=25.2s
+[06:33:13] [647/1195] Helsinki-NLP/opus-mt-lg-en (V=60447) — ETA: 3:59:55
+[06:33:37]   ✓ BPB=5.4573, time=23.8s
+[06:33:38] [648/1195] Helsinki-NLP/opus-mt-en-lg (V=60447) — ETA: 3:59:28
+[06:33:58]   ✓ BPB=3.7008, time=20.2s
+[06:33:59] [649/1195] Helsinki-NLP/opus-mt-tum-en (V=60463) — ETA: 3:58:57
+[06:34:24]   ✓ BPB=5.5806, time=24.6s
+[06:34:25] [650/1195] Helsinki-NLP/opus-mt-it-is (V=60482) — ETA: 3:58:31
+[06:34:48]   ✓ BPB=4.9954, time=22.7s
+[06:34:49] [651/1195] Helsinki-NLP/opus-mt-is-it (V=60482) — ETA: 3:58:02
+[06:35:13]   ✓ BPB=5.0779, time=24.4s
+[06:35:14] [652/1195] Helsinki-NLP/opus-mt-bcl-fr (V=60484) — ETA: 3:57:35
+[06:35:36]   ✓ BPB=5.4933, time=22.2s
+[06:35:37] [653/1195] Helsinki-NLP/opus-mt-fr-bcl (V=60484) — ETA: 3:57:07
+[06:36:02]   ✓ BPB=4.8545, time=24.3s
+[06:36:03] [654/1195] Helsinki-NLP/opus-mt-en-tll (V=60493) — ETA: 3:56:40
+[06:36:21]   ✓ BPB=3.9857, time=18.7s
+[06:36:22] [655/1195] Helsinki-NLP/opus-mt-tll-en (V=60493) — ETA: 3:56:08
+[06:36:47]   ✓ BPB=5.5572, time=24.3s
+[06:36:48] [656/1195] Helsinki-NLP/opus-mt-sv-ny (V=60497) — ETA: 3:55:41
+[06:37:10]   ✓ BPB=5.4305, time=22.5s
+[06:37:11] [657/1195] Helsinki-NLP/opus-mt-tc-big-gmq-ar (V=60537) — ETA: 3:55:13
+[06:37:39]   ✓ BPB=4.4271, time=27.3s
+[06:37:40] [658/1195] Helsinki-NLP/opus-mt-tc-big-gmq-ar (V=60537) — ETA: 3:54:49
+[06:38:07]   ✓ BPB=4.4271, time=26.9s
+[06:38:08] [659/1195] Helsinki-NLP/opus-mt-tc-big-ar-gmq (V=60575) — ETA: 3:54:24
+[06:38:40]   ✓ BPB=6.1153, time=32.5s
+[06:38:41] [660/1195] Helsinki-NLP/opus-mt-tc-big-ar-gmq (V=60575) — ETA: 3:54:04
+[06:39:10]   ✓ BPB=6.1153, time=28.5s
+[06:39:11] [661/1195] Helsinki-NLP/opus-mt-fr-loz (V=60584) — ETA: 3:53:40
+[06:39:36]   ✓ BPB=5.0656, time=24.9s
+[06:39:37] [662/1195] Helsinki-NLP/opus-mt-loz-fr (V=60584) — ETA: 3:53:14
+[06:40:01]   ✓ BPB=5.2478, time=24.1s
+[06:40:02] [663/1195] Helsinki-NLP/opus-mt-de-ln (V=60592) — ETA: 3:52:47
+[06:40:25]   ✓ BPB=5.1830, time=22.9s
+[06:40:26] [664/1195] Helsinki-NLP/opus-mt-ln-de (V=60592) — ETA: 3:52:19
+[06:40:50]   ✓ BPB=5.1075, time=24.1s
+[06:40:51] [665/1195] Helsinki-NLP/opus-mt-sv-bem (V=60613) — ETA: 3:51:52
+[06:41:15]   ✓ BPB=5.0489, time=23.7s
+[06:41:16] [666/1195] Helsinki-NLP/opus-mt-bem-sv (V=60613) — ETA: 3:51:24
+[06:41:39]   ✓ BPB=5.5995, time=23.8s
+[06:41:41] [667/1195] Helsinki-NLP/opus-mt-sv-fi (V=60614) — ETA: 3:50:57
+[06:42:03]   ✓ BPB=5.6810, time=22.6s
+[06:42:04] [668/1195] Helsinki-NLP/opus-mt-af-fi (V=60657) — ETA: 3:50:29
+[06:42:26]   ✓ BPB=5.2517, time=21.8s
+[06:42:27] [669/1195] Helsinki-NLP/opus-mt-fi-af (V=60657) — ETA: 3:50:00
+[06:42:51]   ✓ BPB=6.1594, time=23.8s
+[06:42:52] [670/1195] Helsinki-NLP/opus-mt-tc-base-tr-uk (V=60660) — ETA: 3:49:33
+[06:43:12]   ✓ BPB=5.2707, time=20.2s
+[06:43:13] [671/1195] Helsinki-NLP/opus-mt-tc-base-uk-tr (V=60668) — ETA: 3:49:03
+[06:43:35]   ✓ BPB=7.4162, time=21.9s
+[06:43:36] [672/1195] Helsinki-NLP/opus-mt-fi-sq (V=60676) — ETA: 3:48:34
+[06:43:58]   ✓ BPB=5.2540, time=22.4s
+[06:43:59] [673/1195] Helsinki-NLP/opus-mt-tc-base-hu-uk (V=60700) — ETA: 3:48:06
+[06:44:20]   ✓ BPB=5.3022, time=20.3s
+[06:44:21] [674/1195] Helsinki-NLP/opus-mt-tc-base-uk-hu (V=60700) — ETA: 3:47:36
+[06:44:45]   ✓ BPB=5.2462, time=24.6s
+[06:44:46] [675/1195] Helsinki-NLP/opus-mt-tc-big-fa-itc (V=60708) — ETA: 3:47:09
+[06:45:14]   ✓ BPB=5.3443, time=27.6s
+[06:45:15] [676/1195] Helsinki-NLP/opus-mt-tc-big-fa-itc (V=60708) — ETA: 3:46:45
+[06:45:42]   ✓ BPB=5.3443, time=26.7s
+[06:45:43] [677/1195] Helsinki-NLP/opus-mt-ja-en (V=60716) — ETA: 3:46:20
+[06:46:04]   ✓ BPB=5.4509, time=20.8s
+[06:46:05] [678/1195] Helsinki-NLP/opus-mt-kwy-fr (V=60718) — ETA: 3:45:51
+[06:46:28]   ✓ BPB=6.4497, time=23.7s
+[06:46:29] [679/1195] Helsinki-NLP/opus-mt-fr-kwy (V=60718) — ETA: 3:45:23
+[06:46:53]   ✓ BPB=5.8421, time=23.2s
+[06:46:54] [680/1195] Helsinki-NLP/opus-mt-tc-bible-big-pqw-fra_ita_por_spa (V=60729) — ETA: 3:44:56
+[06:47:25]   ✓ BPB=5.6674, time=31.1s
+[06:47:26] [681/1195] Helsinki-NLP/opus-mt-tc-bible-big-pqw-fra_ita_por_spa (V=60729) — ETA: 3:44:34
+[06:47:58]   ✓ BPB=5.6674, time=32.1s
+[06:47:59] [682/1195] Helsinki-NLP/opus-mt-tc-base-fi-uk (V=60735) — ETA: 3:44:13
+[06:48:21]   ✓ BPB=5.2936, time=21.6s
+[06:48:22] [683/1195] Helsinki-NLP/opus-mt-tc-base-uk-fi (V=60735) — ETA: 3:43:44
+[06:48:44]   ✓ BPB=6.2507, time=22.6s
+[06:48:45] [684/1195] Helsinki-NLP/opus-mt-bcl-de (V=60738) — ETA: 3:43:16
+[06:49:08]   ✓ BPB=5.8868, time=22.6s
+[06:49:09] [685/1195] Helsinki-NLP/opus-mt-de-bcl (V=60738) — ETA: 3:42:48
+[06:49:33]   ✓ BPB=5.3006, time=23.8s
+[06:49:34] [686/1195] Helsinki-NLP/opus-mt-fr-el (V=60763) — ETA: 3:42:21
+[06:49:56]   ✓ BPB=6.0705, time=22.1s
+[06:49:57] [687/1195] Helsinki-NLP/opus-mt-el-fr (V=60763) — ETA: 3:41:53
+[06:50:20]   ✓ BPB=6.3504, time=23.3s
+[06:50:21] [688/1195] Helsinki-NLP/opus-mt-de-pag (V=60768) — ETA: 3:41:25
+[06:50:44]   ✓ BPB=5.4289, time=23.1s
+[06:50:45] [689/1195] Helsinki-NLP/opus-mt-pag-de (V=60768) — ETA: 3:40:57
+[06:51:08]   ✓ BPB=4.9105, time=22.5s
+[06:51:09] [690/1195] Helsinki-NLP/opus-mt-es-el (V=60782) — ETA: 3:40:29
+[06:51:30]   ✓ BPB=5.7855, time=21.4s
+[06:51:31] [691/1195] Helsinki-NLP/opus-mt-loz-es (V=60783) — ETA: 3:40:01
+[06:51:57]   ✓ BPB=5.7138, time=25.3s
+[06:51:58] [692/1195] Helsinki-NLP/opus-mt-es-loz (V=60783) — ETA: 3:39:35
+[06:52:22]   ✓ BPB=5.4263, time=24.4s
+[06:52:23] [693/1195] Helsinki-NLP/opus-mt-sv-rw (V=60812) — ETA: 3:39:08
+[06:52:47]   ✓ BPB=5.2184, time=23.8s
+[06:52:48] [694/1195] Helsinki-NLP/opus-mt-rw-sv (V=60812) — ETA: 3:38:41
+[06:53:13]   ✓ BPB=5.3367, time=25.2s
+[06:53:14] [695/1195] Helsinki-NLP/opus-mt-lua-es (V=60813) — ETA: 3:38:15
+[06:53:38]   ✓ BPB=5.5174, time=23.8s
+[06:53:39] [696/1195] Helsinki-NLP/opus-mt-es-lua (V=60813) — ETA: 3:37:48
+[06:54:04]   ✓ BPB=5.0612, time=24.7s
+[06:54:05] [697/1195] Helsinki-NLP/opus-mt-es-ny (V=60819) — ETA: 3:37:21
+[06:54:28]   ✓ BPB=5.7316, time=23.0s
+[06:54:29] [698/1195] Helsinki-NLP/opus-mt-ny-es (V=60819) — ETA: 3:36:54
+[06:54:55]   ✓ BPB=5.5854, time=25.7s
+[06:54:56] [699/1195] Helsinki-NLP/opus-mt-tc-base-uk-ces_slk (V=60826) — ETA: 3:36:28
+[06:55:19]   ✓ BPB=5.3037, time=23.6s
+[06:55:20] [700/1195] Helsinki-NLP/opus-mt-fr-tll (V=60829) — ETA: 3:36:01
+[06:55:44]   ✓ BPB=5.1537, time=23.8s
+[06:55:45] [701/1195] Helsinki-NLP/opus-mt-tll-fr (V=60829) — ETA: 3:35:34
+[06:56:11]   ✓ BPB=5.8150, time=25.4s
+[06:56:12] [702/1195] Helsinki-NLP/opus-mt-tc-base-ces_slk-uk (V=60846) — ETA: 3:35:08
+[06:56:34]   ✓ BPB=6.1848, time=22.5s
+[06:56:35] [703/1195] Helsinki-NLP/opus-mt-de-loz (V=60846) — ETA: 3:34:40
+[06:56:59]   ✓ BPB=5.4554, time=23.8s
+[06:57:00] [704/1195] Helsinki-NLP/opus-mt-loz-de (V=60846) — ETA: 3:34:13
+[06:57:25]   ✓ BPB=5.3904, time=24.7s
+[06:57:26] [705/1195] Helsinki-NLP/opus-mt-tc-bible-big-poz-fra_ita_por_spa (V=60868) — ETA: 3:33:47
+[06:57:59]   ✓ BPB=5.7359, time=33.4s
+[06:58:00] [706/1195] Helsinki-NLP/opus-mt-tc-bible-big-poz-fra_ita_por_spa (V=60868) — ETA: 3:33:26
+[06:58:31]   ✓ BPB=5.7359, time=30.6s
+[06:58:32] [707/1195] Helsinki-NLP/opus-mt-ny-de (V=60883) — ETA: 3:33:04
+[06:58:58]   ✓ BPB=5.4356, time=25.5s
+[06:58:59] [708/1195] Helsinki-NLP/opus-mt-de-ny (V=60883) — ETA: 3:32:38
+[06:59:22]   ✓ BPB=6.0784, time=23.4s
+[06:59:23] [709/1195] Helsinki-NLP/opus-mt-tc-bible-big-map-fra_ita_por_spa (V=60885) — ETA: 3:32:11
+[07:00:00]   ✓ BPB=5.6892, time=37.3s
+[07:00:01] [710/1195] Helsinki-NLP/opus-mt-tc-bible-big-map-fra_ita_por_spa (V=60885) — ETA: 3:31:53
+[07:00:35]   ✓ BPB=5.6892, time=33.5s
+[07:00:36] [711/1195] Helsinki-NLP/opus-mt-de-lua (V=60920) — ETA: 3:31:33
+[07:01:01]   ✓ BPB=5.8342, time=24.7s
+[07:01:02] [712/1195] Helsinki-NLP/opus-mt-fr-ny (V=60923) — ETA: 3:31:06
+[07:01:27]   ✓ BPB=5.8421, time=24.9s
+[07:01:28] [713/1195] Helsinki-NLP/opus-mt-tc-big-fi-zle (V=60934) — ETA: 3:30:40
+[07:01:58]   ✓ BPB=5.1290, time=30.1s
+[07:01:59] [714/1195] Helsinki-NLP/opus-mt-tc-big-fi-zle (V=60934) — ETA: 3:30:17
+[07:02:26]   ✓ BPB=5.1290, time=27.5s
+[07:02:27] [715/1195] Helsinki-NLP/opus-mt-tc-bible-big-trk-deu_eng_fra_por_spa (V=60942) — ETA: 3:29:53
+[07:03:01]   ✓ BPB=5.3102, time=33.5s
+[07:03:02] [716/1195] Helsinki-NLP/opus-mt-tc-bible-big-trk-deu_eng_fra_por_spa (V=60942) — ETA: 3:29:32
+[07:03:31]   ✓ BPB=5.3102, time=29.4s
+[07:03:33] [717/1195] Helsinki-NLP/opus-mt-tc-big-it-zle (V=60955) — ETA: 3:29:09
+[07:04:02]   ✓ BPB=4.5561, time=29.7s
+[07:04:03] [718/1195] Helsinki-NLP/opus-mt-tc-big-it-zle (V=60955) — ETA: 3:28:46
+[07:04:30]   ✓ BPB=4.5561, time=27.0s
+[07:04:31] [719/1195] Helsinki-NLP/opus-mt-tc-bible-big-ira-deu_eng_fra_por_spa (V=60956) — ETA: 3:28:21
+[07:05:05]   ✓ BPB=5.1306, time=33.6s
+[07:05:06] [720/1195] Helsinki-NLP/opus-mt-tc-bible-big-ira-deu_eng_fra_por_spa (V=60956) — ETA: 3:28:00
+[07:05:36]   ✓ BPB=5.1306, time=30.0s
+[07:05:37] [721/1195] Helsinki-NLP/opus-mt-tc-big-zle-it (V=60974) — ETA: 3:27:37
+[07:06:08]   ✓ BPB=5.5148, time=31.3s
+[07:06:09] [722/1195] Helsinki-NLP/opus-mt-tc-big-zle-it (V=60974) — ETA: 3:27:15
+[07:06:38]   ✓ BPB=5.5148, time=28.9s
+[07:06:39] [723/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-trk (V=60983) — ETA: 3:26:51
+[07:07:07]   ✓ BPB=3.2198, time=27.4s
+[07:07:08] [724/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-trk (V=60983) — ETA: 3:26:26
+[07:07:33]   ✓ BPB=3.2198, time=25.8s
+[07:07:34] [725/1195] Helsinki-NLP/opus-mt-bem-es (V=60996) — ETA: 3:26:00
+[07:07:58]   ✓ BPB=5.4391, time=23.5s
+[07:07:59] [726/1195] Helsinki-NLP/opus-mt-ceb-fi (V=61010) — ETA: 3:25:33
+[07:08:22]   ✓ BPB=5.1869, time=23.1s
+[07:08:23] [727/1195] Helsinki-NLP/opus-mt-fi-ceb (V=61010) — ETA: 3:25:05
+[07:08:47]   ✓ BPB=5.7875, time=23.9s
+[07:08:48] [728/1195] Helsinki-NLP/opus-mt-ine-en (V=61014) — ETA: 3:24:38
+[07:09:10]   ✓ BPB=6.2070, time=21.9s
+[07:09:11] [729/1195] Helsinki-NLP/opus-mt-tc-big-zle-en (V=61017) — ETA: 3:24:10
+[07:09:43]   ✓ BPB=5.9388, time=31.7s
+[07:09:44] [730/1195] Helsinki-NLP/opus-mt-tc-big-zle-en (V=61017) — ETA: 3:23:48
+[07:10:13]   ✓ BPB=5.9388, time=29.1s
+[07:10:14] [731/1195] Helsinki-NLP/opus-mt-tc-bible-big-sem-en (V=61023) — ETA: 3:23:24
+[07:10:48]   ✓ BPB=5.2625, time=34.3s
+[07:10:49] [732/1195] Helsinki-NLP/opus-mt-tc-bible-big-sem-en (V=61023) — ETA: 3:23:04
+[07:11:21]   ✓ BPB=5.2625, time=31.6s
+[07:11:22] [733/1195] Helsinki-NLP/opus-mt-fr-bem (V=61027) — ETA: 3:22:41
+[07:11:46]   ✓ BPB=5.4532, time=24.3s
+[07:11:47] [734/1195] Helsinki-NLP/opus-mt-bem-fr (V=61027) — ETA: 3:22:15
+[07:12:11]   ✓ BPB=5.3786, time=23.4s
+[07:12:12] [735/1195] Helsinki-NLP/opus-mt-toi-en (V=61051) — ETA: 3:21:47
+[07:12:37]   ✓ BPB=5.7340, time=25.0s
+[07:12:38] [736/1195] Helsinki-NLP/opus-mt-en-toi (V=61051) — ETA: 3:21:21
+[07:12:56]   ✓ BPB=3.9895, time=18.6s
+[07:12:57] [737/1195] Helsinki-NLP/opus-mt-fi-hil (V=61066) — ETA: 3:20:50
+[07:13:21]   ✓ BPB=6.1298, time=23.4s
+[07:13:22] [738/1195] Helsinki-NLP/opus-mt-hil-fi (V=61066) — ETA: 3:20:23
+[07:13:45]   ✓ BPB=4.6050, time=22.8s
+[07:13:46] [739/1195] Helsinki-NLP/opus-mt-rw-fr (V=61080) — ETA: 3:19:55
+[07:14:09]   ✓ BPB=5.4918, time=23.7s
+[07:14:10] [740/1195] Helsinki-NLP/opus-mt-fr-rw (V=61080) — ETA: 3:19:28
+[07:14:34]   ✓ BPB=5.8279, time=23.2s
+[07:14:35] [741/1195] Helsinki-NLP/opus-mt-fi-ilo (V=61080) — ETA: 3:19:01
+[07:14:58]   ✓ BPB=5.6411, time=23.4s
+[07:14:59] [742/1195] Helsinki-NLP/opus-mt-ilo-fi (V=61080) — ETA: 3:18:33
+[07:15:24]   ✓ BPB=5.1660, time=25.1s
+[07:15:25] [743/1195] Helsinki-NLP/opus-mt-fi-fj (V=61090) — ETA: 3:18:07
+[07:15:49]   ✓ BPB=6.1918, time=23.9s
+[07:15:50] [744/1195] Helsinki-NLP/opus-mt-tc-big-ar-en (V=61109) — ETA: 3:17:40
+[07:16:24]   ✓ BPB=6.3365, time=34.1s
+[07:16:25] [745/1195] Helsinki-NLP/opus-mt-tc-big-ar-en (V=61109) — ETA: 3:17:19
+[07:16:56]   ✓ BPB=6.3365, time=30.7s
+[07:16:57] [746/1195] Helsinki-NLP/opus-mt-yo-fi (V=61110) — ETA: 3:16:56
+[07:17:23]   ✓ BPB=7.1756, time=25.9s
+[07:17:24] [747/1195] Helsinki-NLP/opus-mt-bg-de (V=61110) — ETA: 3:16:30
+[07:17:48]   ✓ BPB=6.2083, time=23.7s
+[07:17:49] [748/1195] Helsinki-NLP/opus-mt-de-bg (V=61110) — ETA: 3:16:03
+[07:18:13]   ✓ BPB=5.5313, time=23.7s
+[07:18:14] [749/1195] Helsinki-NLP/opus-mt-fi-yo (V=61110) — ETA: 3:15:36
+[07:18:40]   ✓ BPB=6.0186, time=26.3s
+[07:18:41] [750/1195] Helsinki-NLP/opus-mt-tc-big-itc-he (V=61115) — ETA: 3:15:10
+[07:19:13]   ✓ BPB=4.7417, time=32.3s
+[07:19:14] [751/1195] Helsinki-NLP/opus-mt-tc-big-itc-he (V=61115) — ETA: 3:14:48
+[07:19:43]   ✓ BPB=4.7417, time=28.2s
+[07:19:44] [752/1195] Helsinki-NLP/opus-mt-sv-tll (V=61119) — ETA: 3:14:24
+[07:20:07]   ✓ BPB=5.1092, time=23.3s
+[07:20:08] [753/1195] Helsinki-NLP/opus-mt-tll-sv (V=61119) — ETA: 3:13:56
+[07:20:33]   ✓ BPB=5.8636, time=24.6s
+[07:20:34] [754/1195] Helsinki-NLP/opus-mt-fi-sw (V=61123) — ETA: 3:13:30
+[07:20:59]   ✓ BPB=5.3943, time=25.5s
+[07:21:00] [755/1195] Helsinki-NLP/opus-mt-hi-en (V=61127) — ETA: 3:13:04
+[07:21:24]   ✓ BPB=4.7311, time=24.2s
+[07:21:25] [756/1195] Helsinki-NLP/opus-mt-tc-big-de-zle (V=61131) — ETA: 3:12:37
+[07:21:55]   ✓ BPB=4.9835, time=29.7s
+[07:21:56] [757/1195] Helsinki-NLP/opus-mt-tc-big-de-zle (V=61131) — ETA: 3:12:13
+[07:22:23]   ✓ BPB=4.9835, time=27.0s
+[07:22:24] [758/1195] Helsinki-NLP/opus-mt-sem-en (V=61143) — ETA: 3:11:48
+[07:22:52]   ✓ BPB=8.0494, time=27.5s
+[07:22:53] [759/1195] Helsinki-NLP/opus-mt-tc-big-he-itc (V=61146) — ETA: 3:11:23
+[07:23:23]   ✓ BPB=5.8006, time=30.4s
+[07:23:24] [760/1195] Helsinki-NLP/opus-mt-tc-big-he-itc (V=61146) — ETA: 3:11:00
+[07:23:52]   ✓ BPB=5.8006, time=28.1s
+[07:23:53] [761/1195] Helsinki-NLP/opus-mt-fr-de (V=61153) — ETA: 3:10:35
+[07:24:14]   ✓ BPB=5.5939, time=20.6s
+[07:24:15] [762/1195] Helsinki-NLP/opus-mt-sn-en (V=61153) — ETA: 3:10:06
+[07:24:39]   ✓ BPB=5.7527, time=24.3s
+[07:24:40] [763/1195] Helsinki-NLP/opus-mt-de-fr (V=61153) — ETA: 3:09:39
+[07:25:02]   ✓ BPB=5.7301, time=21.7s
+[07:25:03] [764/1195] Helsinki-NLP/opus-mt-en-sn (V=61153) — ETA: 3:09:11
+[07:25:25]   ✓ BPB=3.6839, time=21.7s
+[07:25:26] [765/1195] Helsinki-NLP/opus-mt-en-ine (V=61161) — ETA: 3:08:43
+[07:25:44]   ✓ BPB=3.2018, time=18.5s
+[07:25:45] [766/1195] Helsinki-NLP/opus-mt-tc-big-zle-de (V=61166) — ETA: 3:08:13
+[07:26:15]   ✓ BPB=5.9714, time=29.4s
+[07:26:16] [767/1195] Helsinki-NLP/opus-mt-tc-big-zle-de (V=61166) — ETA: 3:07:49
+[07:26:44]   ✓ BPB=5.9714, time=28.3s
+[07:26:45] [768/1195] Helsinki-NLP/opus-mt-tc-bible-big-sem-deu_eng_fra_por_spa (V=61171) — ETA: 3:07:24
+[07:27:20]   ✓ BPB=5.6324, time=35.2s
+[07:27:21] [769/1195] Helsinki-NLP/opus-mt-tc-bible-big-sem-deu_eng_fra_por_spa (V=61171) — ETA: 3:07:03
+[07:27:53]   ✓ BPB=5.6324, time=32.2s
+[07:27:54] [770/1195] Helsinki-NLP/opus-mt-en-sem (V=61180) — ETA: 3:06:41
+[07:28:15]   ✓ BPB=15.0209, time=20.3s
+[07:28:16] [771/1195] Helsinki-NLP/opus-mt-afa-en (V=61180) — ETA: 3:06:12
+[07:28:40]   ✓ BPB=17.7590, time=24.2s
+[07:28:41] [772/1195] Helsinki-NLP/opus-mt-efi-fi (V=61193) — ETA: 3:05:45
+[07:29:05]   ✓ BPB=5.2768, time=23.3s
+[07:29:06] [773/1195] Helsinki-NLP/opus-mt-fi-efi (V=61193) — ETA: 3:05:18
+[07:29:31]   ✓ BPB=5.9932, time=25.0s
+[07:29:32] [774/1195] Helsinki-NLP/opus-mt-fi-swc (V=61193) — ETA: 3:04:51
+[07:29:56]   ✓ BPB=6.0128, time=24.1s
+[07:29:57] [775/1195] Helsinki-NLP/opus-mt-swc-fi (V=61193) — ETA: 3:04:24
+[07:30:20]   ✓ BPB=5.5006, time=23.2s
+[07:30:21] [776/1195] Helsinki-NLP/opus-mt-en-afa (V=61199) — ETA: 3:03:57
+[07:30:40]   ✓ BPB=17.4838, time=18.5s
+[07:30:41] [777/1195] Helsinki-NLP/opus-mt-sv-kqn (V=61201) — ETA: 3:03:27
+[07:31:04]   ✓ BPB=5.5999, time=23.3s
+[07:31:05] [778/1195] Helsinki-NLP/opus-mt-kqn-sv (V=61201) — ETA: 3:03:00
+[07:31:30]   ✓ BPB=6.5392, time=24.7s
+[07:31:31] [779/1195] Helsinki-NLP/opus-mt-tc-big-en-ar (V=61247) — ETA: 3:02:33
+[07:31:53]   ✓ BPB=3.3972, time=22.4s
+[07:31:54] [780/1195] Helsinki-NLP/opus-mt-tc-big-en-ar (V=61247) — ETA: 3:02:05
+[07:32:17]   ✓ BPB=3.3972, time=22.7s
+[07:32:18] [781/1195] Helsinki-NLP/opus-mt-tc-big-zle-fi (V=61260) — ETA: 3:01:38
+[07:32:49]   ✓ BPB=4.8944, time=31.2s
+[07:32:50] [782/1195] Helsinki-NLP/opus-mt-tc-big-zle-fi (V=61260) — ETA: 3:01:15
+[07:33:19]   ✓ BPB=4.8944, time=29.1s
+[07:33:20] [783/1195] Helsinki-NLP/opus-mt-fi-st (V=61267) — ETA: 3:00:51
+[07:33:46]   ✓ BPB=5.5264, time=26.1s
+[07:33:47] [784/1195] Helsinki-NLP/opus-mt-st-fi (V=61267) — ETA: 3:00:25
+[07:34:10]   ✓ BPB=6.5203, time=23.2s
+[07:34:12] [785/1195] Helsinki-NLP/opus-mt-fi-ig (V=61272) — ETA: 2:59:57
+[07:34:37]   ✓ BPB=5.6366, time=25.9s
+[07:34:38] [786/1195] Helsinki-NLP/opus-mt-ig-fi (V=61272) — ETA: 2:59:31
+[07:35:00]   ✓ BPB=5.4532, time=21.8s
+[07:35:01] [787/1195] Helsinki-NLP/opus-mt-tum-sv (V=61279) — ETA: 2:59:03
+[07:35:28]   ✓ BPB=6.1218, time=26.8s
+[07:35:29] [788/1195] Helsinki-NLP/opus-mt-sv-tum (V=61279) — ETA: 2:58:38
+[07:35:53]   ✓ BPB=5.0937, time=23.7s
+[07:35:54] [789/1195] Helsinki-NLP/opus-mt-sv-lg (V=61282) — ETA: 2:58:11
+[07:36:17]   ✓ BPB=4.7587, time=23.2s
+[07:36:18] [790/1195] Helsinki-NLP/opus-mt-lg-sv (V=61282) — ETA: 2:57:44
+[07:36:41]   ✓ BPB=5.9257, time=23.2s
+[07:36:42] [791/1195] Helsinki-NLP/opus-mt-en-xh (V=61285) — ETA: 2:57:16
+[07:37:00]   ✓ BPB=3.4233, time=17.7s
+[07:37:01] [792/1195] Helsinki-NLP/opus-mt-xh-en (V=61285) — ETA: 2:56:46
+[07:37:28]   ✓ BPB=5.6666, time=26.6s
+[07:37:29] [793/1195] Helsinki-NLP/opus-mt-rw-es (V=61291) — ETA: 2:56:21
+[07:37:54]   ✓ BPB=5.4195, time=25.4s
+[07:37:55] [794/1195] Helsinki-NLP/opus-mt-es-rw (V=61291) — ETA: 2:55:54
+[07:38:17]   ✓ BPB=5.6196, time=22.2s
+[07:38:18] [795/1195] Helsinki-NLP/opus-mt-es-de (V=61301) — ETA: 2:55:27
+[07:38:42]   ✓ BPB=5.9942, time=23.4s
+[07:38:43] [796/1195] Helsinki-NLP/opus-mt-de-es (V=61301) — ETA: 2:55:00
+[07:39:06]   ✓ BPB=5.9715, time=23.3s
+[07:39:07] [797/1195] Helsinki-NLP/opus-mt-tc-bible-big-sem-deu_eng_nld (V=61309) — ETA: 2:54:32
+[07:39:40]   ✓ BPB=5.2831, time=32.5s
+[07:39:41] [798/1195] Helsinki-NLP/opus-mt-tc-bible-big-sem-deu_eng_nld (V=61309) — ETA: 2:54:10
+[07:40:12]   ✓ BPB=5.2831, time=30.8s
+[07:40:13] [799/1195] Helsinki-NLP/opus-mt-lue-en (V=61313) — ETA: 2:53:46
+[07:40:40]   ✓ BPB=5.8851, time=27.2s
+[07:40:41] [800/1195] Helsinki-NLP/opus-mt-fi-tn (V=61313) — ETA: 2:53:21
+[07:41:07]   ✓ BPB=5.7346, time=25.8s
+[07:41:08] [801/1195] Helsinki-NLP/opus-mt-en-lue (V=61313) — ETA: 2:52:55
+[07:41:27]   ✓ BPB=3.9410, time=19.2s
+[07:41:28] [802/1195] Helsinki-NLP/opus-mt-fi-srn (V=61314) — ETA: 2:52:26
+[07:41:55]   ✓ BPB=5.3116, time=26.6s
+[07:41:56] [803/1195] Helsinki-NLP/opus-mt-tw-fi (V=61325) — ETA: 2:52:00
+[07:42:18]   ✓ BPB=5.3450, time=22.6s
+[07:42:19] [804/1195] Helsinki-NLP/opus-mt-fi-tw (V=61325) — ETA: 2:51:33
+[07:42:45]   ✓ BPB=5.6271, time=25.8s
+[07:42:46] [805/1195] Helsinki-NLP/opus-mt-run-en (V=61335) — ETA: 2:51:07
+[07:43:11]   ✓ BPB=6.0692, time=25.2s
+[07:43:12] [806/1195] Helsinki-NLP/opus-mt-en-run (V=61335) — ETA: 2:50:40
+[07:43:32]   ✓ BPB=3.8567, time=19.4s
+[07:43:33] [807/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-sem (V=61339) — ETA: 2:50:11
+[07:44:00]   ✓ BPB=3.6658, time=27.1s
+[07:44:01] [808/1195] Helsinki-NLP/opus-mt-tc-bible-big-deu_eng_fra_por_spa-sem (V=61339) — ETA: 2:49:46
+[07:44:29]   ✓ BPB=3.6658, time=28.0s
+[07:44:30] [809/1195] Helsinki-NLP/opus-mt-fi-sv (V=61341) — ETA: 2:49:21
+[07:44:53]   ✓ BPB=6.2268, time=23.1s
+[07:44:54] [810/1195] Helsinki-NLP/opus-mt-tc-big-pt-zle (V=61345) — ETA: 2:48:54
+[07:45:25]   ✓ BPB=4.9384, time=30.9s
+[07:45:26] [811/1195] Helsinki-NLP/opus-mt-tc-big-pt-zle (V=61345) — ETA: 2:48:30
+[07:45:54]   ✓ BPB=4.9384, time=27.7s
+[07:45:55] [812/1195] Helsinki-NLP/opus-mt-tc-big-zle-pt (V=61346) — ETA: 2:48:05
+[07:46:25]   ✓ BPB=6.3301, time=30.3s
+[07:46:26] [813/1195] Helsinki-NLP/opus-mt-tc-big-zle-pt (V=61346) — ETA: 2:47:41
+[07:46:55]   ✓ BPB=6.3301, time=28.7s
+[07:46:56] [814/1195] Helsinki-NLP/opus-mt-ts-fi (V=61351) — ETA: 2:47:17
+[07:47:21]   ✓ BPB=5.4436, time=24.9s
+[07:47:22] [815/1195] Helsinki-NLP/opus-mt-fi-ts (V=61351) — ETA: 2:46:50
+[07:47:46]   ✓ BPB=5.5491, time=24.0s
+[07:47:47] [816/1195] Helsinki-NLP/opus-mt-pap-fi (V=61369) — ETA: 2:46:23
+[07:48:10]   ✓ BPB=5.4766, time=22.6s
+[07:48:11] [817/1195] Helsinki-NLP/opus-mt-fi-pap (V=61369) — ETA: 2:45:56
+[07:48:36]   ✓ BPB=5.1842, time=24.9s
+[07:48:37] [818/1195] Helsinki-NLP/opus-mt-tc-big-gmq-zle (V=61373) — ETA: 2:45:30
+[07:49:04]   ✓ BPB=4.3222, time=27.4s
+[07:49:05] [819/1195] Helsinki-NLP/opus-mt-tc-big-gmq-zle (V=61373) — ETA: 2:45:04
+[07:49:31]   ✓ BPB=4.3222, time=25.7s
+[07:49:32] [820/1195] Helsinki-NLP/opus-mt-tc-big-zle-gmq (V=61376) — ETA: 2:44:38
+[07:50:03]   ✓ BPB=5.5161, time=31.3s
+[07:50:04] [821/1195] Helsinki-NLP/opus-mt-tc-big-zle-gmq (V=61376) — ETA: 2:44:15
+[07:50:33]   ✓ BPB=5.5161, time=29.3s
+[07:50:34] [822/1195] Helsinki-NLP/opus-mt-fr-lg (V=61378) — ETA: 2:43:50
+[07:50:58]   ✓ BPB=4.9061, time=23.3s
+[07:50:59] [823/1195] Helsinki-NLP/opus-mt-lg-fr (V=61378) — ETA: 2:43:23
+[07:51:24]   ✓ BPB=6.0956, time=24.8s
+[07:51:25] [824/1195] Helsinki-NLP/opus-mt-es-tll (V=61389) — ETA: 2:42:57
+[07:51:50]   ✓ BPB=5.1601, time=25.6s
+[07:51:51] [825/1195] Helsinki-NLP/opus-mt-tc-bible-big-afa-en (V=61389) — ETA: 2:42:30
+[07:52:25]   ✓ BPB=4.9860, time=33.4s
+[07:52:26] [826/1195] Helsinki-NLP/opus-mt-tll-es (V=61389) — ETA: 2:42:08
+[07:52:50]   ✓ BPB=5.7656, time=24.5s
+[07:52:51] [827/1195] Helsinki-NLP/opus-mt-tc-bible-big-afa-en (V=61389) — ETA: 2:41:41
+[07:53:24]   ✓ BPB=4.9860, time=33.2s
+[07:53:25] [828/1195] Helsinki-NLP/opus-mt-tc-big-fr-zle (V=61392) — ETA: 2:41:18
+[07:53:55]   ✓ BPB=4.2837, time=29.5s
+[07:53:56] [829/1195] Helsinki-NLP/opus-mt-tc-big-fr-zle (V=61392) — ETA: 2:40:54
+[07:54:23]   ✓ BPB=4.2837, time=27.3s
+[07:54:24] [830/1195] Helsinki-NLP/opus-mt-tr-lt (V=61419) — ETA: 2:40:29
+[07:54:47]   ✓ BPB=4.7627, time=23.1s
+[07:54:48] [831/1195] Helsinki-NLP/opus-mt-lt-tr (V=61419) — ETA: 2:40:01
+[07:55:12]   ✓ BPB=4.9036, time=23.5s
+[07:55:13] [832/1195] Helsinki-NLP/opus-mt-nso-fi (V=61423) — ETA: 2:39:34
+[07:55:37]   ✓ BPB=5.3952, time=24.4s
+[07:55:38] [833/1195] Helsinki-NLP/opus-mt-fi-nso (V=61423) — ETA: 2:39:08
+[07:56:05]   ✓ BPB=5.6540, time=26.2s
+[07:56:06] [834/1195] Helsinki-NLP/opus-mt-lg-es (V=61425) — ETA: 2:38:42
+[07:56:35]   ✓ BPB=6.3270, time=29.7s
+[07:56:36] [835/1195] Helsinki-NLP/opus-mt-tc-big-zle-fr (V=61429) — ETA: 2:38:17
+[07:57:08]   ✓ BPB=6.0467, time=31.1s
+[07:57:09] [836/1195] Helsinki-NLP/opus-mt-tc-big-zle-fr (V=61429) — ETA: 2:37:54
+[07:57:38]   ✓ BPB=6.0467, time=29.6s
+[07:57:39] [837/1195] Helsinki-NLP/opus-mt-tc-bible-big-afa-deu_eng_fra_por_spa (V=61448) — ETA: 2:37:29
+[07:58:12]   ✓ BPB=5.1699, time=32.3s
+[07:58:13] [838/1195] Helsinki-NLP/opus-mt-tc-bible-big-afa-deu_eng_fra_por_spa (V=61448) — ETA: 2:37:06
+[07:58:43]   ✓ BPB=5.1699, time=30.4s
+[07:58:44] [839/1195] Helsinki-NLP/opus-mt-ee-fi (V=61449) — ETA: 2:36:42
+[07:59:07]   ✓ BPB=5.8515, time=23.1s
+[07:59:08] [840/1195] Helsinki-NLP/opus-mt-fi-ee (V=61449) — ETA: 2:36:14
+[07:59:33]   ✓ BPB=5.7157, time=24.4s
+[07:59:34] [841/1195] Helsinki-NLP/opus-mt-fr-run (V=61454) — ETA: 2:35:48
+[07:59:59]   ✓ BPB=5.1440, time=25.7s
+[08:00:00] [842/1195] Helsinki-NLP/opus-mt-tc-big-zle-itc (V=61466) — ETA: 2:35:22
+[08:00:32]   ✓ BPB=6.0488, time=31.8s
+[08:00:33] [843/1195] Helsinki-NLP/opus-mt-tc-big-zle-itc (V=61466) — ETA: 2:34:58
+[08:01:02]   ✓ BPB=6.0488, time=28.6s
+[08:01:03] [844/1195] Helsinki-NLP/opus-mt-it-bg (V=61468) — ETA: 2:34:33
+[08:01:28]   ✓ BPB=4.9347, time=24.8s
+[08:01:29] [845/1195] Helsinki-NLP/opus-mt-bg-it (V=61468) — ETA: 2:34:06
+[08:01:53]   ✓ BPB=6.2656, time=23.9s
+[08:01:54] [846/1195] Helsinki-NLP/opus-mt-kqn-fr (V=61473) — ETA: 2:33:39
+[08:02:20]   ✓ BPB=6.0903, time=25.8s
+[08:02:21] [847/1195] Helsinki-NLP/opus-mt-fr-kqn (V=61473) — ETA: 2:33:13
+[08:02:44]   ✓ BPB=5.7051, time=23.8s
+[08:02:45] [848/1195] Helsinki-NLP/opus-mt-bg-fr (V=61483) — ETA: 2:32:46
+[08:03:10]   ✓ BPB=6.5392, time=24.0s
+[08:03:11] [849/1195] Helsinki-NLP/opus-mt-fr-bg (V=61483) — ETA: 2:32:20
+[08:03:32]   ✓ BPB=5.2377, time=21.5s
+[08:03:33] [850/1195] Helsinki-NLP/opus-mt-run-sv (V=61491) — ETA: 2:31:52
+[08:03:57]   ✓ BPB=5.8830, time=24.0s
+[08:03:58] [851/1195] Helsinki-NLP/opus-mt-sv-run (V=61491) — ETA: 2:31:25
+[08:04:21]   ✓ BPB=5.2025, time=22.8s
+[08:04:22] [852/1195] Helsinki-NLP/opus-mt-tc-big-itc-ar (V=61503) — ETA: 2:30:57
+[08:04:52]   ✓ BPB=4.8060, time=30.3s
+[08:04:53] [853/1195] Helsinki-NLP/opus-mt-tc-big-itc-ar (V=61503) — ETA: 2:30:33
+[08:05:21]   ✓ BPB=4.8060, time=27.4s
+[08:05:22] [854/1195] Helsinki-NLP/opus-mt-tc-big-zle-es (V=61515) — ETA: 2:30:08
+[08:05:55]   ✓ BPB=6.4404, time=32.8s
+[08:05:56] [855/1195] Helsinki-NLP/opus-mt-tc-big-zle-es (V=61515) — ETA: 2:29:44
+[08:06:25]   ✓ BPB=6.4404, time=29.3s
+[08:06:26] [856/1195] Helsinki-NLP/opus-mt-sv-lu (V=61517) — ETA: 2:29:20
+[08:06:51]   ✓ BPB=5.1764, time=25.1s
+[08:06:52] [857/1195] Helsinki-NLP/opus-mt-lu-sv (V=61517) — ETA: 2:28:53
+[08:07:19]   ✓ BPB=6.1200, time=27.3s
+[08:07:20] [858/1195] Helsinki-NLP/opus-mt-kqn-es (V=61526) — ETA: 2:28:28
+[08:07:47]   ✓ BPB=5.8528, time=26.5s
+[08:07:48] [859/1195] Helsinki-NLP/opus-mt-fi-ln (V=61529) — ETA: 2:28:02
+[08:08:14]   ✓ BPB=5.3858, time=26.4s
+[08:08:15] [860/1195] Helsinki-NLP/opus-mt-fi-ny (V=61529) — ETA: 2:27:36
+[08:08:40]   ✓ BPB=6.0496, time=24.7s
+[08:08:41] [861/1195] Helsinki-NLP/opus-mt-fr-tum (V=61532) — ETA: 2:27:09
+[08:09:06]   ✓ BPB=5.2098, time=24.3s
+[08:09:07] [862/1195] Helsinki-NLP/opus-mt-tum-fr (V=61532) — ETA: 2:26:42
+[08:09:31]   ✓ BPB=5.9485, time=24.6s
+[08:09:32] [863/1195] Helsinki-NLP/opus-mt-tum-es (V=61535) — ETA: 2:26:16
+[08:09:57]   ✓ BPB=6.0000, time=24.7s
+[08:09:58] [864/1195] Helsinki-NLP/opus-mt-alv-en (V=61549) — ETA: 2:25:49
+[08:10:22]   ✓ BPB=5.9427, time=23.7s
+[08:10:23] [865/1195] Helsinki-NLP/opus-mt-lu-fr (V=61552) — ETA: 2:25:22
+[08:10:50]   ✓ BPB=5.8004, time=27.0s
+[08:10:51] [866/1195] Helsinki-NLP/opus-mt-fr-lu (V=61552) — ETA: 2:24:57
+[08:11:15]   ✓ BPB=5.0926, time=23.8s
+[08:11:16] [867/1195] Helsinki-NLP/opus-mt-en-nic (V=61556) — ETA: 2:24:30
+[08:11:35]   ✓ BPB=3.4292, time=19.7s
+[08:11:36] [868/1195] Helsinki-NLP/opus-mt-run-es (V=61562) — ETA: 2:24:01
+[08:12:03]   ✓ BPB=5.7381, time=26.6s
+[08:12:04] [869/1195] Helsinki-NLP/opus-mt-tc-big-es-zle (V=61577) — ETA: 2:23:35
+[08:12:35]   ✓ BPB=4.7650, time=30.7s
+[08:12:36] [870/1195] Helsinki-NLP/opus-mt-tc-big-en-zle (V=61577) — ETA: 2:23:11
+[08:13:02]   ✓ BPB=3.2455, time=25.7s
+[08:13:03] [871/1195] Helsinki-NLP/opus-mt-en-alv (V=61577) — ETA: 2:22:45
+[08:13:23]   ✓ BPB=3.6253, time=20.7s
+[08:13:24] [872/1195] Helsinki-NLP/opus-mt-tc-big-es-zle (V=61577) — ETA: 2:22:17
+[08:13:52]   ✓ BPB=4.7650, time=27.5s
+[08:13:53] [873/1195] Helsinki-NLP/opus-mt-tc-big-en-zle (V=61577) — ETA: 2:21:51
+[08:14:16]   ✓ BPB=3.2455, time=23.6s
+[08:14:18] [874/1195] Helsinki-NLP/opus-mt-tc-big-ar-itc (V=61580) — ETA: 2:21:24
+[08:14:49]   ✓ BPB=5.8366, time=31.7s
+[08:14:50] [875/1195] Helsinki-NLP/opus-mt-tc-big-ar-itc (V=61580) — ETA: 2:21:00
+[08:15:18]   ✓ BPB=5.8366, time=27.9s
+[08:15:19] [876/1195] Helsinki-NLP/opus-mt-sn-sv (V=61582) — ETA: 2:20:35
+[08:15:43]   ✓ BPB=5.5247, time=24.1s
+[08:15:44] [877/1195] Helsinki-NLP/opus-mt-sv-sn (V=61582) — ETA: 2:20:08
+[08:16:09]   ✓ BPB=5.3499, time=24.2s
+[08:16:10] [878/1195] Helsinki-NLP/opus-mt-gaa-fi (V=61586) — ETA: 2:19:41
+[08:16:34]   ✓ BPB=5.5607, time=24.6s
+[08:16:35] [879/1195] Helsinki-NLP/opus-mt-fi-gaa (V=61586) — ETA: 2:19:15
+[08:17:03]   ✓ BPB=5.3790, time=27.7s
+[08:17:04] [880/1195] Helsinki-NLP/opus-mt-uk-en (V=61587) — ETA: 2:18:49
+[08:17:28]   ✓ BPB=6.1894, time=24.0s

@@ -1,0 +1,91 @@
+Already completed: 34 models
+[1/48] google/flan-t5-small — done, skipping
+[2/48] Helsinki-NLP/opus-mt-tc-big-en-ko — done, skipping
+[3/48] albert/albert-base-v2 — done, skipping
+[4/48] distilbert-base-uncased — done, skipping
+[5/48] bert-base-uncased — done, skipping
+[6/48] TinyLlama/TinyLlama-1.1B-Chat-v1.0 — done, skipping
+[7/48] openlm-research/open_llama_3b — done, skipping
+
+[8/48] mistralai/Mistral-7B-v0.1 (V=32000, causal)
+  OK: BPB=0.5950, bits/tok=2.33, bytes/tok=3.91, PPL=5.02 (129.5s)
+
+[9/48] NousResearch/Llama-2-7b-hf (V=32000, causal)
+  OK: BPB=0.6131, bits/tok=2.35, bytes/tok=3.83, PPL=5.10 (131.1s)
+[10/48] Helsinki-NLP/opus-mt-en-tvl — done, skipping
+[11/48] Helsinki-NLP/opus-mt-en-ho — done, skipping
+[12/48] Helsinki-NLP/opus-mt-en-iso — done, skipping
+[13/48] HuggingFaceTB/SmolLM-135M — done, skipping
+
+[14/48] sshleifer/tiny-gpt2 (V=50257, causal)
+  ERROR: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be async (4.5s)
+
+[15/48] distilgpt2 (V=50257, causal)
+  ERROR: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be async (4.9s)
+
+[16/48] gpt2 (V=50257, causal)
+  ERROR: CUDA error: unspecified launch failure
+Search for `cudaErrorLaunchFailure' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be  (10.4s)
+
+[17/48] gpt2-medium (V=50257, causal)
+  ERROR: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be async (5.8s)
+
+[18/48] gpt2-large (V=50257, causal)
+  ERROR: CUDA error: unspecified launch failure
+Search for `cudaErrorLaunchFailure' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be  (12.0s)
+[19/48] microsoft/phi-1 — done, skipping
+[20/48] microsoft/phi-1_5 — done, skipping
+[21/48] microsoft/phi-2 — done, skipping
+[22/48] EleutherAI/pythia-14m — done, skipping
+[23/48] EleutherAI/pythia-70m — done, skipping
+[24/48] EleutherAI/pythia-160m — done, skipping
+[25/48] EleutherAI/pythia-410m — done, skipping
+[26/48] EleutherAI/pythia-1b — done, skipping
+[27/48] EleutherAI/pythia-1.4b — done, skipping
+[28/48] facebook/opt-125m — done, skipping
+[29/48] facebook/opt-350m — done, skipping
+[30/48] facebook/opt-1.3b — done, skipping
+[31/48] cerebras/Cerebras-GPT-111M — done, skipping
+[32/48] cerebras/Cerebras-GPT-256M — done, skipping
+[33/48] allenai/OLMo-1B-hf — done, skipping
+[34/48] roberta-base — done, skipping
+[35/48] Helsinki-NLP/opus-mt-tc-big-en-pt — done, skipping
+[36/48] Helsinki-NLP/opus-mt-en-de — done, skipping
+[37/48] Helsinki-NLP/opus-mt-en-fr — done, skipping
+[38/48] Helsinki-NLP/opus-mt-en-ru — done, skipping
+[39/48] Helsinki-NLP/opus-mt-en-es — done, skipping
+
+[40/48] baichuan-inc/Baichuan-7B (V=64000, causal)
+  OK: BPB=3.4647, bits/tok=13.15, bytes/tok=3.80, PPL=9110.54 (132.7s)
+
+[41/48] 01-ai/Yi-6B (V=63992, causal)
+  OK: BPB=0.6482, bits/tok=2.48, bytes/tok=3.83, PPL=5.59 (111.6s)
+[42/48] Helsinki-NLP/opus-mt-en-it — done, skipping
+[43/48] google/pegasus-xsum — done, skipping
+
+[44/48] stabilityai/stablelm-2-zephyr-1_6b (V=100289, causal)
+  OK: BPB=0.8566, bits/tok=3.70, bytes/tok=4.32, PPL=13.00 (44.6s)
+
+[45/48] Qwen/Qwen2.5-0.5B (V=151643, causal)
+  OK: BPB=0.8343, bits/tok=3.61, bytes/tok=4.32, PPL=12.17 (22.5s)
+
+[46/48] Qwen/Qwen2.5-1.5B (V=151643, causal)
+  OK: BPB=0.7125, bits/tok=3.08, bytes/tok=4.32, PPL=8.45 (35.0s)
+
+[47/48] bigscience/bloom-560m (V=250680, causal)
+  OK: BPB=0.9986, bits/tok=4.53, bytes/tok=4.54, PPL=23.15 (20.8s)
+
+[48/48] bigscience/bloom-1b1 (V=250680, causal)
+  OK: BPB=0.9199, bits/tok=4.18, bytes/tok=4.54, PPL=18.07 (30.6s)
+
+======================================================================
+ALL MODELS EVALUATED: 43 success, 5 error/oom
+======================================================================

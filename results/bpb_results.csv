@@ -1,0 +1,59 @@
+model_name,vocab_size,log2_vocab,BPB,bits_per_token,avg_bytes_per_token,perplexity,model_type,status,error_msg
+google/flan-t5-small,32100,14.97,0.061555,0.2349,3.8169,1.1769,translation,success,
+Helsinki-NLP/opus-mt-tc-big-en-ko,32001,14.966,2.337953,10.1009,4.3204,1098.1842,translation,success,
+albert/albert-base-v2,30000,14.873,0.779896,3.2703,4.1933,9.6486,LLM,success,
+distilbert-base-uncased,30522,14.898,0.508737,2.4061,4.7295,5.3003,LLM,success,
+bert-base-uncased,30522,14.898,0.361851,1.7114,4.7295,3.2748,LLM,success,
+TinyLlama/TinyLlama-1.1B-Chat-v1.0,32000,14.966,0.766917,2.9393,3.8326,7.6703,LLM,success,
+openlm-research/open_llama_3b,32000,14.966,0.69708,2.8405,4.0749,7.1629,LLM,success,
+Helsinki-NLP/opus-mt-en-tvl,38380,15.228,3.237049,12.2982,3.7992,5036.5927,translation,success,
+Helsinki-NLP/opus-mt-en-ho,42463,15.374,3.080139,11.8455,3.8458,3679.9387,translation,success,
+Helsinki-NLP/opus-mt-en-iso,45029,15.459,3.501657,13.4374,3.8375,11093.644,translation,success,
+HuggingFaceTB/SmolLM-135M,49152,15.585,0.936829,3.9912,4.2603,15.9024,LLM,success,
+microsoft/phi-1,50257,15.617,1.631613,7.4068,4.5395,169.6892,LLM,success,
+microsoft/phi-1_5,50257,15.617,1.005064,4.5625,4.5395,23.6295,LLM,success,
+microsoft/phi-2,50257,15.617,0.717583,3.2575,4.5395,9.5632,LLM,success,
+EleutherAI/pythia-14m,50254,15.617,1.497723,6.7389,4.4994,106.8087,LLM,success,
+EleutherAI/pythia-70m,50254,15.617,1.249282,5.621,4.4994,49.2157,LLM,success,
+EleutherAI/pythia-160m,50254,15.617,1.067149,4.8016,4.4994,27.8876,LLM,success,
+EleutherAI/pythia-410m,50254,15.617,0.895667,4.03,4.4994,16.336,LLM,success,
+EleutherAI/pythia-1b,50254,15.617,0.833594,3.7507,4.4994,13.4608,LLM,success,
+EleutherAI/pythia-1.4b,50254,15.617,0.79303,3.5682,4.4994,11.8612,LLM,success,
+facebook/opt-125m,50265,15.617,1.06724,4.8447,4.5395,28.7352,LLM,success,
+facebook/opt-350m,50265,15.617,0.992504,4.5055,4.5395,22.7136,LLM,success,
+facebook/opt-1.3b,50265,15.617,0.860726,3.9073,4.5395,15.004,LLM,success,
+cerebras/Cerebras-GPT-111M,50257,15.617,1.207337,5.4807,4.5395,44.6547,LLM,success,
+cerebras/Cerebras-GPT-256M,50257,15.617,1.083389,4.9181,4.5395,30.2335,LLM,success,
+allenai/OLMo-1B-hf,50280,15.618,0.810071,3.6448,4.4994,12.5085,LLM,success,
+roberta-base,50265,15.617,0.378019,1.716,4.5395,3.2853,LLM,success,
+Helsinki-NLP/opus-mt-tc-big-en-pt,54776,15.741,1.304052,5.3704,4.1182,41.3655,translation,success,
+Helsinki-NLP/opus-mt-en-de,58101,15.826,0.562378,2.3956,4.2598,5.262,translation,success,
+Helsinki-NLP/opus-mt-en-fr,59514,15.861,0.676913,2.8917,4.272,7.4217,translation,success,
+Helsinki-NLP/opus-mt-en-ru,62518,15.932,1.285318,5.1719,4.0238,36.0482,translation,success,
+Helsinki-NLP/opus-mt-en-es,65001,15.988,0.799863,3.2978,4.123,9.8343,translation,success,
+Helsinki-NLP/opus-mt-en-it,80035,16.288,0.554754,2.2162,3.9949,4.6467,translation,success,
+google/pegasus-xsum,96103,16.552,0.249057,1.1112,4.4615,2.1602,LLM,success,
+mistralai/Mistral-7B-v0.1,32000,14.966,0.595049,2.3276,3.9116,5.0197,LLM,success,
+NousResearch/Llama-2-7b-hf,32000,14.966,0.613112,2.3498,3.8326,5.0976,LLM,success,
+sshleifer/tiny-gpt2,50257,15.617,,,,,LLM,error,"CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be async"
+distilgpt2,50257,15.617,,,,,LLM,error,"CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be async"
+gpt2,50257,15.617,,,,,LLM,error,"CUDA error: unspecified launch failure
+Search for `cudaErrorLaunchFailure' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be "
+gpt2-medium,50257,15.617,,,,,LLM,error,"CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be async"
+gpt2-large,50257,15.617,,,,,LLM,error,"CUDA error: unspecified launch failure
+Search for `cudaErrorLaunchFailure' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be "
+baichuan-inc/Baichuan-7B,64000,15.966,3.464654,13.1533,3.7964,9110.5421,LLM,success,
+01-ai/Yi-6B,63992,15.966,0.6482,2.482,3.8291,5.5869,LLM,success,
+stabilityai/stablelm-2-zephyr-1_6b,100289,16.614,0.856554,3.7006,4.3204,13.0019,LLM,success,
+Qwen/Qwen2.5-0.5B,151643,17.21,0.834265,3.6057,4.322,12.1736,LLM,success,
+Qwen/Qwen2.5-1.5B,151643,17.21,0.712451,3.0792,4.322,8.4515,LLM,success,
+bigscience/bloom-560m,250680,17.935,0.998628,4.5327,4.5389,23.146,LLM,success,
+bigscience/bloom-1b1,250680,17.935,0.919887,4.1753,4.5389,18.0671,LLM,success,

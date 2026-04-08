@@ -1,0 +1,28 @@
+THROUGHPUT CONSTRAINT EXPERIMENT — STATISTICAL SUMMARY
+============================================================
+
+Date: 2025-03-28
+Corpus: WikiText-2 test set
+Models analyzed: 43
+Vocab range: 30000 - 250680
+log₂(V) range: 14.9 - 17.9
+
+A. LINEAR FIT: BPB ~ β₀ + β₁·log₂(V)
+   β₀ = 2.6440, β₁ = -0.097869
+   R² = 0.0077, p(β₁) = 0.576315
+   Causal LMs only: β₁=0.057834, R²=0.0073, p=0.642758
+
+B. SPEARMAN RANK
+   ρ = 0.0418, p = 0.790228
+
+C. PLATEAU
+   V_plateau ≈ 42463
+
+D. BITS/EVENT
+   Mean=4.6440, Median=3.7507, Std=3.1197
+   IQR=[2.8662, 5.0450]
+   In [3, 5.5]: 22/43 (51.2%)
+
+E. RATE-DISTORTION
+   Mean residual: -0.2882
+   Std residual: 2.5893

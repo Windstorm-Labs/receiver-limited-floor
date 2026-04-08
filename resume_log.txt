@@ -1,0 +1,24 @@
+Corpus: 1,292,013 bytes
+Already completed: 6 models
+[1/44] google/flan-t5-small — already done, skipping
+[2/44] Helsinki-NLP/opus-mt-tc-big-en-ko — already done, skipping
+[3/44] albert/albert-base-v2 — already done, skipping
+[4/44] distilbert-base-uncased — already done, skipping
+[5/44] bert-base-uncased — already done, skipping
+[6/44] TinyLlama/TinyLlama-1.1B-Chat-v1.0 — already done, skipping
+
+[7/44] openlm-research/open_llama_3b (vocab=32000, method=causal)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   1%|          | 2/237 [00:00<00:15, 14.99it/s]Loading weights:   2%|▏         | 4/237 [00:00<00:22, 10.16it/s]Loading weights:   3%|▎         | 7/237 [00:00<00:15, 14.93it/s]Loading weights:  18%|█▊        | 42/237 [00:00<00:03, 55.51it/s]Loading weights:  41%|████▏     | 98/237 [00:01<00:00, 139.72it/s]Loading weights:  51%|█████     | 120/237 [00:01<00:01, 101.44it/s]Loading weights:  59%|█████▉    | 140/237 [00:01<00:00, 114.68it/s]Loading weights:  66%|██████▌   | 157/237 [00:01<00:00, 103.90it/s]Loading weights:  73%|███████▎  | 172/237 [00:02<00:01, 64.35it/s] Loading weights:  83%|████████▎ | 197/237 [00:02<00:00, 64.92it/s]Loading weights:  87%|████████▋ | 207/237 [00:02<00:00, 56.68it/s]Loading weights:  96%|█████████▌| 228/237 [00:03<00:00, 71.23it/s]Loading weights: 100%|██████████| 237/237 [00:03<00:00, 75.92it/s]
+Token indices sequence length is longer than the specified maximum sequence length for this model (317066 > 2048). Running this sequence through the model will result in indexing errors
+  OK: BPB=0.6971, bits/tok=2.84, bytes/tok=4.07, PPL=7.16 (71.8s)
+
+[8/44] Helsinki-NLP/opus-mt-en-tvl (vocab=38380, method=seq2seq)
+Loading weights:   0%|          | 0/258 [00:00<?, ?it/s]Loading weights: 100%|██████████| 258/258 [00:00<00:00, 2892.82it/s]
+The tied weights mapping and config for this model specifies to tie model.shared.weight to model.decoder.embed_tokens.weight, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+The tied weights mapping and config for this model specifies to tie model.shared.weight to model.encoder.embed_tokens.weight, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+Token indices sequence length is longer than the specified maximum sequence length for this model (340074 > 512). Running this sequence through the model will result in indexing errors
+  OK: BPB=3.2370, bits/tok=12.30, bytes/tok=3.80, PPL=5036.59 (38.9s)
+
+[9/44] Helsinki-NLP/opus-mt-en-ho (vocab=42463, method=seq2seq)

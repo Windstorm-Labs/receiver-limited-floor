@@ -1,0 +1,70 @@
+======================================================================
+STEP 1: Building model catalog
+======================================================================
+Catalog: 48 models
+Vocab range: 30000 - 250680
+Saved to /home/hermes-oc1/throughput_experiment/results/model_catalog.csv
+
+======================================================================
+STEP 2: Preparing reference corpus (WikiText-2 test)
+======================================================================
+Corpus already exists: 1289979 chars
+Total bytes: 1,292,013
+
+======================================================================
+STEP 3: Computing BPB for each model
+======================================================================
+
+[1/48] google/flan-t5-small (vocab=32100, method=seq2seq)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/190 [00:00<?, ?it/s]Loading weights: 100%|██████████| 190/190 [00:00<00:00, 2563.09it/s]
+The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Token indices sequence length is longer than the specified maximum sequence length for this model (338497 > 512). Running this sequence through the model will result in indexing errors
+  OK: BPB=0.0616, bits/tok=0.23, bytes/tok=3.82, PPL=1.18 (8.5s)
+
+[2/48] Helsinki-NLP/opus-mt-tc-big-en-ko (vocab=32001, method=seq2seq)
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 4669.28it/s]
+Token indices sequence length is longer than the specified maximum sequence length for this model (299049 > 512). Running this sequence through the model will result in indexing errors
+  OK: BPB=2.3380, bits/tok=10.10, bytes/tok=4.32, PPL=1098.18 (10.0s)
+
+[3/48] albert/albert-base-v2 (vocab=30000, method=masked)
+Loading weights:   0%|          | 0/29 [00:00<?, ?it/s]Loading weights: 100%|██████████| 29/29 [00:00<00:00, 2762.54it/s]
+The tied weights mapping and config for this model specifies to tie predictions.bias to predictions.decoder.bias, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+[1mAlbertForMaskedLM LOAD REPORT[0m from: albert/albert-base-v2
+Key                  | Status     |  | 
+---------------------+------------+--+-
+albert.pooler.bias   | UNEXPECTED |  | 
+albert.pooler.weight | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Token indices sequence length is longer than the specified maximum sequence length for this model (308116 > 512). Running this sequence through the model will result in indexing errors
+  OK: BPB=0.7799, bits/tok=3.27, bytes/tok=4.19, PPL=9.65 (2.0s)
+
+[4/48] distilbert-base-uncased (vocab=30522, method=masked)
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 4659.94it/s]
+Token indices sequence length is longer than the specified maximum sequence length for this model (273180 > 512). Running this sequence through the model will result in indexing errors
+  OK: BPB=0.5087, bits/tok=2.41, bytes/tok=4.73, PPL=5.30 (5.2s)
+
+[5/48] bert-base-uncased (vocab=30522, method=masked)
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 6531.17it/s]
+[1mBertForMaskedLM LOAD REPORT[0m from: bert-base-uncased
+Key                         | Status     |  | 
+----------------------------+------------+--+-
+bert.pooler.dense.weight    | UNEXPECTED |  | 
+cls.seq_relationship.bias   | UNEXPECTED |  | 
+bert.pooler.dense.bias      | UNEXPECTED |  | 
+cls.seq_relationship.weight | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Token indices sequence length is longer than the specified maximum sequence length for this model (273180 > 512). Running this sequence through the model will result in indexing errors
+  OK: BPB=0.3619, bits/tok=1.71, bytes/tok=4.73, PPL=3.27 (6.8s)
+
+[6/48] TinyLlama/TinyLlama-1.1B-Chat-v1.0 (vocab=32000, method=causal)
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:   0%|          | 1/201 [00:00<00:58,  3.43it/s]Loading weights:  15%|█▌        | 31/201 [00:00<00:02, 82.08it/s]Loading weights:  21%|██        | 42/201 [00:00<00:02, 69.18it/s]Loading weights:  27%|██▋       | 54/201 [00:00<00:01, 80.03it/s]Loading weights:  32%|███▏      | 65/201 [00:00<00:01, 87.44it/s]Loading weights:  38%|███▊      | 76/201 [00:01<00:01, 75.75it/s]Loading weights:  43%|████▎     | 87/201 [00:01<00:01, 83.45it/s]Loading weights:  50%|█████     | 101/201 [00:01<00:01, 97.27it/s]Loading weights:  56%|█████▌    | 113/201 [00:01<00:00, 101.51it/s]Loading weights:  63%|██████▎   | 127/201 [00:01<00:00, 111.51it/s]Loading weights:  69%|██████▉   | 139/201 [00:02<00:01, 43.02it/s] Loading weights:  74%|███████▎  | 148/201 [00:02<00:01, 49.02it/s]Loading weights:  78%|███████▊  | 157/201 [00:02<00:00, 55.25it/s]Loading weights:  83%|████████▎ | 166/201 [00:02<00:00, 60.74it/s]Loading weights:  87%|████████▋ | 175/201 [00:02<00:00, 66.61it/s]Loading weights:  92%|█████████▏| 184/201 [00:02<00:00, 59.74it/s]Loading weights:  96%|█████████▌| 192/201 [00:02<00:00, 53.61it/s]Loading weights: 100%|██████████| 201/201 [00:02<00:00, 67.63it/s]
+Token indices sequence length is longer than the specified maximum sequence length for this model (337112 > 2048). Running this sequence through the model will result in indexing errors
+  OK: BPB=0.7669, bits/tok=2.94, bytes/tok=3.83, PPL=7.67 (26.5s)
+
+[7/48] openlm-research/open_llama_3b (vocab=32000, method=causal)
