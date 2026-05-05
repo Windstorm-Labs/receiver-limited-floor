@@ -46,6 +46,14 @@ See individual experiment scripts for runtime estimates and specific dependencie
 
 ---
 
+## Discuss this code
+
+- **Bug, reproduction failure, or unexpected output?** → [Open an Issue](../../issues)
+- **Q&A — version compatibility, hardware, generalization to other inputs?** → [Start a Discussion](../../discussions)
+- **Discuss the paper itself** → [Comments on the website article](https://windstorminstitute.org/articles/receiver-limited-floor.html#comments) or [Issues on the Institute repo](https://github.com/Windstorm-Institute/receiver-limited-floor/issues)
+
+---
+
 ## The Windstorm Series
 
 | # | Paper | DOI |
