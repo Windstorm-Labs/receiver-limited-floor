@@ -38,7 +38,7 @@ Use `run_full_experiment.py` unless you have a specific reason to use one of the
 
 ## Hardware
 
-- **GPU:** NVIDIA RTX 5090 (32 GB VRAM)
+- **GPU:** Current-generation Nvidia GPU (32 GB VRAM, CUDA)
 - **OS:** Ubuntu 24.04
 - **Python:** 3.11+
 
