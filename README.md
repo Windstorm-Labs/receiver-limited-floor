@@ -80,11 +80,11 @@ See individual experiment scripts for runtime estimates and specific dependencie
 | 10 | [Phonon Extraction Bound (BEC Analog Gravity)](https://github.com/Windstorm-Institute/phonon-extraction-bound) | [10.5281/zenodo.20014391](https://doi.org/10.5281/zenodo.20014391) |
 | 11 | [Gravitational Entropy Escrow](https://github.com/Windstorm-Institute/gravitational-entropy-escrow) | [10.5281/zenodo.20032023](https://doi.org/10.5281/zenodo.20032023) |
 | 12 | [C8 Clarification Note](https://github.com/Windstorm-Institute/c8-clarification-note) | [10.5281/zenodo.20041992](https://doi.org/10.5281/zenodo.20041992) |
-
 | 13 | [Lattice QFT Test of the Static Escrow Postulate](https://github.com/Windstorm-Institute/lattice-qft-test) *(4th in track; supplement to Paper 11)* | [10.5281/zenodo.20057538](https://doi.org/10.5281/zenodo.20057538) |
 | 14 | [Spacetime as Escrow Bookkeeping](https://github.com/Windstorm-Institute/escrow-spacetime) *(5th in track; translation of standard GR results into the escrow vocabulary; companion to Paper 11)* | [10.5281/zenodo.20126091](https://doi.org/10.5281/zenodo.20126091) |
 | 15 | [The 𝒩<sub>esc</sub> Recipe](https://github.com/Windstorm-Institute/nesc-recipe) *(6th in track; formalizes 𝒩<sub>esc</sub> as a cross-regime function; continuation of Paper 14)* | [10.5281/zenodo.20145106](https://doi.org/10.5281/zenodo.20145106) |
 | 16 | [The Compton Corollary](https://github.com/Windstorm-Institute/compton-corollary) *(7th in track; short Bekenstein observation at the Compton scale; uses 𝒩<sub>esc</sub> notation only, escrow recipe not invoked)* | [10.5281/zenodo.20163451](https://doi.org/10.5281/zenodo.20163451) |
+
 **Website:** [windstorminstitute.org](https://windstorminstitute.org)
 
 ---
